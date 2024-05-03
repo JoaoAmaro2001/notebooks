@@ -5,6 +5,11 @@ dependencies:
   - geopandas
   - opencv
   - pip
-  - pip:
+  - pip: 
     - tilemapbase
     - pluma-analysis
+  
+  '''
+  Pip is used to install packages that are not available in the conda repository, i.e.custom packages created by NGR.
+  The dependencies section is used to install packages that are available in the conda repository. 
+  '''
