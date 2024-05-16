@@ -5,3 +5,5 @@ cache
 .env
 .vscode
 .conda
+.csv
+.geojson
