@@ -6,4 +6,4 @@ from .for_empatica import *
 from .for_eye_tracker import *
 from .for_path_info import *
 from .for_analysis import *
-# import importlib
+from .for_setpath import * 

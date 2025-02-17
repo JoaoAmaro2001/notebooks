@@ -53,68 +53,131 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
         gps_file     = os.path.join(output, f"sub-{participant_name}_ses-{session_name}_gps.png")
 
         # Get path information
-        path_num = fetch_path_num(session_name)
+        if "lisbon" in path.sourcedata:
+            path_num = fetch_path_num(session_name, "lisbon")
+        elif "copenhagen" in path.sourcedata:
+            path_num = fetch_path_num(session_name, "copenhagen")
+        if "lansing" in path.sourcedata:
+            path_num = fetch_path_num(session_name, "lansing")
+        elif "london" in path.sourcedata:
+            path_num = fetch_path_num(session_name, "london")            
         path_num = str(path_num).zfill(2) # make it a two-digit string
 
         # Correct GPS data and plot it
-        try: 
-            shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
-            # Get shapefile name
-            if path_num == '01':
-                shp_filename = "01_belem.shp"
-            elif path_num == '02':
-                shp_filename = "02_lapa.shp"
-            elif path_num == '03':
-                shp_filename = "03_gulbenkian.shp"
-            elif path_num == '04':
-                shp_filename = "04_Baixa.shp"
-            elif path_num == '05':
-                shp_filename = "05_Graca.shp"
-            elif path_num == '06':
-                shp_filename = "06_Pnacoes.shp"
-            elif path_num == '07':
-                shp_filename = "07_ANovas_Sa_Bandeira.shp"
-            elif path_num == '08':
-                shp_filename = "08_ANovas_CMoeda.shp"
-            elif path_num == '09':
-                shp_filename = "09_PFranca_Escolas.shp"
-            elif path_num == '10':
-                shp_filename = "10_PFranca_Morais_Soares.shp"
-            elif path_num == '11':
-                shp_filename = "11_Marvila_Beato.shp"
-            elif path_num == '12':
-                shp_filename = "12_PNacoes_Gare.shp"
-            elif path_num == '13':
-                shp_filename = "13_Madredeus.shp"
-            elif path_num == '14':
-                shp_filename = "14_Benfica_Pupilos.shp"
-            elif path_num == '15':
-                shp_filename = "15_Benfica_Moinhos.shp"
-            elif path_num == '16':
-                shp_filename = "16_Benfica_Grandella.shp"
-            elif path_num == '17':
-                shp_filename = "17_Restauradores.shp"
-            elif path_num == '18':
-                shp_filename = "18_Belem_Estadio.shp"
-            elif path_num == '19':
-                shp_filename = "19_Estrela_Jardim.shp"
-            elif path_num == '20':
-                shp_filename = "20_Estrela_Assembleia.shp"
-            elif path_num == '21':
-                shp_filename = "21_Estrela_Rato.shp"
-            elif path_num == '22':
-                shp_filename = "22_Estrela_Prazeres.shp"
-            elif path_num == '23':
-                shp_filename = "23_MAAT_path.shp"
-            # Correct GPS data
-            shp_file        = os.path.join(shpdata, shp_filename)
-            geodata         = correct_gps_data(geodata, shp_file, output, plot=False)
-            print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
-            print('Check plot for the corrected GPS data...')
-            # Add typology
-            if path_num in ['01', '02', '03', '04', '05', '06', '23']:
-                print('Adding typology...')
-                geodata = add_typology(geodata, path.sourcedata, int(path_num))
+        try:
+            if "lisbon" in path.sourcedata:
+                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+                # Get shapefile name
+                if path_num == '01':
+                    shp_filename = "01_belem.shp"
+                elif path_num == '02':
+                    shp_filename = "02_lapa.shp"
+                elif path_num == '03':
+                    shp_filename = "03_gulbenkian.shp"
+                elif path_num == '04':
+                    shp_filename = "04_Baixa.shp"
+                elif path_num == '05':
+                    shp_filename = "05_Graca.shp"
+                elif path_num == '06':
+                    shp_filename = "06_Pnacoes.shp"
+                elif path_num == '07':
+                    shp_filename = "07_ANovas_Sa_Bandeira.shp"
+                elif path_num == '08':
+                    shp_filename = "08_ANovas_CMoeda.shp"
+                elif path_num == '09':
+                    shp_filename = "09_PFranca_Escolas.shp"
+                elif path_num == '10':
+                    shp_filename = "10_PFranca_Morais_Soares.shp"
+                elif path_num == '11':
+                    shp_filename = "11_Marvila_Beato.shp"
+                elif path_num == '12':
+                    shp_filename = "12_PNacoes_Gare.shp"
+                elif path_num == '13':
+                    shp_filename = "13_Madredeus.shp"
+                elif path_num == '14':
+                    shp_filename = "14_Benfica_Pupilos.shp"
+                elif path_num == '15':
+                    shp_filename = "15_Benfica_Moinhos.shp"
+                elif path_num == '16':
+                    shp_filename = "16_Benfica_Grandella.shp"
+                elif path_num == '17':
+                    shp_filename = "17_Restauradores.shp"
+                elif path_num == '18':
+                    shp_filename = "18_Belem_Estadio.shp"
+                elif path_num == '19':
+                    shp_filename = "19_Estrela_Jardim.shp"
+                elif path_num == '20':
+                    shp_filename = "20_Estrela_Assembleia.shp"
+                elif path_num == '21':
+                    shp_filename = "21_Estrela_Rato.shp"
+                elif path_num == '22':
+                    shp_filename = "22_Estrela_Prazeres.shp"
+                elif path_num == '23':
+                    shp_filename = "23_MAAT_path.shp"
+                # Correct GPS data
+                shp_file        = os.path.join(shpdata, shp_filename)
+                geodata         = correct_gps_data(geodata, shp_file, output, plot=False)
+                print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
+                print('Check plot for the corrected GPS data...')
+                # Add typology
+                if path_num in ['01', '02', '03', '04', '05', '06', '23']:
+                    print('Adding typology...')
+                    geodata = add_typology(geodata, path.sourcedata, int(path_num))
+            
+            elif "copenhagen" in path.sourcedata:
+                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+                # Get shapefile name
+                if path_num == '01':
+                    shp_filename = "Path1_Norrebro.shp"
+                elif path_num == '02':
+                    shp_filename = "Path2_Norreport.shp"
+                elif path_num == '03':
+                    shp_filename = "Path3_Nordahvn.shp"
+                elif path_num == '04':
+                    shp_filename = "Path4_Hellerup.shp"
+                # Correct GPS data
+                shp_file        = os.path.join(shpdata, shp_filename)
+                geodata         = correct_gps_data(geodata, shp_file, output, plot=True)
+                print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
+                print('Check plot for the corrected GPS data...')
+
+            elif "lansing" in path.sourcedata:
+                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+                # Get shapefile name
+                if path_num == '01':
+                    shp_filename = "Path1_Northern_Natural.shp"
+                elif path_num == '02':
+                    shp_filename = "Path2_Northern_Urban.shp"
+                elif path_num == '03':
+                    shp_filename = "Path3_Downtown_Natural.shp"
+                elif path_num == '04':
+                    shp_filename = "Path4_Downtown_Urban.shp"
+                elif path_num == '05':
+                    shp_filename = "Path5_Southern_Natural.shp"
+                elif path_num == '06':
+                    shp_filename = "Path6_Southern_Urban.shp"                                        
+                # Correct GPS data
+                shp_file        = os.path.join(shpdata, shp_filename)
+                geodata         = correct_gps_data(geodata, shp_file, output, plot=True)
+                print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
+                print('Check plot for the corrected GPS data...')     
+
+            elif "london" in path.sourcedata:
+                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+                # Get shapefile name
+                if path_num == '01':
+                    shp_filename = "Path1_CityLondon.shp"
+                elif path_num == '02':
+                    shp_filename = "Path2_KeningtonGardens.shp"
+                elif path_num == '03':
+                    shp_filename = "Path3_Whitechapel.shp"
+                elif path_num == '04':
+                    shp_filename = "Path4_Woolwich.shp"
+                # Correct GPS data
+                shp_file        = os.path.join(shpdata, shp_filename)
+                geodata         = correct_gps_data(geodata, shp_file, output, plot=True)
+                print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
+                print('Check plot for the corrected GPS data...')                                                         
             
         except Exception as e:
             print(f"An unexpected error occurred for participant '{participant_name}', session '{session_name}': {e}")
@@ -365,36 +428,77 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
     Parameters:
     -----------
     df : DataFrame
-        Input DataFrame with latitude and longitude columns
+        Input DataFrame with latitude and longitude columns.
     shp_path : str
-        Path to the reference shapefile
+        Path to the reference shapefile.
     output_dir : str
-        Directory where outputs will be saved
+        Directory where outputs will be saved. Its name must contain one of: 
+        'lisbon', 'copenhagen', 'london', or 'lansing'.
+    plot : bool, optional
+        If True, additional plots and video outputs will be generated.
+    
+    Returns:
+    --------
+    gdf : GeoDataFrame
+        The input GeoDataFrame with added corrected coordinates and distances.
     """
     
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
     
-    # 1. Load and validate input
+    # Determine target CRS based on city contained in output_dir
+    out_lower = output_dir.lower()
+    if "lisbon" in out_lower:
+        target_crs = "EPSG:3763"     # Lisbon (Portugal)
+    elif "copenhagen" in out_lower:
+        target_crs = "EPSG:25832"    # ETRS89 / UTM zone 32N (commonly used in Denmark)
+    elif "london" in out_lower:
+        target_crs = "EPSG:27700"    # OSGB 1936 / British National Grid (UK)
+    elif "lansing" in out_lower:
+        target_crs = "EPSG:26916"    # NAD83 / UTM zone 16N (commonly used for Michigan, USA)
+    else:
+        sys.exit("City not recognized in output_dir; must contain one of: lisbon, copenhagen, london, lansing")
+    
+    # 1. Load and validate input: create a GeoDataFrame from df (assumed to have 'latitude' and 'longitude')
+    #    Start with WGS84 (EPSG:4326) then convert to the city's target CRS.
     gdf = gpd.GeoDataFrame(
         df,
         geometry=gpd.points_from_xy(df.longitude, df.latitude),
         crs="EPSG:4326"
-    ).to_crs("EPSG:3763")
-
-    # 2. Prepare reference path
-    path_gdf = gpd.read_file(shp_path).to_crs("EPSG:3763")
-    path = path_gdf.geometry.iloc[0]
+    ).to_crs(target_crs)
     
-    # Create high-res reference points
-    line_length = path.length
+    # 2. Prepare reference path:
+    #    Read the shapefile and convert it to the target CRS.
+    path_gdf = gpd.read_file(shp_path).to_crs(target_crs)
+    path_geom = path_gdf.geometry.iloc[0]
+    
+    # Create high-resolution reference points along the path
+    line_length = path_geom.length
     ref_distances = np.arange(0, line_length, 0.1)
-    ref_points = np.array([[p.x, p.y] for p in 
-                          [path.interpolate(d) for d in ref_distances]])
+    ref_points = np.array([[p.x, p.y] for p in (path_geom.interpolate(d) for d in ref_distances)])
+    
+    # Build a spatial tree for fast nearest-neighbor queries.
     tree = BallTree(ref_points)
 
+    # --- Inversion check ---
+    # Check the first GPS point: if its nearest reference point is far along the line,
+    # assume that the shapefile is inverted and reverse the reference points.
+    first_point = gdf.geometry.iloc[0]
+    first_nn_idx = tree.query([[first_point.x, first_point.y]], k=1)[1][0][0]
+    if first_nn_idx > len(ref_points) / 2:
+        print("First GPS point is far from the start of the shapefile. Inverting shapefile reference points...")
+        ref_points = ref_points[::-1]
+        # Adjust ref_distances: reverse and convert to cumulative distance from the new start.
+        ref_distances = line_length - ref_distances[::-1]
+        # Rebuild the spatial tree with the inverted reference points.
+        tree = BallTree(ref_points)    
+    
     def process_points(max_jump, step):
-        
+        """
+        Process each point in the GeoDataFrame by matching it to the reference points along the path.
+        Returns cumulative distances, number of detected jumps, the corrected mapped points,
+        and mapping lines (used for visualization).
+        """
         jumps_count = 0
         cumulative_dists = []
         mapped_points = []
@@ -404,36 +508,38 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
         
         for idx in range(len(gdf)):
             point = gdf.geometry.iloc[idx]
+            # Query the nearest reference point
             _, idx_ref = tree.query([[point.x, point.y]], k=1)
             current_idx = idx_ref[0][0]
             current_dist = ref_distances[current_idx]
-
+    
             if prev_dist is None:
-                if current_dist > max_jump*10:
+                # If the first point is too far along the reference, reset.
+                if current_dist > max_jump * 10:
                     jumps_count += 1
                     current_dist = 0
                     current_idx = 0
             else:
-                if abs((current_dist - prev_dist)) > max_jump:
+                # If the jump between consecutive points exceeds max_jump, adjust.
+                if abs(current_dist - prev_dist) > max_jump:
                     jumps_count += 1
                     try:
                         current_idx = prev_idx + step
                         current_dist = ref_distances[current_idx]
-                    except:
+                    except Exception:
                         current_idx = len(ref_points) - 1
                         current_dist = ref_distances[-1]
-            
+    
             mapped_point = ref_points[current_idx]
             mapped_points.append(mapped_point)
             mapping_lines.append([(point.x, point.y), (mapped_point[0], mapped_point[1])])
-            
             cumulative_dists.append(current_dist)
             prev_dist = current_dist
             prev_idx = current_idx
         
         return cumulative_dists, jumps_count, np.array(mapped_points), mapping_lines
 
-    # Optimize parameters
+    # 3. Optimize parameters: try a range of step sizes and max_jump values
     print("Optimizing parameters...")
     steps = range(1, 11)
     max_jumps = np.linspace(1, 100, 100)
@@ -454,12 +560,12 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
                 optimal_mapped_points = mapped_points
                 optimal_mapping_lines = mapping_lines
     
-    print(f"\nOptimal parameters found:")
+    print("\nOptimal parameters found:")
     print(f"step: {optimal_params[0]}")
     print(f"max_jump: {optimal_params[1]:.2f}")
     print(f"Number of jumps: {min_jumps}")
     
-    # Add corrected coordinates and distances
+    # 4. Add corrected coordinates and distances to the GeoDataFrame
     gdf['cum_dist'] = optimal_dists
     gdf['corrected_x'] = optimal_mapped_points[:, 0]
     gdf['corrected_y'] = optimal_mapped_points[:, 1]
@@ -468,41 +574,43 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
         gdf.corrected_y, 
         crs=gdf.crs
     )
-
-    # Transform the corrected geometry back to WGS84
+    
+    # Transform the corrected geometry back to WGS84 (EPSG:4326)
     gdf_wgs84 = gdf.set_geometry('geometry_corrected').to_crs("EPSG:4326")
     
-    # Extract the corrected lat/lon coordinates
+    # Extract the corrected longitude and latitude coordinates
     gdf['longitude_corrected'] = gdf_wgs84.geometry.x
     gdf['latitude_corrected']  = gdf_wgs84.geometry.y
 
+    # -------------------------------
+    # Plotting Section
+    # -------------------------------
     if plot:
-    
-        # Create static plots
+        # Helper function to save and close plots.
         def save_plot(fig, filename):
             fig.savefig(os.path.join(output_dir, filename), dpi=300, bbox_inches='tight')
             plt.close(fig)
         
-        # 1. Raw vs Corrected Points
+        # 1. Raw vs Corrected Points Plot.
         fig, ax = plt.subplots(figsize=(12, 8))
         path_gdf.plot(ax=ax, color='grey', alpha=0.5, label='Reference Path')
         gdf.plot(ax=ax, color='red', alpha=0.5, label='Raw GPS')
         ax.scatter(optimal_mapped_points[:, 0], optimal_mapped_points[:, 1], 
-                color='blue', alpha=0.5, label='Corrected Points')
+                   color='blue', alpha=0.5, label='Corrected Points')
         ax.set_title('Raw vs Corrected GPS Points')
         ax.legend()
         save_plot(fig, 'raw_vs_corrected.png')
         
-        # 2. Only Corrected Points
+        # 2. Corrected Points Only Plot.
         fig, ax = plt.subplots(figsize=(12, 8))
         path_gdf.plot(ax=ax, color='grey', alpha=0.5, label='Reference Path')
         ax.scatter(optimal_mapped_points[:, 0], optimal_mapped_points[:, 1], 
-                color='blue', alpha=0.5, label='Corrected Points')
+                   color='blue', alpha=0.5, label='Corrected Points')
         ax.set_title('Corrected GPS Points')
         ax.legend()
         save_plot(fig, 'corrected_only.png')
         
-        # 3. Cumulative Distance Plot
+        # 3. Cumulative Distance Plot.
         fig, ax = plt.subplots(figsize=(12, 4))
         ax.plot(optimal_dists, '-o', alpha=0.5)
         ax.set_title('Cumulative Distance Along Path')
@@ -511,7 +619,29 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
         ax.grid(True)
         save_plot(fig, 'cumulative_distance.png')
         
-        # Create animation
+        # 4. Basemap Plot using Contextily and Pyproj.
+        # Define a helper to add a basemap.
+        def add_basemap_to_ax(ax, data_crs="EPSG:4326", source=None):
+            import contextily as ctx
+            if source is None:
+                source = ctx.providers.CartoDB.Positron
+            ctx.add_basemap(ax, crs=data_crs, source=source)
+        
+        # Since gdf_wgs84 is in EPSG:4326 (WGS84), we can use that as our data CRS.
+        fig, ax = plt.subplots(figsize=(10, 6))
+        gdf_wgs84.plot(ax=ax, color='red', markersize=30, alpha=0.7)
+        add_basemap_to_ax(ax, data_crs="EPSG:4326")
+        # Remove grid lines and axis spines for a cleaner look.
+        ax.grid(False)
+        for spine in ax.spines.values():
+            spine.set_visible(False)        
+        ax.set_title("Corrected GPS Data on Basemap", fontsize=14)
+        ax.set_xlabel("Longitude", fontsize=12)
+        ax.set_ylabel("Latitude", fontsize=12)
+        plt.tight_layout()
+        save_plot(fig, 'basemap_corrected.png')
+        
+        # 5. Create animation of the mapping process (optional).
         fig, ax = plt.subplots(figsize=(12, 8))
         
         def init():
@@ -524,74 +654,25 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
             ax.clear()
             path_gdf.plot(ax=ax, color='grey', alpha=0.5, label='Reference Path')
             gdf.iloc[:frame+1].plot(ax=ax, color='red', alpha=0.5, label='Raw GPS')
-            
-            # Plot corrected points up to current frame
             ax.scatter(optimal_mapped_points[:frame+1, 0], 
-                    optimal_mapped_points[:frame+1, 1],
-                    color='blue', alpha=0.5, label='Corrected Points')
-            
-            # Plot mapping line for current point
+                       optimal_mapped_points[:frame+1, 1],
+                       color='blue', alpha=0.5, label='Corrected Points')
+            # Plot mapping line for current point.
             line = optimal_mapping_lines[frame]
             ax.plot([line[0][0], line[1][0]], [line[0][1], line[1][1]], 
                     'k-', alpha=0.5, label='Mapping' if frame == 0 else "")
-            
             ax.set_title(f'Point Mapping Process (Point {frame+1}/{len(gdf)})')
             ax.legend()
             return []
         
-        anim = FuncAnimation(fig, update, init_func=init, frames=len(gdf),
-                            interval=100, blit=True)
-        
-        # Save animation
+        anim = animation.FuncAnimation(fig, update, init_func=init, frames=len(gdf),
+                                       interval=100, blit=True)
         writer = animation.FFMpegWriter(fps=10, bitrate=1800)
         anim.save(os.path.join(output_dir, 'mapping_process.mp4'), writer=writer)
-        plt.close()
+        plt.close(fig)
     
     return gdf
 
-def group_gps_by_distance(
-    gps_data,
-    distance_threshold=10
-) -> List[Tuple[datetime, datetime]]:
-    """
-    Groups a GPS+time dataset into segments of ~10 meters. 
-    gps_data is assumed to be an iterable of rows with columns:
-      ['lat', 'lon', 'time']
-    Returns a list of (start_time, end_time) for each ~10 meter segment.
-    """
-    if len(gps_data) < 2:
-        return []
-
-    segments = []
-    # Initialize
-    seg_start_idx = 0
-    cumulative_dist = 0.0
-
-    for i in range(1, len(gps_data)):
-        lat1 = gps_data[i-1]['lat']
-        lon1 = gps_data[i-1]['lon']
-        lat2 = gps_data[i]['lat']
-        lon2 = gps_data[i]['lon']
-
-        dist = haversine(lat1, lon1, lat2, lon2)
-        cumulative_dist += dist
-
-        if cumulative_dist >= distance_threshold:
-            # We define a segment boundary at i
-            start_time = gps_data[seg_start_idx]['time']
-            end_time   = gps_data[i]['time']
-            segments.append((start_time, end_time))
-
-            # Reset boundary
-            seg_start_idx = i
-            cumulative_dist = 0.0
-
-    # Optionally, if you want to handle the "last partial" segment:
-    # if seg_start_idx < len(gps_data)-1:
-    #     segments.append((gps_data[seg_start_idx]['time'],
-    #                      gps_data[-1]['time']))
-
-    return segments
 
 def add_typology(df, sourcedata, path_num):
     """Add typology for each gps coordinate based on predefined classification of the urban seettings associated with the gps coordinates. The typology information is present in one excel file which contains the intervals in meters associated with each typology. This function associates the GPS coordinates from the path with the typology. It does so by computing the havesine distance for successive GPS coordinates until the distance is greater than the interval in meters associated with the typology. The input should be an excel file with longittude and latitude columns. The output is a new excel file with the typology column added.
@@ -681,6 +762,44 @@ def vincenty(lat1, lon1, lat2, lon2):
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #                          PLOTTING FUNCTIONS                                   #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+def add_basemap_to_ax(ax, data_crs="EPSG:4326", source=None):
+    """
+    Adds a basemap to the given matplotlib axis using contextily.
+    
+    Parameters:
+    -----------
+    ax : matplotlib.axes.Axes
+        The axis on which the data has been plotted.
+    data_crs : str, optional
+        The CRS of the data currently plotted on the axis. Default is "EPSG:4326" (WGS84).
+    source : contextily provider, optional
+        The basemap provider to use. Default is CartoDB.Positron.
+    
+    This function leverages contextily's built-in capability to reproject the
+    basemap to match the provided data CRS. Additionally, it shows how pyproj can be
+    used to set up a Transformer (if further coordinate transformation or formatting is needed).
+    """
+    import contextily as ctx
+    from pyproj import Transformer
+
+    # If no source is provided, use CartoDB Positron.
+    if source is None:
+        source = ctx.providers.CartoDB.Positron
+
+    # (Optional) Example using pyproj to create a transformer:
+    # This transformer converts coordinates from the data CRS to Web Mercator (EPSG:3857)
+    transformer = Transformer.from_crs(data_crs, "EPSG:3857", always_xy=True)
+    # You could use this transformer to manually convert axis limits or add custom formatting.
+    # For instance, to transform the current x-axis limits:
+    x0, x1 = ax.get_xlim()
+    # (Not used directly here, but available for custom formatting if desired.)
+    # transformed_x0, _ = transformer.transform(x0, 0)
+    # transformed_x1, _ = transformer.transform(x1, 0)
+
+    # Now, add the basemap. Contextily will reproject the basemap to match the data CRS.
+    ctx.add_basemap(ax, crs=data_crs, source=source)
+
 
 def plot_save_gps(gdf, shp_path, output_path):
     """
