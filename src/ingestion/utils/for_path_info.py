@@ -3,6 +3,7 @@ import re
 import shutil
 import numpy as np
 import pandas as pd
+from pandas import Timedelta
 from unidecode import unidecode
 import geopandas as gpd
 from shapely.geometry import Point, LineString
@@ -114,7 +115,7 @@ def organize_sub_folders(parent_dir):
     and moves the original folder inside "OE109002".
 
     Example:
-    organize_sub_folders(os.path.join(path.sourcedata,"data"))
+    organize_sub_folders(os.path.join(sourcedata,"data"))
 
     Parameters:
     -----------
@@ -139,3 +140,81 @@ def organize_sub_folders(parent_dir):
                 shutil.move(entry_path, destination)
             else:
                 print(f"No 'sub-' pattern found in folder name '{entry}'")
+
+def fetch_stoppage_times(sourcedata, participant_folder, session_name):
+    
+    # Create IDs for checkpoints
+    participant_num = participant_folder[2:]
+    full_id = 'OE123' + participant_num
+
+    # LSL data
+    df_lsl = pd.read_csv(os.path.join(sourcedata, 'supp', 'stress_csv', f'sub-{participant_folder}', f'ses-{session_name}','lsl_markers.csv'))
+    # SAM data
+    df_sam = pd.read_excel(os.path.join(sourcedata, 'supp', 'sam.xlsx'))
+
+    # Compute beginning and end times in seconds
+    df_sam["Carimbo de data/hora"] = pd.to_datetime(df_sam["Carimbo de data/hora"])
+    df_lsl["Seconds"] = pd.to_datetime(df_lsl["Seconds"])
+    beg_sec = df_lsl.loc[df_lsl["MarkerIdx"] == 35005, "Seconds"].dt.round("1s")
+    end_sec = df_lsl.loc[df_lsl["MarkerIdx"] == 35006, "Seconds"].dt.round("1s")
+
+    # Define the coordinates for each checkpoint and questionnaire
+    checkpoint_coords = [
+        {
+            "check_coords": ("9.1946400°W", "38.6964075°N"),
+            "quest_coords": ("9.1945664°W", "38.6963377°N")
+        },
+        {
+            "check_coords": ("9.1933845°W", "38.6958142°N"),
+            "quest_coords": ("9.1932788°W", "38.6958434°N")
+        },
+        {
+            "check_coords": ("9.1931279°W", "38.6957859°N"),
+            "quest_coords": ("9.1933166°W", "38.6957510°N")
+        },
+        {
+            "check_coords": ("9.1961935°W", "38.6957208°N"),
+            "quest_coords": ("9.1965557°W", "38.6957057°N")
+        },
+        {
+            "check_coords": ("9.1934005°W", "38.6958538°N"),
+            "quest_coords": ("9.1931204°W", "38.6959132°N")
+        }
+    ]
+
+    times = list()
+    checkpoints = ('_1', '_2', '_3', '_4', '_5')
+
+    for i, check in enumerate(checkpoints):
+        check_num = int(check.strip('_'))  # Extract checkpoint number
+        check_id = full_id + check  # Create checkpoint ID
+
+        # Create the checkpoint ID (e.g., full_id + '_1')
+        check_id = full_id + check
+
+        # Compute time for checkpoint (35200 + check_num) - (35100 + check_num)
+        time_walk = df_lsl.loc[df_lsl["MarkerIdx"] == 35200 + check_num, "Seconds"].iloc[0]
+        time_stop = df_lsl.loc[df_lsl["MarkerIdx"] == 35100 + check_num, "Seconds"].iloc[0]
+
+        # Perform the subtraction and round to the nearest second
+        time_in_check = (time_walk - time_stop).round('1s')
+
+        quest_time = df_sam.loc[df_sam["Escreva o código de participante"] == check_id, "Carimbo de data/hora"].iloc[0]
+        marker_time = df_lsl.loc[df_lsl["MarkerIdx"] == 35300 + check_num, "Seconds"].iloc[0]
+        time_in_quest = (quest_time - marker_time).round('1s')
+        # Handle negative Timedelta (e.g., '-1 days +23:59:46')
+        if time_in_quest < Timedelta('0s'):
+            time_in_quest = Timedelta('15s')  # Assume 15 seconds duration
+
+        # Append results
+        times.append({
+            "checkpoint": check_num,
+            "time_in_check": time_in_check,
+            "time_in_quest": time_in_quest,
+            "check_coords": checkpoint_coords[i]["check_coords"],  # Checkpoint coordinates
+            "quest_coords": checkpoint_coords[i]["quest_coords"],   # Questionnaire coordinates
+            "beg_sec": beg_sec,  # First moment of the walk
+            "end_sec": end_sec   # Last moment of the walk
+        })
+
+    return times

@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pythermalcomfort.models import utci, solar_gain
 import pandas as pd
+from pandas import Timedelta
 import geopandas as gpd
 from shapely.geometry import Point, LineString
 from shapely.validation import explain_validity
@@ -34,6 +35,7 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
     
     # Import functions from utils
     from utils import fetch_path_num 
+    from utils import fetch_stoppage_times
     import utils.for_setpath as path
 
     print(f"Processing geodata for participant '{participant_name}', session '{session_name}'...")
@@ -114,11 +116,18 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                     shp_filename = "22_Estrela_Prazeres.shp"
                 elif path_num == '23':
                     shp_filename = "23_MAAT_path.shp"
-                # Correct GPS data
                 shp_file        = os.path.join(shpdata, shp_filename)
-                geodata         = correct_gps_data(geodata, shp_file, output, plot=False)
-                print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
-                print('Check plot for the corrected GPS data...')
+                # Correct GPS data
+                if path_num in ['23']:
+                    print("Getting stoppage times...")
+                    times = fetch_stoppage_times(path.sourcedata, participant_name, session_name)
+                    print(times)     
+                    print("Attempting to interpolate GPS data...")               
+                    geodata = interpolate_gps_data(geodata, shp_file, output, times, plot=True)
+                else:
+                    geodata = correct_gps_data(geodata, shp_file, output, plot=True)
+                    print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
+                    print('Check plot for the corrected GPS data...')
                 # Add typology
                 if path_num in ['01', '02', '03', '04', '05', '06', '23']:
                     print('Adding typology...')
@@ -215,8 +224,8 @@ def tidy_geodata(df):
     df['temp_radiant']    = temp_radiant
     df['noise_level']     = noise_level
 
-    # Compute the UTCI
-    df['utci']            = utci(tdb=temp_atmos, tr=temp_radiant, v=wind_speed, rh=humidity)
+    # # Compute the UTCI
+    # df['utci']            = utci(tdb=temp_atmos, tr=temp_radiant, v=wind_speed, rh=humidity)
 
     # Get raw GPS coordinates and integrate them into df
     coords                = df.geometry.get_coordinates(include_z=True)
@@ -365,26 +374,30 @@ def add_environmental_metrics(df):
     df['solar_azimuth'] = df['solar_azimuth'].apply(lambda x: max(0, min(x, 360)))
     solar_gain_output = []
     delta_mrt_values = []
-
+    
     # Calculate delta_mrt using pythermalcomfort's solar_gain function
     delta_mrt_values = []
     for alt, az, ghi in zip(df['solar_altitude'], df['solar_azimuth'], df['ghi']):
-        # Ensure valid solar altitude values
-        if alt <= 0:
-            delta_mrt = 0
+        # Check if any of the required values is NaN
+        if np.isnan(alt) or np.isnan(az) or np.isnan(ghi):
+            delta_mrt = 0  # or you might choose to continue (skip this row)
         else:
-            solar_gain_output = solar_gain(
-                sol_altitude=alt,
-                sharp=az,
-                sol_radiation_dir=ghi,
-                sol_transmittance=0.5,
-                f_svv=0.5,
-                f_bes=0.5,
-                asw=0.7,
-                floor_reflectance=0.6,
-                posture="standing"
-            )
-            delta_mrt = solar_gain_output['delta_mrt']
+            # Ensure valid solar altitude values
+            if alt <= 0:
+                delta_mrt = 0
+            else:
+                solar_gain_output = solar_gain(
+                    sol_altitude=alt,
+                    sharp=az,
+                    sol_radiation_dir=ghi,
+                    sol_transmittance=0.5,
+                    f_svv=0.5,
+                    f_bes=0.5,
+                    asw=0.7,
+                    floor_reflectance=0.6,
+                    posture="standing"
+                )
+                delta_mrt = solar_gain_output['delta_mrt']
         delta_mrt_values.append(delta_mrt)
 
     # Add delta_mrt to dataframe
@@ -497,24 +510,31 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
         """
         Process each point in the GeoDataFrame by matching it to the reference points along the path.
         Returns cumulative distances, number of detected jumps, the corrected mapped points,
-        and mapping lines (used for visualization).
+        and mapping lines (used for visualization). Rows with NaN geometry (or NaN x/y) are tracked.
         """
         jumps_count = 0
         cumulative_dists = []
         mapped_points = []
+        mapping_lines = []
         prev_dist = None
         prev_idx = None
-        mapping_lines = []
+        valid_indices = []  # Track indices of valid points
         
         for idx in range(len(gdf)):
             point = gdf.geometry.iloc[idx]
-            # Query the nearest reference point
+            # Check if the point or its coordinates are NaN
+            if point is None or pd.isna(point.x) or pd.isna(point.y):
+                print(f"[WARN] Skipping row {idx} due to missing geometry or coordinates.")
+                continue
+                
+            valid_indices.append(idx)
+            # Query the nearest reference point using the valid point.
             _, idx_ref = tree.query([[point.x, point.y]], k=1)
             current_idx = idx_ref[0][0]
             current_dist = ref_distances[current_idx]
-    
+
             if prev_dist is None:
-                # If the first point is too far along the reference, reset.
+                # If the first valid point is too far along the reference, reset.
                 if current_dist > max_jump * 10:
                     jumps_count += 1
                     current_dist = 0
@@ -529,46 +549,76 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
                     except Exception:
                         current_idx = len(ref_points) - 1
                         current_dist = ref_distances[-1]
-    
+
             mapped_point = ref_points[current_idx]
             mapped_points.append(mapped_point)
             mapping_lines.append([(point.x, point.y), (mapped_point[0], mapped_point[1])])
             cumulative_dists.append(current_dist)
             prev_dist = current_dist
             prev_idx = current_idx
-        
-        return cumulative_dists, jumps_count, np.array(mapped_points), mapping_lines
+
+        return cumulative_dists, jumps_count, np.array(mapped_points), mapping_lines, valid_indices
 
     # 3. Optimize parameters: try a range of step sizes and max_jump values
     print("Optimizing parameters...")
     steps = range(1, 11)
-    max_jumps = np.linspace(1, 100, 100)
-    
+    max_jumps = np.linspace(1, 100, 100)        
+
+    # Modify the optimization loop to include valid_indices
     min_jumps = float('inf')
     optimal_dists = None
     optimal_params = None
     optimal_mapped_points = None
     optimal_mapping_lines = None
-    
+    optimal_valid_indices = None
+
     for step in steps:
         for max_jump in max_jumps:
-            dists, jumps, mapped_points, mapping_lines = process_points(max_jump, step)
+            dists, jumps, mapped_points, mapping_lines, valid_indices = process_points(max_jump, step)
             if jumps < min_jumps:
                 min_jumps = jumps
                 optimal_dists = dists
                 optimal_params = (step, max_jump)
                 optimal_mapped_points = mapped_points
                 optimal_mapping_lines = mapping_lines
-    
-    print("\nOptimal parameters found:")
-    print(f"step: {optimal_params[0]}")
-    print(f"max_jump: {optimal_params[1]:.2f}")
-    print(f"Number of jumps: {min_jumps}")
-    
-    # 4. Add corrected coordinates and distances to the GeoDataFrame
-    gdf['cum_dist'] = optimal_dists
-    gdf['corrected_x'] = optimal_mapped_points[:, 0]
-    gdf['corrected_y'] = optimal_mapped_points[:, 1]
+                optimal_valid_indices = valid_indices
+
+    # Fill missing points with nearest valid point
+    full_mapped_points = np.zeros((len(gdf), 2))
+    full_dists = np.zeros(len(gdf))
+
+    # First, fill known points
+    for idx, valid_idx in enumerate(optimal_valid_indices):
+        full_mapped_points[valid_idx] = optimal_mapped_points[idx]
+        full_dists[valid_idx] = optimal_dists[idx]
+
+    # Then fill missing points with nearest valid point
+    all_indices = set(range(len(gdf)))
+    missing_indices = all_indices - set(optimal_valid_indices)
+
+    for missing_idx in missing_indices:
+        # Find nearest valid index (preceding or following)
+        preceding = [i for i in optimal_valid_indices if i < missing_idx]
+        following = [i for i in optimal_valid_indices if i > missing_idx]
+        
+        if not preceding:  # If no preceding point, use the first following point
+            nearest_valid_idx = following[0]
+        elif not following:  # If no following point, use the last preceding point
+            nearest_valid_idx = preceding[-1]
+        else:  # Use the closer of preceding or following
+            pre_idx = preceding[-1]
+            fol_idx = following[0]
+            nearest_valid_idx = pre_idx if (missing_idx - pre_idx) < (fol_idx - missing_idx) else fol_idx
+        
+        # Copy the coordinates and distance from the nearest valid point
+        valid_point_pos = optimal_valid_indices.index(nearest_valid_idx)
+        full_mapped_points[missing_idx] = optimal_mapped_points[valid_point_pos]
+        full_dists[missing_idx] = optimal_dists[valid_point_pos]
+
+    # Update the GeoDataFrame with the complete arrays
+    gdf['cum_dist'] = full_dists
+    gdf['corrected_x'] = full_mapped_points[:, 0]
+    gdf['corrected_y'] = full_mapped_points[:, 1]
     gdf['geometry_corrected'] = gpd.points_from_xy(
         gdf.corrected_x, 
         gdf.corrected_y, 
@@ -670,6 +720,251 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
         writer = animation.FFMpegWriter(fps=10, bitrate=1800)
         anim.save(os.path.join(output_dir, 'mapping_process.mp4'), writer=writer)
         plt.close(fig)
+    
+    return gdf
+
+import os
+import sys
+import numpy as np
+import pandas as pd
+import geopandas as gpd
+import matplotlib.pyplot as plt
+from shapely.geometry import Point
+
+def interpolate_gps_data(df, shp_path, output_dir, times, plot=True):
+    """
+    Robust GPS correction with sequential checkpoint/questionnaire adjustments.
+    
+    For each GPS point within the defined walk interval, the function:
+      - Moves along a reference path at an optimal constant speed.
+      - The optimal speed is computed such that the effective movement (i.e. total walk time minus
+        waiting periods) exactly covers the length of the reference path.
+      - Checks whether the next target (checkpoint or questionnaire) is reached.
+      - If the interpolated point is within 1 meter of the target, the function "pauses"
+        for the defined waiting period without increasing the cumulative distance.
+      - Once the waiting period is over, the function resumes along the path and then
+        waits at the subsequent target in sequence.
+    
+    The function expects `times` to contain keys:
+      'check_coords', 'quest_coords', 'time_in_check', 'time_in_quest', 'beg_sec', and 'end_sec'.
+    
+    If plot is True, four plots are generated:
+      1. Raw vs Corrected Points Plot.
+      2. Corrected Points Only Plot.
+      3. Cumulative Distance Plot.
+      4. Basemap Plot using Contextily.
+    
+    Returns a GeoDataFrame with corrected GPS points.
+    """
+    # Create output directory if needed.
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Determine target CRS based on city in output_dir.
+    out_lower = output_dir.lower()
+    if "lisbon" in out_lower:
+        target_crs = "EPSG:3763"
+    elif "copenhagen" in out_lower:
+        target_crs = "EPSG:25832"
+    elif "london" in out_lower:
+        target_crs = "EPSG:27700"
+    elif "lansing" in out_lower:
+        target_crs = "EPSG:26916"
+    else:
+        sys.exit("City not recognized in output_dir")
+    
+    # Convert input DataFrame to a GeoDataFrame and reproject to the target CRS.
+    gdf = gpd.GeoDataFrame(
+        df,
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326"
+    ).to_crs(target_crs)
+    
+    # Load reference path and resample it for sufficient resolution (0.5 m steps).
+    path_gdf = gpd.read_file(shp_path).to_crs(target_crs)
+    path_geom = path_gdf.geometry.iloc[0]
+    line_length = path_geom.length
+    ref_distances = np.arange(0, line_length, 0.5)
+    ref_points = np.array([[p.x, p.y] for p in (path_geom.interpolate(d) for d in ref_distances)])
+    
+    # Read and convert checkpoint and questionnaire coordinates only once.
+    # Build an ordered list of targets: checkpoint 1, questionnaire 1, checkpoint 2, ...
+    targets = []
+    for entry in times:
+        # Parse checkpoint coordinates.
+        check_lon = -float(entry['check_coords'][0].replace('°W', '').strip())
+        check_lat = float(entry['check_coords'][1].replace('°N', '').strip())
+        check_gdf = gpd.GeoDataFrame(
+            geometry=gpd.points_from_xy([check_lon], [check_lat]),
+            crs="EPSG:4326"
+        ).to_crs(target_crs)
+        check_coord = (check_gdf.geometry.x.iloc[0], check_gdf.geometry.y.iloc[0])
+        targets.append({"coord": check_coord, "wait": entry["time_in_check"]})
+        
+        # Parse questionnaire coordinates.
+        quest_lon = -float(entry['quest_coords'][0].replace('°W', '').strip())
+        quest_lat = float(entry['quest_coords'][1].replace('°N', '').strip())
+        quest_gdf = gpd.GeoDataFrame(
+            geometry=gpd.points_from_xy([quest_lon], [quest_lat]),
+            crs="EPSG:4326"
+        ).to_crs(target_crs)
+        quest_coord = (quest_gdf.geometry.x.iloc[0], quest_gdf.geometry.y.iloc[0])
+        targets.append({"coord": quest_coord, "wait": entry["time_in_quest"]})
+    
+    # Convert timestamps to datetime.
+    gdf['time'] = pd.to_datetime(gdf['time'])
+    beg_sec = pd.to_datetime(times[0]['beg_sec'])
+    end_sec = pd.to_datetime(times[0]['end_sec'])
+    beg_sec_value = beg_sec if isinstance(beg_sec, pd.Timestamp) else beg_sec.iloc[0]
+    end_sec_value = end_sec if isinstance(end_sec, pd.Timestamp) else end_sec.iloc[0]
+    
+    # Compute total walk time in seconds.
+    total_walk_time = (end_sec_value - beg_sec_value).total_seconds()
+    # Compute total waiting time from all targets.
+    total_waiting_time = sum(pd.Timedelta(target["wait"]).total_seconds() for target in targets)
+    # Effective movement time is the total walk time minus waiting times.
+    effective_movement_time = total_walk_time - total_waiting_time
+    if effective_movement_time <= 0:
+        sys.exit("Effective movement time is non-positive; check your waiting times and walk interval.")
+    
+    # Compute optimal speed such that the cumulative movement covers the entire path.
+    optimal_speed = line_length / effective_movement_time
+    print(f"Estimated speed is {optimal_speed} m/s!")
+    
+    # Filter rows within the walk interval.
+    walk_mask = (gdf['time'] >= beg_sec_value) & (gdf['time'] <= end_sec_value)
+    walk_indices = gdf[walk_mask].index
+
+    # Initialize tracking variables.
+    current_distance = 0.0
+    prev_time = None
+    current_target_index = 0  # Pointer to the next target in the ordered list.
+    paused_until = None       # If not None, holds the timestamp until which we remain paused.
+    
+    # Process each GPS point (ordered by time).
+    for idx in walk_indices:
+        current_time = gdf.at[idx, 'time']
+        
+        # Calculate elapsed time.
+        if prev_time is None:
+            delta_sec = 0.0
+        else:
+            delta_sec = (current_time - prev_time).total_seconds()
+        prev_time = current_time
+        
+        # If currently paused at a target, check if pause duration has elapsed.
+        if paused_until is not None:
+            if current_time < paused_until:
+                if current_target_index < len(targets):
+                    target_coord = targets[current_target_index]["coord"]
+                    gdf.at[idx, 'cum_dist'] = current_distance
+                    gdf.at[idx, 'corrected_x'] = target_coord[0]
+                    gdf.at[idx, 'corrected_y'] = target_coord[1]
+                else:
+                    # No target remains; update normally.
+                    current_distance += optimal_speed * delta_sec
+                    point = path_geom.interpolate(current_distance)
+                    gdf.at[idx, 'cum_dist'] = current_distance
+                    gdf.at[idx, 'corrected_x'] = point.x
+                    gdf.at[idx, 'corrected_y'] = point.y
+                continue
+            else:
+                # Pause period is over; clear pause and move to next target.
+                paused_until = None
+                current_target_index += 1
+        
+        # Not in a pause: compute the proposed cumulative distance.
+        proposed_distance = current_distance + optimal_speed * delta_sec
+        proposed_point = path_geom.interpolate(proposed_distance)
+        
+        # Check if the next target is reached.
+        if current_target_index < len(targets):
+            target_coord = targets[current_target_index]["coord"]
+            if proposed_point.distance(Point(target_coord)) < 1.0:
+                # If within 1 m of the target, "pause" and hold at the target.
+                gdf.at[idx, 'cum_dist'] = current_distance
+                gdf.at[idx, 'corrected_x'] = target_coord[0]
+                gdf.at[idx, 'corrected_y'] = target_coord[1]
+                # Convert waiting time if needed.
+                wait_val = targets[current_target_index]["wait"]
+                if isinstance(wait_val, pd.Timedelta):
+                    paused_until = current_time + wait_val
+                else:
+                    paused_until = current_time + pd.Timedelta(seconds=wait_val)
+                continue
+        
+        # Otherwise, update normally.
+        current_distance = proposed_distance
+        gdf.at[idx, 'cum_dist'] = current_distance
+        gdf.at[idx, 'corrected_x'] = proposed_point.x
+        gdf.at[idx, 'corrected_y'] = proposed_point.y
+    
+    # Recompute corrected geometry in WGS84.
+    gdf['geometry_corrected'] = gpd.points_from_xy(
+        gdf.corrected_x, 
+        gdf.corrected_y, 
+        crs=target_crs
+    )
+    gdf_wgs84 = gdf.set_geometry('geometry_corrected').to_crs("EPSG:4326")
+    gdf['longitude_corrected'] = gdf_wgs84.geometry.x
+    gdf['latitude_corrected'] = gdf_wgs84.geometry.y
+
+    # If plotting is enabled, generate the plots.
+    if plot:
+        # Helper function to save and close plots.
+        def save_plot(fig, filename):
+            fig.savefig(os.path.join(output_dir, filename), dpi=300, bbox_inches='tight')
+            plt.close(fig)
+        
+        # Create arrays for plotting.
+        optimal_mapped_points = gdf[['corrected_x', 'corrected_y']].to_numpy()
+        optimal_dists = gdf['cum_dist'].values
+
+        # 1. Raw vs Corrected Points Plot.
+        fig, ax = plt.subplots(figsize=(12, 8))
+        path_gdf.plot(ax=ax, color='grey', alpha=0.5, label='Reference Path')
+        gdf.plot(ax=ax, color='red', alpha=0.5, label='Raw GPS')
+        ax.scatter(optimal_mapped_points[:, 0], optimal_mapped_points[:, 1], 
+                   color='blue', alpha=0.5, label='Corrected Points')
+        ax.set_title('Raw vs Corrected GPS Points')
+        ax.legend()
+        save_plot(fig, 'raw_vs_corrected.png')
+        
+        # 2. Corrected Points Only Plot.
+        fig, ax = plt.subplots(figsize=(12, 8))
+        path_gdf.plot(ax=ax, color='grey', alpha=0.5, label='Reference Path')
+        ax.scatter(optimal_mapped_points[:, 0], optimal_mapped_points[:, 1], 
+                   color='blue', alpha=0.5, label='Corrected Points')
+        ax.set_title('Corrected GPS Points')
+        ax.legend()
+        save_plot(fig, 'corrected_only.png')
+        
+        # 3. Cumulative Distance Plot.
+        fig, ax = plt.subplots(figsize=(12, 4))
+        ax.plot(optimal_dists, '-o', alpha=0.5)
+        ax.set_title('Cumulative Distance Along Path')
+        ax.set_xlabel('Point Index')
+        ax.set_ylabel('Distance (m)')
+        ax.grid(True)
+        save_plot(fig, 'cumulative_distance.png')
+        
+        # 4. Basemap Plot using Contextily.
+        def add_basemap_to_ax(ax, data_crs="EPSG:4326", source=None):
+            import contextily as ctx
+            if source is None:
+                source = ctx.providers.CartoDB.Positron
+            ctx.add_basemap(ax, crs=data_crs, source=source)
+        
+        fig, ax = plt.subplots(figsize=(10, 6))
+        gdf_wgs84.plot(ax=ax, color='red', markersize=30, alpha=0.7)
+        add_basemap_to_ax(ax, data_crs="EPSG:4326")
+        ax.grid(False)
+        for spine in ax.spines.values():
+            spine.set_visible(False)
+        ax.set_title("Corrected GPS Data on Basemap", fontsize=14)
+        ax.set_xlabel("Longitude", fontsize=12)
+        ax.set_ylabel("Latitude", fontsize=12)
+        plt.tight_layout()
+        save_plot(fig, 'basemap_corrected.png')
     
     return gdf
 

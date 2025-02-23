@@ -1,0 +1,880 @@
+2025-02-18 19:04:12,812 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\lisbon\sourcedata\data
+2025-02-18 19:04:12,821 [INFO] Processing participant OE001, session Belem
+2025-02-18 19:04:23,180 [WARNING] OE001-Belem: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 19:04:23,181 [INFO] OE001-Belem: Trying missing_sync schema...
+2025-02-18 19:04:29,010 [INFO] OE001-Belem: Dataset loaded successfully.
+2025-02-18 19:06:14,138 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:06:14,142 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE001\ses-Belem\mapping_process.mp4'
+2025-02-18 19:08:42,232 [INFO] OE001-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE001\ses-Belem.
+2025-02-18 19:08:43,185 [INFO] OE001-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE001\ses-Belem.
+2025-02-18 19:08:43,187 [INFO] Processing participant OE001, session Parque
+2025-02-18 19:08:50,121 [INFO] OE001-Parque: Dataset loaded successfully.
+2025-02-18 19:10:36,685 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:10:36,687 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE001\ses-Parque\mapping_process.mp4'
+2025-02-18 19:13:06,890 [INFO] OE001-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE001\ses-Parque.
+2025-02-18 19:13:06,903 [ERROR] Error saving empatica data for OE001-Parque: 'DotMap' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 90, in main
+    empatica.empatica_and_ecg_to_csv(dataset, csv_outdir)
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\utils\for_empatica.py", line 32, in empatica_and_ecg_to_csv
+    datapicker.streams.Empatica.data.E4_Gsr.to_csv(outdir+r'\e4_gsr.csv')
+TypeError: 'DotMap' object is not callable
+
+2025-02-18 19:13:06,908 [INFO] OE001-Parque: No empatica data found or error encountered.
+2025-02-18 19:13:06,911 [INFO] Processing participant OE002, session Belem
+2025-02-18 19:13:15,442 [WARNING] OE002-Belem: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 19:13:15,443 [INFO] OE002-Belem: Trying missing_sync schema...
+2025-02-18 19:13:20,860 [INFO] OE002-Belem: Dataset loaded successfully.
+2025-02-18 19:14:54,199 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:14:54,202 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE002\ses-Belem\mapping_process.mp4'
+2025-02-18 19:17:06,870 [INFO] OE002-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE002\ses-Belem.
+2025-02-18 19:17:07,281 [INFO] OE002-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE002\ses-Belem.
+2025-02-18 19:17:07,283 [INFO] Processing participant OE002, session Lapa
+2025-02-18 19:17:15,976 [WARNING] OE002-Lapa: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 19:17:15,976 [INFO] OE002-Lapa: Trying missing_sync schema...
+2025-02-18 19:17:21,607 [INFO] OE002-Lapa: Dataset loaded successfully.
+2025-02-18 19:18:55,615 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:18:55,618 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE002\ses-Lapa\mapping_process.mp4'
+2025-02-18 19:21:08,625 [INFO] OE002-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE002\ses-Lapa.
+2025-02-18 19:21:09,480 [INFO] OE002-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE002\ses-Lapa.
+2025-02-18 19:21:09,482 [INFO] Processing participant OE003, session Agudo
+2025-02-18 19:21:15,603 [INFO] Requesting http://a.tile.openstreetmap.org/16/31105/25110.png
+2025-02-18 19:21:15,647 [INFO] Requesting http://a.tile.openstreetmap.org/16/31106/25110.png
+2025-02-18 19:21:15,657 [INFO] Requesting http://a.tile.openstreetmap.org/16/31107/25110.png
+2025-02-18 19:21:15,895 [INFO] OE003-Agudo: Dataset loaded successfully.
+2025-02-18 19:22:31,027 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:22:31,030 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Agudo\mapping_process.mp4'
+2025-02-18 19:24:10,787 [INFO] OE003-Agudo: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Agudo.
+2025-02-18 19:24:11,531 [INFO] OE003-Agudo: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Agudo.
+2025-02-18 19:24:11,532 [INFO] Processing participant OE003, session Alfarrobeira
+2025-02-18 19:24:16,357 [INFO] Requesting http://a.tile.openstreetmap.org/17/62189/50210.png
+2025-02-18 19:24:16,369 [INFO] Requesting http://a.tile.openstreetmap.org/17/62189/50211.png
+2025-02-18 19:24:16,378 [INFO] Requesting http://a.tile.openstreetmap.org/17/62189/50212.png
+2025-02-18 19:24:16,387 [INFO] Requesting http://a.tile.openstreetmap.org/17/62189/50213.png
+2025-02-18 19:24:16,396 [INFO] Requesting http://a.tile.openstreetmap.org/17/62190/50210.png
+2025-02-18 19:24:16,406 [INFO] Requesting http://a.tile.openstreetmap.org/17/62190/50211.png
+2025-02-18 19:24:16,416 [INFO] Requesting http://a.tile.openstreetmap.org/17/62190/50212.png
+2025-02-18 19:24:16,424 [INFO] Requesting http://a.tile.openstreetmap.org/17/62190/50213.png
+2025-02-18 19:24:16,433 [INFO] Requesting http://a.tile.openstreetmap.org/17/62191/50210.png
+2025-02-18 19:24:16,448 [INFO] Requesting http://a.tile.openstreetmap.org/17/62191/50211.png
+2025-02-18 19:24:16,457 [INFO] Requesting http://a.tile.openstreetmap.org/17/62191/50212.png
+2025-02-18 19:24:16,466 [INFO] Requesting http://a.tile.openstreetmap.org/17/62191/50213.png
+2025-02-18 19:24:16,474 [INFO] Requesting http://a.tile.openstreetmap.org/17/62192/50210.png
+2025-02-18 19:24:16,483 [INFO] Requesting http://a.tile.openstreetmap.org/17/62192/50211.png
+2025-02-18 19:24:16,491 [INFO] Requesting http://a.tile.openstreetmap.org/17/62192/50212.png
+2025-02-18 19:24:16,500 [INFO] Requesting http://a.tile.openstreetmap.org/17/62192/50213.png
+2025-02-18 19:24:16,509 [INFO] Requesting http://a.tile.openstreetmap.org/17/62193/50210.png
+2025-02-18 19:24:16,518 [INFO] Requesting http://a.tile.openstreetmap.org/17/62193/50211.png
+2025-02-18 19:24:16,527 [INFO] Requesting http://a.tile.openstreetmap.org/17/62193/50212.png
+2025-02-18 19:24:16,535 [INFO] Requesting http://a.tile.openstreetmap.org/17/62193/50213.png
+2025-02-18 19:24:16,938 [INFO] OE003-Alfarrobeira: Dataset loaded successfully.
+2025-02-18 19:25:24,059 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:25:24,063 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Alfarrobeira\mapping_process.mp4'
+2025-02-18 19:26:55,824 [INFO] OE003-Alfarrobeira: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Alfarrobeira.
+2025-02-18 19:26:56,449 [INFO] OE003-Alfarrobeira: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Alfarrobeira.
+2025-02-18 19:26:56,451 [INFO] Processing participant OE003, session Baixa
+2025-02-18 19:27:02,398 [WARNING] OE003-Baixa: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 19:27:02,398 [INFO] OE003-Baixa: Trying missing_sync schema...
+2025-02-18 19:27:06,267 [INFO] OE003-Baixa: Dataset loaded successfully.
+2025-02-18 19:28:40,829 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:28:40,833 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Baixa\mapping_process.mp4'
+2025-02-18 19:30:48,994 [INFO] OE003-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Baixa.
+2025-02-18 19:30:49,867 [INFO] OE003-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Baixa.
+2025-02-18 19:30:49,869 [INFO] Processing participant OE003, session Belem
+2025-02-18 19:31:00,946 [INFO] OE003-Belem: Dataset loaded successfully.
+2025-02-18 19:33:05,449 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:33:05,454 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Belem\mapping_process.mp4'
+2025-02-18 19:36:12,117 [INFO] OE003-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Belem.
+2025-02-18 19:36:13,311 [INFO] OE003-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Belem.
+2025-02-18 19:36:13,313 [INFO] Processing participant OE003, session Casamoeda
+2025-02-18 19:36:19,242 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100428.png
+2025-02-18 19:36:19,259 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100429.png
+2025-02-18 19:36:19,268 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100430.png
+2025-02-18 19:36:19,276 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100431.png
+2025-02-18 19:36:19,284 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100432.png
+2025-02-18 19:36:19,292 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100433.png
+2025-02-18 19:36:19,301 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100434.png
+2025-02-18 19:36:19,311 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100435.png
+2025-02-18 19:36:19,321 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100436.png
+2025-02-18 19:36:19,331 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100437.png
+2025-02-18 19:36:19,340 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100438.png
+2025-02-18 19:36:19,349 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100439.png
+2025-02-18 19:36:19,358 [INFO] Requesting http://a.tile.openstreetmap.org/18/124411/100440.png
+2025-02-18 19:36:19,367 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100428.png
+2025-02-18 19:36:19,376 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100429.png
+2025-02-18 19:36:19,390 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100430.png
+2025-02-18 19:36:19,406 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100431.png
+2025-02-18 19:36:19,416 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100432.png
+2025-02-18 19:36:19,426 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100433.png
+2025-02-18 19:36:19,437 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100434.png
+2025-02-18 19:36:19,446 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100435.png
+2025-02-18 19:36:19,455 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100436.png
+2025-02-18 19:36:19,464 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100437.png
+2025-02-18 19:36:19,473 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100438.png
+2025-02-18 19:36:19,482 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100439.png
+2025-02-18 19:36:19,491 [INFO] Requesting http://a.tile.openstreetmap.org/18/124412/100440.png
+2025-02-18 19:36:19,501 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100428.png
+2025-02-18 19:36:19,511 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100429.png
+2025-02-18 19:36:19,520 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100430.png
+2025-02-18 19:36:19,528 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100431.png
+2025-02-18 19:36:19,537 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100432.png
+2025-02-18 19:36:19,546 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100433.png
+2025-02-18 19:36:19,554 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100434.png
+2025-02-18 19:36:19,564 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100435.png
+2025-02-18 19:36:19,573 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100436.png
+2025-02-18 19:36:19,581 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100437.png
+2025-02-18 19:36:19,589 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100438.png
+2025-02-18 19:36:19,598 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100439.png
+2025-02-18 19:36:19,607 [INFO] Requesting http://a.tile.openstreetmap.org/18/124413/100440.png
+2025-02-18 19:36:19,668 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100428.png
+2025-02-18 19:36:19,676 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100429.png
+2025-02-18 19:36:19,685 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100430.png
+2025-02-18 19:36:19,694 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100431.png
+2025-02-18 19:36:19,702 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100432.png
+2025-02-18 19:36:19,710 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100433.png
+2025-02-18 19:36:19,717 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100434.png
+2025-02-18 19:36:19,726 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100435.png
+2025-02-18 19:36:19,734 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100436.png
+2025-02-18 19:36:19,881 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100437.png
+2025-02-18 19:36:19,890 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100438.png
+2025-02-18 19:36:19,897 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100439.png
+2025-02-18 19:36:19,906 [INFO] Requesting http://a.tile.openstreetmap.org/18/124414/100440.png
+2025-02-18 19:36:19,923 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100428.png
+2025-02-18 19:36:19,932 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100429.png
+2025-02-18 19:36:19,941 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100430.png
+2025-02-18 19:36:19,949 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100431.png
+2025-02-18 19:36:19,957 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100432.png
+2025-02-18 19:36:19,965 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100433.png
+2025-02-18 19:36:19,974 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100434.png
+2025-02-18 19:36:19,986 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100435.png
+2025-02-18 19:36:19,994 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100436.png
+2025-02-18 19:36:20,003 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100437.png
+2025-02-18 19:36:20,011 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100438.png
+2025-02-18 19:36:20,019 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100439.png
+2025-02-18 19:36:20,028 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100440.png
+2025-02-18 19:36:21,230 [INFO] OE003-Casamoeda: Dataset loaded successfully.
+2025-02-18 19:37:43,068 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:37:43,072 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Casamoeda\mapping_process.mp4'
+2025-02-18 19:39:22,491 [INFO] OE003-Casamoeda: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Casamoeda.
+2025-02-18 19:39:23,297 [INFO] OE003-Casamoeda: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Casamoeda.
+2025-02-18 19:39:23,299 [INFO] Processing participant OE003, session EstrelaA
+2025-02-18 19:39:27,330 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200902.png
+2025-02-18 19:39:27,344 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200903.png
+2025-02-18 19:39:27,359 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200904.png
+2025-02-18 19:39:27,367 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200905.png
+2025-02-18 19:39:27,377 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200906.png
+2025-02-18 19:39:27,385 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200907.png
+2025-02-18 19:39:27,393 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200908.png
+2025-02-18 19:39:27,401 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200909.png
+2025-02-18 19:39:27,409 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200910.png
+2025-02-18 19:39:27,418 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200911.png
+2025-02-18 19:39:27,427 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200912.png
+2025-02-18 19:39:27,435 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200913.png
+2025-02-18 19:39:27,445 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200902.png
+2025-02-18 19:39:27,453 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200903.png
+2025-02-18 19:39:27,463 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200904.png
+2025-02-18 19:39:27,473 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200905.png
+2025-02-18 19:39:27,534 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200906.png
+2025-02-18 19:39:27,543 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200907.png
+2025-02-18 19:39:27,551 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200908.png
+2025-02-18 19:39:27,559 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200909.png
+2025-02-18 19:39:27,569 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200910.png
+2025-02-18 19:39:27,578 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200911.png
+2025-02-18 19:39:27,588 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200912.png
+2025-02-18 19:39:27,599 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200913.png
+2025-02-18 19:39:27,609 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200902.png
+2025-02-18 19:39:27,619 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200903.png
+2025-02-18 19:39:27,628 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200904.png
+2025-02-18 19:39:27,637 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200905.png
+2025-02-18 19:39:27,644 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200906.png
+2025-02-18 19:39:27,652 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200907.png
+2025-02-18 19:39:27,708 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200908.png
+2025-02-18 19:39:27,716 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200909.png
+2025-02-18 19:39:27,725 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200910.png
+2025-02-18 19:39:27,734 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200911.png
+2025-02-18 19:39:27,742 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200912.png
+2025-02-18 19:39:27,751 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200913.png
+2025-02-18 19:39:27,759 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200902.png
+2025-02-18 19:39:27,767 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200903.png
+2025-02-18 19:39:27,775 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200904.png
+2025-02-18 19:39:27,785 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200905.png
+2025-02-18 19:39:27,794 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200906.png
+2025-02-18 19:39:27,854 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200907.png
+2025-02-18 19:39:27,862 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200908.png
+2025-02-18 19:39:27,871 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200909.png
+2025-02-18 19:39:27,880 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200910.png
+2025-02-18 19:39:27,888 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200911.png
+2025-02-18 19:39:27,899 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200912.png
+2025-02-18 19:39:27,907 [INFO] Requesting http://a.tile.openstreetmap.org/19/248814/200913.png
+2025-02-18 19:39:28,799 [INFO] OE003-EstrelaA: Dataset loaded successfully.
+2025-02-18 19:40:07,181 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:40:07,183 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-EstrelaA\mapping_process.mp4'
+2025-02-18 19:40:55,322 [INFO] OE003-EstrelaA: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-EstrelaA.
+2025-02-18 19:40:55,725 [INFO] OE003-EstrelaA: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-EstrelaA.
+2025-02-18 19:40:55,728 [INFO] Processing participant OE003, session EstrelaB
+2025-02-18 19:40:59,000 [WARNING] OE003-EstrelaB: Failed to load using outdoor schema. Error: The quality of the linear fit is lower than expected 0.9888386648764877
+2025-02-18 19:40:59,000 [INFO] OE003-EstrelaB: Trying missing_sync schema...
+2025-02-18 19:41:00,206 [ERROR] Error loading dataset for OE003-EstrelaB: The quality of the linear fit is lower than expected 0.9888386648764877
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 42, in load
+    self.align_to_harp()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 46, in align_to_harp
+    eeg_to_harp_model = synchronize_eeg_to_harp(self.server_lsl_marker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 138, in synchronize_eeg_to_harp
+    raise AssertionError(f"The quality of the linear fit is lower than expected {r2}")
+AssertionError: The quality of the linear fit is lower than expected 0.9888386648764877
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 42, in load
+    self.align_to_harp()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 46, in align_to_harp
+    eeg_to_harp_model = synchronize_eeg_to_harp(self.server_lsl_marker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 138, in synchronize_eeg_to_harp
+    raise AssertionError(f"The quality of the linear fit is lower than expected {r2}")
+AssertionError: The quality of the linear fit is lower than expected 0.9888386648764877
+
+2025-02-18 19:41:00,208 [INFO] Processing participant OE003, session Estrela
+2025-02-18 19:41:08,080 [INFO] Requesting http://a.tile.openstreetmap.org/17/62200/50225.png
+2025-02-18 19:41:08,096 [INFO] Requesting http://a.tile.openstreetmap.org/17/62200/50226.png
+2025-02-18 19:41:08,106 [INFO] Requesting http://a.tile.openstreetmap.org/17/62200/50227.png
+2025-02-18 19:41:08,118 [INFO] Requesting http://a.tile.openstreetmap.org/17/62200/50228.png
+2025-02-18 19:41:08,128 [INFO] Requesting http://a.tile.openstreetmap.org/17/62201/50225.png
+2025-02-18 19:41:08,138 [INFO] Requesting http://a.tile.openstreetmap.org/17/62201/50226.png
+2025-02-18 19:41:08,147 [INFO] Requesting http://a.tile.openstreetmap.org/17/62201/50227.png
+2025-02-18 19:41:08,155 [INFO] Requesting http://a.tile.openstreetmap.org/17/62201/50228.png
+2025-02-18 19:41:08,164 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50225.png
+2025-02-18 19:41:08,173 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50226.png
+2025-02-18 19:41:08,181 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50227.png
+2025-02-18 19:41:08,190 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50228.png
+2025-02-18 19:41:08,198 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50225.png
+2025-02-18 19:41:08,208 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50226.png
+2025-02-18 19:41:08,217 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50227.png
+2025-02-18 19:41:08,226 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50228.png
+2025-02-18 19:41:08,639 [INFO] OE003-Estrela: Dataset loaded successfully.
+2025-02-18 19:42:44,289 [INFO] OE003-Estrela: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Estrela.
+2025-02-18 19:42:45,201 [INFO] OE003-Estrela: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Estrela.
+2025-02-18 19:42:45,202 [INFO] Processing participant OE003, session Gulb1
+2025-02-18 19:42:51,983 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50214.png
+2025-02-18 19:42:51,995 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50215.png
+2025-02-18 19:42:52,005 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50216.png
+2025-02-18 19:42:52,014 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50217.png
+2025-02-18 19:42:52,023 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50218.png
+2025-02-18 19:42:52,036 [INFO] Requesting http://a.tile.openstreetmap.org/17/62202/50219.png
+2025-02-18 19:42:52,046 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50214.png
+2025-02-18 19:42:52,055 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50215.png
+2025-02-18 19:42:52,064 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50216.png
+2025-02-18 19:42:52,073 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50217.png
+2025-02-18 19:42:52,081 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50218.png
+2025-02-18 19:42:52,089 [INFO] Requesting http://a.tile.openstreetmap.org/17/62203/50219.png
+2025-02-18 19:42:52,099 [INFO] Requesting http://a.tile.openstreetmap.org/17/62204/50214.png
+2025-02-18 19:42:52,107 [INFO] Requesting http://a.tile.openstreetmap.org/17/62204/50215.png
+2025-02-18 19:42:52,116 [INFO] Requesting http://a.tile.openstreetmap.org/17/62204/50216.png
+2025-02-18 19:42:52,124 [INFO] Requesting http://a.tile.openstreetmap.org/17/62204/50217.png
+2025-02-18 19:42:52,132 [INFO] Requesting http://a.tile.openstreetmap.org/17/62204/50218.png
+2025-02-18 19:42:52,141 [INFO] Requesting http://a.tile.openstreetmap.org/17/62204/50219.png
+2025-02-18 19:42:52,150 [INFO] Requesting http://a.tile.openstreetmap.org/17/62205/50214.png
+2025-02-18 19:42:52,158 [INFO] Requesting http://a.tile.openstreetmap.org/17/62205/50215.png
+2025-02-18 19:42:52,165 [INFO] Requesting http://a.tile.openstreetmap.org/17/62205/50216.png
+2025-02-18 19:42:52,174 [INFO] Requesting http://a.tile.openstreetmap.org/17/62205/50217.png
+2025-02-18 19:42:52,183 [INFO] Requesting http://a.tile.openstreetmap.org/17/62205/50218.png
+2025-02-18 19:42:52,191 [INFO] Requesting http://a.tile.openstreetmap.org/17/62205/50219.png
+2025-02-18 19:42:52,199 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50214.png
+2025-02-18 19:42:52,208 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50215.png
+2025-02-18 19:42:52,216 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50216.png
+2025-02-18 19:42:52,224 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50217.png
+2025-02-18 19:42:52,326 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50218.png
+2025-02-18 19:42:52,333 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50219.png
+2025-02-18 19:42:52,955 [INFO] OE003-Gulb1: Dataset loaded successfully.
+2025-02-18 19:44:19,996 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:44:19,998 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Gulb1\mapping_process.mp4'
+2025-02-18 19:46:23,821 [INFO] OE003-Gulb1: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Gulb1.
+2025-02-18 19:46:24,644 [INFO] OE003-Gulb1: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Gulb1.
+2025-02-18 19:46:24,647 [INFO] Processing participant OE003, session Lapa
+2025-02-18 19:46:32,966 [WARNING] OE003-Lapa: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 19:46:32,967 [INFO] OE003-Lapa: Trying missing_sync schema...
+2025-02-18 19:46:38,511 [INFO] OE003-Lapa: Dataset loaded successfully.
+2025-02-18 19:47:37,284 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:47:37,287 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Lapa\mapping_process.mp4'
+2025-02-18 19:48:56,397 [INFO] OE003-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Lapa.
+2025-02-18 19:48:57,160 [INFO] OE003-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Lapa.
+2025-02-18 19:48:57,162 [INFO] Processing participant OE003, session Luz
+2025-02-18 19:49:02,477 [INFO] Requesting http://a.tile.openstreetmap.org/18/124386/100420.png
+2025-02-18 19:49:02,490 [INFO] Requesting http://a.tile.openstreetmap.org/18/124386/100421.png
+2025-02-18 19:49:02,500 [INFO] Requesting http://a.tile.openstreetmap.org/18/124386/100422.png
+2025-02-18 19:49:02,509 [INFO] Requesting http://a.tile.openstreetmap.org/18/124386/100423.png
+2025-02-18 19:49:02,518 [INFO] Requesting http://a.tile.openstreetmap.org/18/124387/100420.png
+2025-02-18 19:49:02,527 [INFO] Requesting http://a.tile.openstreetmap.org/18/124387/100421.png
+2025-02-18 19:49:02,535 [INFO] Requesting http://a.tile.openstreetmap.org/18/124387/100422.png
+2025-02-18 19:49:02,544 [INFO] Requesting http://a.tile.openstreetmap.org/18/124387/100423.png
+2025-02-18 19:49:02,552 [INFO] Requesting http://a.tile.openstreetmap.org/18/124388/100420.png
+2025-02-18 19:49:02,560 [INFO] Requesting http://a.tile.openstreetmap.org/18/124388/100421.png
+2025-02-18 19:49:02,568 [INFO] Requesting http://a.tile.openstreetmap.org/18/124388/100422.png
+2025-02-18 19:49:02,577 [INFO] Requesting http://a.tile.openstreetmap.org/18/124388/100423.png
+2025-02-18 19:49:02,585 [INFO] Requesting http://a.tile.openstreetmap.org/18/124389/100420.png
+2025-02-18 19:49:02,593 [INFO] Requesting http://a.tile.openstreetmap.org/18/124389/100421.png
+2025-02-18 19:49:02,603 [INFO] Requesting http://a.tile.openstreetmap.org/18/124389/100422.png
+2025-02-18 19:49:02,614 [INFO] Requesting http://a.tile.openstreetmap.org/18/124389/100423.png
+2025-02-18 19:49:02,624 [INFO] Requesting http://a.tile.openstreetmap.org/18/124390/100420.png
+2025-02-18 19:49:02,633 [INFO] Requesting http://a.tile.openstreetmap.org/18/124390/100421.png
+2025-02-18 19:49:02,640 [INFO] Requesting http://a.tile.openstreetmap.org/18/124390/100422.png
+2025-02-18 19:49:02,648 [INFO] Requesting http://a.tile.openstreetmap.org/18/124390/100423.png
+2025-02-18 19:49:02,656 [INFO] Requesting http://a.tile.openstreetmap.org/18/124391/100420.png
+2025-02-18 19:49:02,664 [INFO] Requesting http://a.tile.openstreetmap.org/18/124391/100421.png
+2025-02-18 19:49:02,672 [INFO] Requesting http://a.tile.openstreetmap.org/18/124391/100422.png
+2025-02-18 19:49:02,679 [INFO] Requesting http://a.tile.openstreetmap.org/18/124391/100423.png
+2025-02-18 19:49:03,117 [INFO] OE003-Luz: Dataset loaded successfully.
+2025-02-18 19:50:05,051 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:50:05,054 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Luz\mapping_process.mp4'
+2025-02-18 19:51:31,742 [INFO] OE003-Luz: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Luz.
+2025-02-18 19:51:32,315 [INFO] OE003-Luz: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Luz.
+2025-02-18 19:51:32,316 [INFO] Processing participant OE003, session Maat
+2025-02-18 19:51:32,320 [INFO] OE003-Maat: Detected Maat acquisition.
+2025-02-18 19:51:37,356 [ERROR] Error loading dataset for OE003-Maat: 'Class'
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 58, in main
+    dataset = load_dataset(session_path, schema=maat.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 30, in load
+    self.load_event_list(self.autoload_messages)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 43, in load_event_list
+    self.load_event(event)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 33, in load_event
+    self._update_dotmap(event, load_ubx_event_stream(event, root=self.rootfolder))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\ubx.py", line 156, in load_ubx_event_stream
+    if (bin_file["Class"].values == csv_file["Class"].values).all():
+        ~~~~~~~~^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'Class'
+
+2025-02-18 19:51:37,358 [INFO] Processing participant OE003, session Madre
+2025-02-18 19:51:43,052 [INFO] Requesting http://a.tile.openstreetmap.org/17/62216/50217.png
+2025-02-18 19:51:43,067 [INFO] Requesting http://a.tile.openstreetmap.org/17/62216/50218.png
+2025-02-18 19:51:43,077 [INFO] Requesting http://a.tile.openstreetmap.org/17/62216/50219.png
+2025-02-18 19:51:43,086 [INFO] Requesting http://a.tile.openstreetmap.org/17/62216/50220.png
+2025-02-18 19:51:43,093 [INFO] Requesting http://a.tile.openstreetmap.org/17/62216/50221.png
+2025-02-18 19:51:43,103 [INFO] Requesting http://a.tile.openstreetmap.org/17/62217/50217.png
+2025-02-18 19:51:43,113 [INFO] Requesting http://a.tile.openstreetmap.org/17/62217/50218.png
+2025-02-18 19:51:43,122 [INFO] Requesting http://a.tile.openstreetmap.org/17/62217/50219.png
+2025-02-18 19:51:43,131 [INFO] Requesting http://a.tile.openstreetmap.org/17/62217/50220.png
+2025-02-18 19:51:43,139 [INFO] Requesting http://a.tile.openstreetmap.org/17/62217/50221.png
+2025-02-18 19:51:43,147 [INFO] Requesting http://a.tile.openstreetmap.org/17/62218/50217.png
+2025-02-18 19:51:43,156 [INFO] Requesting http://a.tile.openstreetmap.org/17/62218/50218.png
+2025-02-18 19:51:43,165 [INFO] Requesting http://a.tile.openstreetmap.org/17/62218/50219.png
+2025-02-18 19:51:43,174 [INFO] Requesting http://a.tile.openstreetmap.org/17/62218/50220.png
+2025-02-18 19:51:43,183 [INFO] Requesting http://a.tile.openstreetmap.org/17/62218/50221.png
+2025-02-18 19:51:43,192 [INFO] Requesting http://a.tile.openstreetmap.org/17/62219/50217.png
+2025-02-18 19:51:43,201 [INFO] Requesting http://a.tile.openstreetmap.org/17/62219/50218.png
+2025-02-18 19:51:43,209 [INFO] Requesting http://a.tile.openstreetmap.org/17/62219/50219.png
+2025-02-18 19:51:43,218 [INFO] Requesting http://a.tile.openstreetmap.org/17/62219/50220.png
+2025-02-18 19:51:43,227 [INFO] Requesting http://a.tile.openstreetmap.org/17/62219/50221.png
+2025-02-18 19:51:43,234 [INFO] Requesting http://a.tile.openstreetmap.org/17/62220/50217.png
+2025-02-18 19:51:43,243 [INFO] Requesting http://a.tile.openstreetmap.org/17/62220/50218.png
+2025-02-18 19:51:43,252 [INFO] Requesting http://a.tile.openstreetmap.org/17/62220/50219.png
+2025-02-18 19:51:43,262 [INFO] Requesting http://a.tile.openstreetmap.org/17/62220/50220.png
+2025-02-18 19:51:43,270 [INFO] Requesting http://a.tile.openstreetmap.org/17/62220/50221.png
+2025-02-18 19:51:43,728 [INFO] OE003-Madre: Dataset loaded successfully.
+2025-02-18 19:52:57,902 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:52:57,906 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Madre\mapping_process.mp4'
+2025-02-18 19:54:31,148 [INFO] OE003-Madre: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Madre.
+2025-02-18 19:54:31,827 [INFO] OE003-Madre: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Madre.
+2025-02-18 19:54:31,828 [INFO] Processing participant OE003, session Marvila
+2025-02-18 19:54:38,424 [INFO] Requesting http://a.tile.openstreetmap.org/16/31109/25107.png
+2025-02-18 19:54:38,440 [INFO] Requesting http://a.tile.openstreetmap.org/16/31109/25108.png
+2025-02-18 19:54:38,450 [INFO] Requesting http://a.tile.openstreetmap.org/16/31109/25109.png
+2025-02-18 19:54:38,460 [INFO] Requesting http://a.tile.openstreetmap.org/16/31110/25107.png
+2025-02-18 19:54:38,470 [INFO] Requesting http://a.tile.openstreetmap.org/16/31110/25108.png
+2025-02-18 19:54:38,478 [INFO] Requesting http://a.tile.openstreetmap.org/16/31110/25109.png
+2025-02-18 19:54:38,488 [INFO] Requesting http://a.tile.openstreetmap.org/16/31111/25107.png
+2025-02-18 19:54:38,497 [INFO] Requesting http://a.tile.openstreetmap.org/16/31111/25108.png
+2025-02-18 19:54:38,505 [INFO] Requesting http://a.tile.openstreetmap.org/16/31111/25109.png
+2025-02-18 19:54:38,795 [INFO] OE003-Marvila: Dataset loaded successfully.
+2025-02-18 19:56:02,049 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:56:02,052 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Marvila\mapping_process.mp4'
+2025-02-18 19:58:00,927 [INFO] OE003-Marvila: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Marvila.
+2025-02-18 19:58:01,686 [INFO] OE003-Marvila: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Marvila.
+2025-02-18 19:58:01,688 [INFO] Processing participant OE003, session Msoares
+2025-02-18 19:58:05,759 [WARNING] OE003-Msoares: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 19:58:05,759 [INFO] OE003-Msoares: Trying missing_sync schema...
+2025-02-18 19:58:07,124 [ERROR] Error loading dataset for OE003-Msoares: 'Class'
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 30, in load
+    self.load_event_list(self.autoload_messages)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 43, in load_event_list
+    self.load_event(event)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 33, in load_event
+    self._update_dotmap(event, load_ubx_event_stream(event, root=self.rootfolder))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\ubx.py", line 156, in load_ubx_event_stream
+    if (bin_file["Class"].values == csv_file["Class"].values).all():
+        ~~~~~~~~^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'Class'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 30, in load
+    self.load_event_list(self.autoload_messages)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 43, in load_event_list
+    self.load_event(event)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 33, in load_event
+    self._update_dotmap(event, load_ubx_event_stream(event, root=self.rootfolder))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\ubx.py", line 156, in load_ubx_event_stream
+    if (bin_file["Class"].values == csv_file["Class"].values).all():
+        ~~~~~~~~^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'Class'
+
+2025-02-18 19:58:07,126 [INFO] Processing participant OE003, session Oriente
+2025-02-18 19:58:14,173 [INFO] OE003-Oriente: Dataset loaded successfully.
+2025-02-18 19:59:40,533 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 19:59:40,536 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Oriente\mapping_process.mp4'
+2025-02-18 20:01:44,061 [INFO] OE003-Oriente: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Oriente.
+2025-02-18 20:01:44,160 [ERROR] Error saving empatica data for OE003-Oriente: 'DotMap' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 90, in main
+    empatica.empatica_and_ecg_to_csv(dataset, csv_outdir)
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\utils\for_empatica.py", line 34, in empatica_and_ecg_to_csv
+    datapicker.streams.Empatica.data.E4_Ibi.to_csv(outdir+r'\e4_ibi.csv')
+TypeError: 'DotMap' object is not callable
+
+2025-02-18 20:01:44,161 [INFO] OE003-Oriente: No empatica data found or error encountered.
+2025-02-18 20:01:44,162 [INFO] Processing participant OE003, session Prazeres
+2025-02-18 20:01:51,092 [INFO] Requesting http://a.tile.openstreetmap.org/16/31098/25112.png
+2025-02-18 20:01:51,106 [INFO] Requesting http://a.tile.openstreetmap.org/16/31098/25113.png
+2025-02-18 20:01:51,116 [INFO] Requesting http://a.tile.openstreetmap.org/16/31099/25112.png
+2025-02-18 20:01:51,124 [INFO] Requesting http://a.tile.openstreetmap.org/16/31099/25113.png
+2025-02-18 20:01:51,134 [INFO] Requesting http://a.tile.openstreetmap.org/16/31100/25112.png
+2025-02-18 20:01:51,144 [INFO] Requesting http://a.tile.openstreetmap.org/16/31100/25113.png
+2025-02-18 20:01:51,443 [INFO] OE003-Prazeres: Dataset loaded successfully.
+2025-02-18 20:03:12,591 [INFO] OE003-Prazeres: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Prazeres.
+2025-02-18 20:03:13,375 [INFO] OE003-Prazeres: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Prazeres.
+2025-02-18 20:03:13,378 [INFO] Processing participant OE003, session Pupilos
+2025-02-18 20:03:13,857 [WARNING] OE003-Pupilos: Failed to load using outdoor schema. Error: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+2025-02-18 20:03:13,858 [INFO] OE003-Pupilos: Trying missing_sync schema...
+2025-02-18 20:03:14,096 [ERROR] Error loading dataset for OE003-Pupilos: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ecg.py", line 26, in load
+    heartrate, filtered, working_data, measures = heartrate_from_ecg(ecg)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\preprocessing\ecg.py", line 47, in heartrate_from_ecg
+    working_data, measures = hp.process(filtered, sample_rate=sample_rate, bpmmax=bpmmax)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\heartpy.py", line 289, in process
+    working_data = fit_peaks(hrdata, rol_mean, sample_rate, bpmmin=bpmmin,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\peakdetection.py", line 305, in fit_peaks
+    raise BadSignalWarning('\n----------------\nCould not determine best fit for \
+heartpy.exceptions.BadSignalWarning: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ecg.py", line 26, in load
+    heartrate, filtered, working_data, measures = heartrate_from_ecg(ecg)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\preprocessing\ecg.py", line 47, in heartrate_from_ecg
+    working_data, measures = hp.process(filtered, sample_rate=sample_rate, bpmmax=bpmmax)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\heartpy.py", line 289, in process
+    working_data = fit_peaks(hrdata, rol_mean, sample_rate, bpmmin=bpmmin,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\peakdetection.py", line 305, in fit_peaks
+    raise BadSignalWarning('\n----------------\nCould not determine best fit for \
+heartpy.exceptions.BadSignalWarning: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+
+2025-02-18 20:03:14,101 [INFO] Processing participant OE003, session Restauradores
+2025-02-18 20:03:20,742 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50225.png
+2025-02-18 20:03:20,754 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50226.png
+2025-02-18 20:03:20,763 [INFO] Requesting http://a.tile.openstreetmap.org/17/62206/50227.png
+2025-02-18 20:03:20,771 [INFO] Requesting http://a.tile.openstreetmap.org/17/62207/50225.png
+2025-02-18 20:03:20,781 [INFO] Requesting http://a.tile.openstreetmap.org/17/62207/50226.png
+2025-02-18 20:03:20,790 [INFO] Requesting http://a.tile.openstreetmap.org/17/62207/50227.png
+2025-02-18 20:03:20,799 [INFO] Requesting http://a.tile.openstreetmap.org/17/62208/50225.png
+2025-02-18 20:03:20,809 [INFO] Requesting http://a.tile.openstreetmap.org/17/62208/50226.png
+2025-02-18 20:03:20,818 [INFO] Requesting http://a.tile.openstreetmap.org/17/62208/50227.png
+2025-02-18 20:03:20,827 [INFO] Requesting http://a.tile.openstreetmap.org/17/62209/50225.png
+2025-02-18 20:03:20,846 [INFO] Requesting http://a.tile.openstreetmap.org/17/62209/50226.png
+2025-02-18 20:03:20,855 [INFO] Requesting http://a.tile.openstreetmap.org/17/62209/50227.png
+2025-02-18 20:03:20,864 [INFO] Requesting http://a.tile.openstreetmap.org/17/62210/50225.png
+2025-02-18 20:03:20,873 [INFO] Requesting http://a.tile.openstreetmap.org/17/62210/50226.png
+2025-02-18 20:03:20,882 [INFO] Requesting http://a.tile.openstreetmap.org/17/62210/50227.png
+2025-02-18 20:03:21,289 [INFO] OE003-Restauradores: Dataset loaded successfully.
+2025-02-18 20:05:12,074 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:05:12,079 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Restauradores\mapping_process.mp4'
+2025-02-18 20:07:55,004 [INFO] OE003-Restauradores: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE003\ses-Restauradores.
+2025-02-18 20:07:56,046 [INFO] OE003-Restauradores: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE003\ses-Restauradores.
+2025-02-18 20:07:56,048 [INFO] Processing participant OE003, session Restelo
+2025-02-18 20:08:01,806 [WARNING] OE003-Restelo: Failed to load using outdoor schema. Error: The quality of the linear fit is lower than expected 0.9953991641965065
+2025-02-18 20:08:01,806 [INFO] OE003-Restelo: Trying missing_sync schema...
+2025-02-18 20:08:03,976 [ERROR] Error loading dataset for OE003-Restelo: The quality of the linear fit is lower than expected 0.9953991641965065
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 42, in load
+    self.align_to_harp()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 46, in align_to_harp
+    eeg_to_harp_model = synchronize_eeg_to_harp(self.server_lsl_marker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 138, in synchronize_eeg_to_harp
+    raise AssertionError(f"The quality of the linear fit is lower than expected {r2}")
+AssertionError: The quality of the linear fit is lower than expected 0.9953991641965065
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 42, in load
+    self.align_to_harp()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 46, in align_to_harp
+    eeg_to_harp_model = synchronize_eeg_to_harp(self.server_lsl_marker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 138, in synchronize_eeg_to_harp
+    raise AssertionError(f"The quality of the linear fit is lower than expected {r2}")
+AssertionError: The quality of the linear fit is lower than expected 0.9953991641965065
+
+2025-02-18 20:08:03,979 [INFO] Processing participant OE004, session Baixa
+2025-02-18 20:08:10,271 [WARNING] OE004-Baixa: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 20:08:10,272 [INFO] OE004-Baixa: Trying missing_sync schema...
+2025-02-18 20:08:14,232 [INFO] OE004-Baixa: Dataset loaded successfully.
+2025-02-18 20:10:01,796 [INFO] OE004-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE004\ses-Baixa.
+2025-02-18 20:10:02,775 [INFO] OE004-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE004\ses-Baixa.
+2025-02-18 20:10:02,812 [INFO] Processing participant OE005, session Belem
+2025-02-18 20:10:17,908 [INFO] OE005-Belem: Dataset loaded successfully.
+2025-02-18 20:11:55,848 [INFO] OE005-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE005\ses-Belem.
+2025-02-18 20:11:56,759 [INFO] OE005-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE005\ses-Belem.
+2025-02-18 20:11:56,762 [INFO] Processing participant OE005, session Graca
+2025-02-18 20:12:04,638 [INFO] Requesting http://a.tile.openstreetmap.org/17/62210/50228.png
+2025-02-18 20:12:04,653 [INFO] Requesting http://a.tile.openstreetmap.org/17/62210/50229.png
+2025-02-18 20:12:04,666 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50226.png
+2025-02-18 20:12:04,678 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50227.png
+2025-02-18 20:12:04,688 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50228.png
+2025-02-18 20:12:04,698 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50229.png
+2025-02-18 20:12:04,707 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50226.png
+2025-02-18 20:12:04,717 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50227.png
+2025-02-18 20:12:04,726 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50228.png
+2025-02-18 20:12:04,735 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50229.png
+2025-02-18 20:12:05,078 [INFO] OE005-Graca: Dataset loaded successfully.
+2025-02-18 20:13:53,456 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:13:53,459 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE005\ses-Graca\mapping_process.mp4'
+2025-02-18 20:16:42,959 [INFO] OE005-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE005\ses-Graca.
+2025-02-18 20:16:43,957 [INFO] OE005-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE005\ses-Graca.
+2025-02-18 20:16:43,959 [INFO] Processing participant OE005, session Maat
+2025-02-18 20:16:43,963 [INFO] OE005-Maat: Detected Maat acquisition.
+2025-02-18 20:16:49,327 [ERROR] Error loading dataset for OE005-Maat: 'Class'
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 58, in main
+    dataset = load_dataset(session_path, schema=maat.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 30, in load
+    self.load_event_list(self.autoload_messages)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 43, in load_event_list
+    self.load_event(event)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 33, in load_event
+    self._update_dotmap(event, load_ubx_event_stream(event, root=self.rootfolder))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\ubx.py", line 156, in load_ubx_event_stream
+    if (bin_file["Class"].values == csv_file["Class"].values).all():
+        ~~~~~~~~^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'Class'
+
+2025-02-18 20:16:49,328 [INFO] Processing participant OE005, session Parque
+2025-02-18 20:16:54,744 [WARNING] OE005-Parque: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 20:16:54,745 [INFO] OE005-Parque: Trying missing_sync schema...
+2025-02-18 20:16:58,159 [INFO] OE005-Parque: Dataset loaded successfully.
+2025-02-18 20:18:22,865 [INFO] OE005-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE005\ses-Parque.
+2025-02-18 20:18:23,699 [INFO] OE005-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE005\ses-Parque.
+2025-02-18 20:18:23,701 [INFO] Processing participant OE006, session Belem
+2025-02-18 20:18:33,252 [INFO] OE006-Belem: Dataset loaded successfully.
+2025-02-18 20:20:17,182 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:20:17,187 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE006\ses-Belem\mapping_process.mp4'
+2025-02-18 20:22:46,388 [INFO] OE006-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE006\ses-Belem.
+2025-02-18 20:22:47,347 [INFO] OE006-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE006\ses-Belem.
+2025-02-18 20:22:47,348 [INFO] Processing participant OE006, session Graca
+2025-02-18 20:22:54,388 [INFO] OE006-Graca: Dataset loaded successfully.
+2025-02-18 20:24:38,046 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:24:38,050 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE006\ses-Graca\mapping_process.mp4'
+2025-02-18 20:27:18,462 [INFO] OE006-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE006\ses-Graca.
+2025-02-18 20:27:19,443 [INFO] OE006-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE006\ses-Graca.
+2025-02-18 20:27:19,445 [INFO] Processing participant OE006, session Lapa
+2025-02-18 20:27:26,876 [INFO] Requesting http://a.tile.openstreetmap.org/17/62196/50229.png
+2025-02-18 20:27:26,923 [INFO] Requesting http://a.tile.openstreetmap.org/17/62196/50230.png
+2025-02-18 20:27:26,935 [INFO] Requesting http://a.tile.openstreetmap.org/17/62197/50229.png
+2025-02-18 20:27:26,945 [INFO] Requesting http://a.tile.openstreetmap.org/17/62197/50230.png
+2025-02-18 20:27:26,955 [INFO] Requesting http://a.tile.openstreetmap.org/17/62198/50229.png
+2025-02-18 20:27:26,967 [INFO] Requesting http://a.tile.openstreetmap.org/17/62198/50230.png
+2025-02-18 20:27:27,275 [INFO] OE006-Lapa: Dataset loaded successfully.
+2025-02-18 20:29:08,447 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:29:08,450 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE006\ses-Lapa\mapping_process.mp4'
+2025-02-18 20:31:36,723 [INFO] OE006-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE006\ses-Lapa.
+2025-02-18 20:31:37,682 [INFO] OE006-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE006\ses-Lapa.
+2025-02-18 20:31:37,684 [INFO] Processing participant OE007, session Belem
+2025-02-18 20:31:47,500 [INFO] OE007-Belem: Dataset loaded successfully.
+2025-02-18 20:33:42,565 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:33:42,568 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE007\ses-Belem\mapping_process.mp4'
+2025-02-18 20:36:33,096 [INFO] OE007-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE007\ses-Belem.
+2025-02-18 20:36:34,264 [INFO] OE007-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE007\ses-Belem.
+2025-02-18 20:36:34,265 [INFO] Processing participant OE007, session Graca
+2025-02-18 20:36:45,370 [INFO] OE007-Graca: Dataset loaded successfully.
+2025-02-18 20:38:46,101 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:38:46,107 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE007\ses-Graca\mapping_process.mp4'
+2025-02-18 20:41:56,287 [INFO] OE007-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE007\ses-Graca.
+2025-02-18 20:41:57,437 [INFO] OE007-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE007\ses-Graca.
+2025-02-18 20:41:57,438 [INFO] Processing participant OE007, session Maat
+2025-02-18 20:41:57,443 [INFO] OE007-Maat: Detected Maat acquisition.
+2025-02-18 20:42:04,608 [ERROR] Error loading dataset for OE007-Maat: 'Class'
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 58, in main
+    dataset = load_dataset(session_path, schema=maat.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 30, in load
+    self.load_event_list(self.autoload_messages)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 43, in load_event_list
+    self.load_event(event)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 33, in load_event
+    self._update_dotmap(event, load_ubx_event_stream(event, root=self.rootfolder))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\ubx.py", line 156, in load_ubx_event_stream
+    if (bin_file["Class"].values == csv_file["Class"].values).all():
+        ~~~~~~~~^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'Class'
+
+2025-02-18 20:42:04,610 [INFO] Processing participant OE008, session Baixa
+2025-02-18 20:42:13,438 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100452.png
+2025-02-18 20:42:13,456 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100453.png
+2025-02-18 20:42:13,467 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100454.png
+2025-02-18 20:42:13,479 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100455.png
+2025-02-18 20:42:13,490 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100456.png
+2025-02-18 20:42:13,501 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100457.png
+2025-02-18 20:42:13,511 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100458.png
+2025-02-18 20:42:13,520 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100459.png
+2025-02-18 20:42:13,530 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100460.png
+2025-02-18 20:42:13,542 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100461.png
+2025-02-18 20:42:13,554 [INFO] Requesting http://a.tile.openstreetmap.org/18/124416/100462.png
+2025-02-18 20:42:13,564 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100452.png
+2025-02-18 20:42:13,574 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100453.png
+2025-02-18 20:42:13,583 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100454.png
+2025-02-18 20:42:13,598 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100455.png
+2025-02-18 20:42:13,609 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100456.png
+2025-02-18 20:42:13,619 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100457.png
+2025-02-18 20:42:13,628 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100458.png
+2025-02-18 20:42:13,637 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100459.png
+2025-02-18 20:42:13,645 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100460.png
+2025-02-18 20:42:13,654 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100461.png
+2025-02-18 20:42:13,664 [INFO] Requesting http://a.tile.openstreetmap.org/18/124417/100462.png
+2025-02-18 20:42:13,671 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100452.png
+2025-02-18 20:42:13,681 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100453.png
+2025-02-18 20:42:13,691 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100454.png
+2025-02-18 20:42:13,703 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100455.png
+2025-02-18 20:42:13,712 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100456.png
+2025-02-18 20:42:13,722 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100457.png
+2025-02-18 20:42:13,733 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100458.png
+2025-02-18 20:42:13,746 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100459.png
+2025-02-18 20:42:13,755 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100460.png
+2025-02-18 20:42:13,763 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100461.png
+2025-02-18 20:42:13,773 [INFO] Requesting http://a.tile.openstreetmap.org/18/124418/100462.png
+2025-02-18 20:42:13,781 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100452.png
+2025-02-18 20:42:13,794 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100453.png
+2025-02-18 20:42:13,803 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100454.png
+2025-02-18 20:42:13,813 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100455.png
+2025-02-18 20:42:13,823 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100456.png
+2025-02-18 20:42:13,834 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100457.png
+2025-02-18 20:42:13,843 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100458.png
+2025-02-18 20:42:13,853 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100459.png
+2025-02-18 20:42:13,862 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100460.png
+2025-02-18 20:42:13,870 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100461.png
+2025-02-18 20:42:13,878 [INFO] Requesting http://a.tile.openstreetmap.org/18/124419/100462.png
+2025-02-18 20:42:13,887 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100452.png
+2025-02-18 20:42:13,896 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100453.png
+2025-02-18 20:42:13,906 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100454.png
+2025-02-18 20:42:13,916 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100455.png
+2025-02-18 20:42:13,925 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100456.png
+2025-02-18 20:42:13,934 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100457.png
+2025-02-18 20:42:13,944 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100458.png
+2025-02-18 20:42:13,955 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100459.png
+2025-02-18 20:42:13,964 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100460.png
+2025-02-18 20:42:13,976 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100461.png
+2025-02-18 20:42:13,986 [INFO] Requesting http://a.tile.openstreetmap.org/18/124420/100462.png
+2025-02-18 20:42:14,962 [INFO] OE008-Baixa: Dataset loaded successfully.
+2025-02-18 20:44:03,379 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:44:03,383 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE008\ses-Baixa\mapping_process.mp4'
+2025-02-18 20:46:36,955 [INFO] OE008-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE008\ses-Baixa.
+2025-02-18 20:46:38,033 [INFO] OE008-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE008\ses-Baixa.
+2025-02-18 20:46:38,039 [INFO] Processing participant OE009, session Lapa
+2025-02-18 20:46:44,278 [INFO] OE009-Lapa: Dataset loaded successfully.
+2025-02-18 20:48:09,908 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:48:09,911 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE009\ses-Lapa\mapping_process.mp4'
+2025-02-18 20:50:11,622 [INFO] OE009-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE009\ses-Lapa.
+2025-02-18 20:50:12,425 [INFO] OE009-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE009\ses-Lapa.
+2025-02-18 20:50:12,427 [INFO] Processing participant OE010, session Parque
+2025-02-18 20:50:17,950 [WARNING] OE010-Parque: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 20:50:17,951 [INFO] OE010-Parque: Trying missing_sync schema...
+2025-02-18 20:50:21,397 [INFO] OE010-Parque: Dataset loaded successfully.
+2025-02-18 20:51:51,497 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:51:51,501 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE010\ses-Parque\mapping_process.mp4'
+2025-02-18 20:53:56,252 [INFO] OE010-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE010\ses-Parque.
+2025-02-18 20:53:57,095 [INFO] OE010-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE010\ses-Parque.
+2025-02-18 20:53:57,134 [INFO] Processing participant OE011, session Baixa
+2025-02-18 20:54:07,813 [INFO] OE011-Baixa: Dataset loaded successfully.
+2025-02-18 20:56:03,350 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:56:03,353 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE011\ses-Baixa\mapping_process.mp4'
+2025-02-18 20:58:44,166 [INFO] OE011-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE011\ses-Baixa.
+2025-02-18 20:58:45,268 [INFO] OE011-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE011\ses-Baixa.
+2025-02-18 20:58:45,270 [INFO] Processing participant OE011, session Lapa
+2025-02-18 20:58:46,515 [INFO] Requesting http://a.tile.openstreetmap.org/19/248788/200918.png
+2025-02-18 20:58:46,812 [INFO] OE011-Lapa: Dataset loaded successfully.
+2025-02-18 20:58:48,312 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 20:58:48,317 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE011\ses-Lapa\mapping_process.mp4'
+2025-02-18 20:58:48,568 [INFO] OE011-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE011\ses-Lapa.
+2025-02-18 20:58:48,582 [ERROR] Error saving empatica data for OE011-Lapa: 'DotMap' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_23332\2587259609.py", line 90, in main
+    empatica.empatica_and_ecg_to_csv(dataset, csv_outdir)
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\utils\for_empatica.py", line 32, in empatica_and_ecg_to_csv
+    datapicker.streams.Empatica.data.E4_Gsr.to_csv(outdir+r'\e4_gsr.csv')
+TypeError: 'DotMap' object is not callable
+
+2025-02-18 20:58:48,582 [INFO] OE011-Lapa: No empatica data found or error encountered.
+2025-02-18 20:58:48,585 [INFO] Processing participant OE011, session Parque
+2025-02-18 20:58:53,506 [WARNING] OE011-Parque: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 20:58:53,507 [INFO] OE011-Parque: Trying missing_sync schema...
+2025-02-18 20:58:56,346 [INFO] OE011-Parque: Dataset loaded successfully.
+2025-02-18 21:00:26,861 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 21:00:26,865 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE011\ses-Parque\mapping_process.mp4'
+2025-02-18 21:02:35,553 [INFO] OE011-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE011\ses-Parque.
+2025-02-18 21:02:35,723 [INFO] OE011-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE011\ses-Parque.
+2025-02-18 21:02:35,725 [INFO] Processing participant OE012, session Belem
+2025-02-18 21:02:40,512 [WARNING] OE012-Belem: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 21:02:40,513 [INFO] OE012-Belem: Trying missing_sync schema...
+2025-02-18 21:02:43,513 [INFO] OE012-Belem: Dataset loaded successfully.
+2025-02-18 21:04:17,353 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 21:04:17,357 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE012\ses-Belem\mapping_process.mp4'

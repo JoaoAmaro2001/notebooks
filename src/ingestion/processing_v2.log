@@ -1,0 +1,64 @@
+2025-02-18 21:45:52,324 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\lisbon\sourcedata\data
+2025-02-18 21:45:52,332 [INFO] Processing participant OE012, session Belem
+2025-02-18 21:45:56,918 [WARNING] OE012-Belem: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 21:45:56,919 [INFO] OE012-Belem: Trying missing_sync schema...
+2025-02-18 21:45:59,756 [INFO] OE012-Belem: Dataset loaded successfully.
+2025-02-18 21:47:24,804 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 21:47:24,809 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE012\ses-Belem\mapping_process.mp4'
+2025-02-18 21:49:20,882 [INFO] OE012-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE012\ses-Belem.
+2025-02-18 21:49:21,635 [INFO] OE012-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE012\ses-Belem.
+2025-02-18 21:49:21,637 [INFO] Processing participant OE013, session Baixa
+2025-02-18 21:49:29,794 [INFO] OE013-Baixa: Dataset loaded successfully.
+2025-02-18 21:51:12,617 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 21:51:12,621 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE013\ses-Baixa\mapping_process.mp4'
+2025-02-18 21:53:31,424 [INFO] OE013-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE013\ses-Baixa.
+2025-02-18 21:53:31,994 [INFO] OE013-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE013\ses-Baixa.
+2025-02-18 21:53:31,997 [INFO] Processing participant OE013, session Parque
+2025-02-18 21:53:39,263 [INFO] OE013-Parque: Dataset loaded successfully.
+2025-02-18 21:55:29,186 [INFO] OE013-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE013\ses-Parque.
+2025-02-18 21:55:30,206 [INFO] OE013-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE013\ses-Parque.
+2025-02-18 21:55:30,208 [INFO] Processing participant OE015, session Lapa
+2025-02-18 21:55:35,754 [INFO] OE015-Lapa: Dataset loaded successfully.
+2025-02-18 21:57:06,676 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 21:57:06,679 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE015\ses-Lapa\mapping_process.mp4'
+2025-02-18 21:59:15,634 [INFO] OE015-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE015\ses-Lapa.
+2025-02-18 21:59:16,474 [INFO] OE015-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE015\ses-Lapa.
+2025-02-18 21:59:16,481 [INFO] Processing participant OE016, session Graca
+2025-02-18 21:59:24,105 [INFO] OE016-Graca: Dataset loaded successfully.
+2025-02-18 22:01:14,704 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:01:14,708 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE016\ses-Graca\mapping_process.mp4'
+2025-02-18 22:04:06,925 [INFO] OE016-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE016\ses-Graca.
+2025-02-18 22:04:08,002 [INFO] OE016-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE016\ses-Graca.
+2025-02-18 22:04:08,004 [INFO] Processing participant OE016, session Parque
+2025-02-18 22:04:13,292 [WARNING] OE016-Parque: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 22:04:13,293 [INFO] OE016-Parque: Trying missing_sync schema...
+2025-02-18 22:04:16,935 [INFO] OE016-Parque: Dataset loaded successfully.
+2025-02-18 22:05:44,521 [INFO] OE016-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE016\ses-Parque.
+2025-02-18 22:05:45,337 [INFO] OE016-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE016\ses-Parque.
+2025-02-18 22:05:45,339 [INFO] Processing participant OE017, session Graca
+2025-02-18 22:05:55,173 [INFO] OE017-Graca: Dataset loaded successfully.
+2025-02-18 22:07:55,609 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:07:55,613 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE017\ses-Graca\mapping_process.mp4'
+2025-02-18 22:11:33,509 [INFO] OE017-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE017\ses-Graca.
+2025-02-18 22:11:34,648 [INFO] OE017-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE017\ses-Graca.
+2025-02-18 22:11:34,650 [INFO] Processing participant OE021, session Parque
+2025-02-18 22:11:40,591 [WARNING] OE021-Parque: Failed to load using outdoor schema. Error: 'Class'
+2025-02-18 22:11:40,592 [INFO] OE021-Parque: Trying missing_sync schema...
+2025-02-18 22:11:44,782 [INFO] OE021-Parque: Dataset loaded successfully.
+2025-02-18 22:13:18,483 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:13:18,487 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE021\ses-Parque\mapping_process.mp4'
+2025-02-18 22:15:31,503 [INFO] OE021-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE021\ses-Parque.
+2025-02-18 22:15:32,375 [INFO] OE021-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE021\ses-Parque.
+2025-02-18 22:15:32,377 [INFO] Processing participant OE022, session Parque
+2025-02-18 22:15:42,716 [INFO] OE022-Parque: Dataset loaded successfully.
+2025-02-18 22:17:49,120 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:17:49,123 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE022\ses-Parque\mapping_process.mp4'
+2025-02-18 22:20:51,281 [INFO] OE022-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE022\ses-Parque.
+2025-02-18 22:20:52,448 [INFO] OE022-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE022\ses-Parque.
+2025-02-18 22:20:52,450 [INFO] Processing participant OE023, session Lapa
+2025-02-18 22:20:58,454 [INFO] OE023-Lapa: Dataset loaded successfully.
+2025-02-18 22:22:47,788 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:22:47,791 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE023\ses-Lapa\mapping_process.mp4'
+2025-02-18 22:25:32,197 [INFO] OE023-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE023\ses-Lapa.
+2025-02-18 22:25:33,210 [INFO] OE023-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE023\ses-Lapa.
+2025-02-18 22:25:33,211 [INFO] Processing participant OE024, session Gulbenkian

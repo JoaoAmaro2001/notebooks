@@ -65,7 +65,8 @@ def infer_participant_code(city, subject_id, session, stimulus):
             ('Estrela', 19),
             ('EstrelaA', 20),
             ('EstrelaB', 21),
-            ('Prazeres', 22)            
+            ('Prazeres', 22),
+            ('Maat', 23)            
         ]
 
         # Checkpoints for Lisbon sessions (order corresponding to session number)
@@ -75,7 +76,8 @@ def infer_participant_code(city, subject_id, session, stimulus):
             ['A3', 'B4', 'B6', 'B7'],       # Gulbenkian - 3
             ['D12', 'D27', 'D26', 'B10'],   # Baixa - 4
             ['C31', 'C32', 'D31', 'D32'],   # Graca - 5
-            ['A24', 'A25']                  # Parque (das Nações) - 6
+            ['A24', 'A25'],                 # Parque (das Nações) - 6
+            ['A99','A98','A97','A96','B99'] # Maat - 23
         ]
 
         # Find the session number from the session name.
@@ -195,7 +197,8 @@ def parse_participant_code(participant_code):
             ('Parque', 6),
             ('Gulbenkian', 3),
             ('Lapa', 2),
-            ('Graca', 5)
+            ('Graca', 5),
+            ('Maat', 23)
         ]
 
         # Reverse mapping for session numbers to names
@@ -207,7 +210,8 @@ def parse_participant_code(participant_code):
             ['A3', 'B4', 'B6', 'B7'],       # Gulbenkian - 3
             ['D12', 'D27', 'D26', 'B10'],   # Baixa - 4
             ['C31', 'C32', 'D31', 'D32'],   # Graca - 5
-            ['A24', 'A25']                  # Parque das Nações - 6
+            ['A24', 'A25'],                 # Parque (das Nações) - 6
+            ['A99','A98','A97','A96','B99'] # Maat - 23
         ]
 
     # Copenhagen

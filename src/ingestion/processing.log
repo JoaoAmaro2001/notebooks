@@ -1,0 +1,2363 @@
+2025-02-18 22:51:48,727 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\lisbon\sourcedata\data
+2025-02-18 22:51:48,734 [INFO] Processing participant OE024, session Gulbenkian
+2025-02-18 22:51:58,894 [INFO] Requesting http://a.tile.openstreetmap.org/18/124404/100429.png
+2025-02-18 22:51:58,939 [INFO] Requesting http://a.tile.openstreetmap.org/18/124404/100430.png
+2025-02-18 22:51:58,950 [INFO] Requesting http://a.tile.openstreetmap.org/18/124404/100431.png
+2025-02-18 22:51:58,962 [INFO] Requesting http://a.tile.openstreetmap.org/18/124404/100432.png
+2025-02-18 22:51:58,972 [INFO] Requesting http://a.tile.openstreetmap.org/18/124404/100433.png
+2025-02-18 22:51:58,982 [INFO] Requesting http://a.tile.openstreetmap.org/18/124405/100429.png
+2025-02-18 22:51:58,992 [INFO] Requesting http://a.tile.openstreetmap.org/18/124405/100430.png
+2025-02-18 22:51:59,002 [INFO] Requesting http://a.tile.openstreetmap.org/18/124405/100431.png
+2025-02-18 22:51:59,012 [INFO] Requesting http://a.tile.openstreetmap.org/18/124405/100432.png
+2025-02-18 22:51:59,022 [INFO] Requesting http://a.tile.openstreetmap.org/18/124405/100433.png
+2025-02-18 22:51:59,032 [INFO] Requesting http://a.tile.openstreetmap.org/18/124406/100429.png
+2025-02-18 22:51:59,040 [INFO] Requesting http://a.tile.openstreetmap.org/18/124406/100430.png
+2025-02-18 22:51:59,051 [INFO] Requesting http://a.tile.openstreetmap.org/18/124406/100431.png
+2025-02-18 22:51:59,060 [INFO] Requesting http://a.tile.openstreetmap.org/18/124406/100432.png
+2025-02-18 22:51:59,069 [INFO] Requesting http://a.tile.openstreetmap.org/18/124406/100433.png
+2025-02-18 22:51:59,079 [INFO] Requesting http://a.tile.openstreetmap.org/18/124407/100429.png
+2025-02-18 22:51:59,089 [INFO] Requesting http://a.tile.openstreetmap.org/18/124407/100430.png
+2025-02-18 22:51:59,098 [INFO] Requesting http://a.tile.openstreetmap.org/18/124407/100431.png
+2025-02-18 22:51:59,109 [INFO] Requesting http://a.tile.openstreetmap.org/18/124407/100432.png
+2025-02-18 22:51:59,120 [INFO] Requesting http://a.tile.openstreetmap.org/18/124407/100433.png
+2025-02-18 22:51:59,130 [INFO] Requesting http://a.tile.openstreetmap.org/18/124408/100429.png
+2025-02-18 22:51:59,139 [INFO] Requesting http://a.tile.openstreetmap.org/18/124408/100430.png
+2025-02-18 22:51:59,149 [INFO] Requesting http://a.tile.openstreetmap.org/18/124408/100431.png
+2025-02-18 22:51:59,159 [INFO] Requesting http://a.tile.openstreetmap.org/18/124408/100432.png
+2025-02-18 22:51:59,169 [INFO] Requesting http://a.tile.openstreetmap.org/18/124408/100433.png
+2025-02-18 22:51:59,696 [INFO] OE024-Gulbenkian: Dataset loaded successfully.
+2025-02-18 22:54:18,241 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:54:18,245 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE024\ses-Gulbenkian\mapping_process.mp4'
+2025-02-18 22:57:47,253 [INFO] OE024-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE024\ses-Gulbenkian.
+2025-02-18 22:57:48,570 [INFO] OE024-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE024\ses-Gulbenkian.
+2025-02-18 22:57:48,572 [INFO] Processing participant OE025, session Graca
+2025-02-18 22:57:56,326 [INFO] OE025-Graca: Dataset loaded successfully.
+2025-02-18 22:59:52,151 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 22:59:52,155 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE025\ses-Graca\mapping_process.mp4'
+2025-02-18 23:03:01,717 [INFO] OE025-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE025\ses-Graca.
+2025-02-18 23:03:02,863 [INFO] OE025-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE025\ses-Graca.
+2025-02-18 23:03:02,866 [INFO] Processing participant OE026, session Gulbenkian
+2025-02-18 23:03:13,390 [INFO] OE026-Gulbenkian: Dataset loaded successfully.
+2025-02-18 23:05:24,885 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:05:24,888 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE026\ses-Gulbenkian\mapping_process.mp4'
+2025-02-18 23:08:42,120 [INFO] OE026-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE026\ses-Gulbenkian.
+2025-02-18 23:08:43,424 [INFO] OE026-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE026\ses-Gulbenkian.
+2025-02-18 23:08:43,426 [INFO] Processing participant OE027, session Belem
+2025-02-18 23:08:52,270 [INFO] OE027-Belem: Dataset loaded successfully.
+2025-02-18 23:10:47,110 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:10:47,114 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE027\ses-Belem\mapping_process.mp4'
+2025-02-18 23:13:28,615 [INFO] OE027-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE027\ses-Belem.
+2025-02-18 23:13:29,727 [INFO] OE027-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE027\ses-Belem.
+2025-02-18 23:13:29,729 [INFO] Processing participant OE028, session Baixa
+2025-02-18 23:13:39,893 [INFO] OE028-Baixa: Dataset loaded successfully.
+2025-02-18 23:15:37,049 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:15:37,054 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE028\ses-Baixa\mapping_process.mp4'
+2025-02-18 23:18:21,628 [INFO] OE028-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE028\ses-Baixa.
+2025-02-18 23:18:22,831 [INFO] OE028-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE028\ses-Baixa.
+2025-02-18 23:18:22,833 [INFO] Processing participant OE029, session Graca
+2025-02-18 23:18:32,312 [INFO] OE029-Graca: Dataset loaded successfully.
+2025-02-18 23:20:33,057 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:20:33,060 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE029\ses-Graca\mapping_process.mp4'
+2025-02-18 23:23:51,234 [INFO] OE029-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE029\ses-Graca.
+2025-02-18 23:23:52,477 [INFO] OE029-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE029\ses-Graca.
+2025-02-18 23:23:52,478 [INFO] Processing participant OE029, session Lapa
+2025-02-18 23:23:59,403 [INFO] OE029-Lapa: Dataset loaded successfully.
+2025-02-18 23:25:30,727 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:25:30,730 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE029\ses-Lapa\mapping_process.mp4'
+2025-02-18 23:27:38,460 [INFO] OE029-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE029\ses-Lapa.
+2025-02-18 23:27:39,296 [INFO] OE029-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE029\ses-Lapa.
+2025-02-18 23:27:39,299 [INFO] Processing participant OE031, session Agudo
+2025-02-18 23:27:45,531 [INFO] OE031-Agudo: Dataset loaded successfully.
+2025-02-18 23:28:54,141 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:28:54,144 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Agudo\mapping_process.mp4'
+2025-02-18 23:30:26,051 [INFO] OE031-Agudo: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Agudo.
+2025-02-18 23:30:26,754 [INFO] OE031-Agudo: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Agudo.
+2025-02-18 23:30:26,755 [INFO] Processing participant OE031, session Alfarrobeira
+2025-02-18 23:30:31,711 [INFO] OE031-Alfarrobeira: Dataset loaded successfully.
+2025-02-18 23:31:21,607 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:31:21,612 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Alfarrobeira\mapping_process.mp4'
+2025-02-18 23:32:30,411 [INFO] OE031-Alfarrobeira: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Alfarrobeira.
+2025-02-18 23:32:30,962 [INFO] OE031-Alfarrobeira: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Alfarrobeira.
+2025-02-18 23:32:30,964 [INFO] Processing participant OE031, session Belem
+2025-02-18 23:32:41,285 [INFO] OE031-Belem: Dataset loaded successfully.
+2025-02-18 23:34:43,735 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:34:43,739 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Belem\mapping_process.mp4'
+2025-02-18 23:37:51,472 [INFO] OE031-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Belem.
+2025-02-18 23:37:52,708 [INFO] OE031-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Belem.
+2025-02-18 23:37:52,709 [INFO] Processing participant OE031, session Casamoeda
+2025-02-18 23:37:59,981 [INFO] OE031-Casamoeda: Dataset loaded successfully.
+2025-02-18 23:39:10,429 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:39:10,431 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Casamoeda\mapping_process.mp4'
+2025-02-18 23:40:43,264 [INFO] OE031-Casamoeda: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Casamoeda.
+2025-02-18 23:40:44,026 [INFO] OE031-Casamoeda: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Casamoeda.
+2025-02-18 23:40:44,027 [INFO] Processing participant OE031, session EstrelaA
+2025-02-18 23:40:47,559 [INFO] OE031-EstrelaA: Dataset loaded successfully.
+2025-02-18 23:41:18,249 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:41:18,252 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-EstrelaA\mapping_process.mp4'
+2025-02-18 23:41:55,688 [INFO] OE031-EstrelaA: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-EstrelaA.
+2025-02-18 23:41:56,000 [INFO] OE031-EstrelaA: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-EstrelaA.
+2025-02-18 23:41:56,001 [INFO] Processing participant OE031, session EstrelaB
+2025-02-18 23:41:59,001 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200893.png
+2025-02-18 23:41:59,016 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200894.png
+2025-02-18 23:41:59,026 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200895.png
+2025-02-18 23:41:59,035 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200896.png
+2025-02-18 23:41:59,046 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200897.png
+2025-02-18 23:41:59,055 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200898.png
+2025-02-18 23:41:59,222 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200899.png
+2025-02-18 23:41:59,230 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200900.png
+2025-02-18 23:41:59,239 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200901.png
+2025-02-18 23:41:59,247 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200902.png
+2025-02-18 23:41:59,257 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200903.png
+2025-02-18 23:41:59,268 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200904.png
+2025-02-18 23:41:59,283 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200905.png
+2025-02-18 23:41:59,347 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200906.png
+2025-02-18 23:41:59,356 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200907.png
+2025-02-18 23:41:59,366 [INFO] Requesting http://a.tile.openstreetmap.org/19/248809/200908.png
+2025-02-18 23:41:59,375 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200893.png
+2025-02-18 23:41:59,384 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200894.png
+2025-02-18 23:41:59,393 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200895.png
+2025-02-18 23:41:59,402 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200896.png
+2025-02-18 23:41:59,412 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200897.png
+2025-02-18 23:41:59,420 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200898.png
+2025-02-18 23:41:59,433 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200899.png
+2025-02-18 23:41:59,443 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200900.png
+2025-02-18 23:41:59,452 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200901.png
+2025-02-18 23:41:59,462 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200902.png
+2025-02-18 23:41:59,472 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200903.png
+2025-02-18 23:41:59,641 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200904.png
+2025-02-18 23:41:59,651 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200905.png
+2025-02-18 23:41:59,661 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200906.png
+2025-02-18 23:41:59,668 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200907.png
+2025-02-18 23:41:59,678 [INFO] Requesting http://a.tile.openstreetmap.org/19/248810/200908.png
+2025-02-18 23:41:59,688 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200893.png
+2025-02-18 23:41:59,697 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200894.png
+2025-02-18 23:41:59,706 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200895.png
+2025-02-18 23:41:59,716 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200896.png
+2025-02-18 23:41:59,725 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200897.png
+2025-02-18 23:41:59,735 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200898.png
+2025-02-18 23:41:59,744 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200899.png
+2025-02-18 23:41:59,753 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200900.png
+2025-02-18 23:41:59,763 [INFO] Requesting http://a.tile.openstreetmap.org/19/248811/200901.png
+2025-02-18 23:41:59,774 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200893.png
+2025-02-18 23:41:59,784 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200894.png
+2025-02-18 23:41:59,793 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200895.png
+2025-02-18 23:41:59,803 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200896.png
+2025-02-18 23:41:59,812 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200897.png
+2025-02-18 23:41:59,821 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200898.png
+2025-02-18 23:41:59,830 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200899.png
+2025-02-18 23:41:59,839 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200900.png
+2025-02-18 23:41:59,848 [INFO] Requesting http://a.tile.openstreetmap.org/19/248812/200901.png
+2025-02-18 23:41:59,859 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200893.png
+2025-02-18 23:41:59,868 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200894.png
+2025-02-18 23:41:59,877 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200895.png
+2025-02-18 23:41:59,886 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200896.png
+2025-02-18 23:41:59,895 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200897.png
+2025-02-18 23:41:59,904 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200898.png
+2025-02-18 23:41:59,913 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200899.png
+2025-02-18 23:41:59,922 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200900.png
+2025-02-18 23:41:59,931 [INFO] Requesting http://a.tile.openstreetmap.org/19/248813/200901.png
+2025-02-18 23:42:01,217 [INFO] OE031-EstrelaB: Dataset loaded successfully.
+2025-02-18 23:42:34,561 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:42:34,563 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-EstrelaB\mapping_process.mp4'
+2025-02-18 23:43:10,915 [INFO] OE031-EstrelaB: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-EstrelaB.
+2025-02-18 23:43:11,251 [INFO] OE031-EstrelaB: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-EstrelaB.
+2025-02-18 23:43:11,253 [INFO] Processing participant OE031, session Estrela
+2025-02-18 23:43:17,000 [INFO] OE031-Estrela: Dataset loaded successfully.
+2025-02-18 23:44:27,668 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:44:27,671 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Estrela\mapping_process.mp4'
+2025-02-18 23:46:01,513 [INFO] OE031-Estrela: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Estrela.
+2025-02-18 23:46:02,168 [INFO] OE031-Estrela: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Estrela.
+2025-02-18 23:46:02,170 [INFO] Processing participant OE031, session Gulb1
+2025-02-18 23:46:09,979 [INFO] OE031-Gulb1: Dataset loaded successfully.
+2025-02-18 23:47:43,100 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:47:43,106 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Gulb1\mapping_process.mp4'
+2025-02-18 23:49:59,497 [INFO] OE031-Gulb1: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Gulb1.
+2025-02-18 23:50:00,424 [INFO] OE031-Gulb1: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Gulb1.
+2025-02-18 23:50:00,426 [INFO] Processing participant OE031, session Gulbenkian
+2025-02-18 23:50:09,288 [INFO] OE031-Gulbenkian: Dataset loaded successfully.
+2025-02-18 23:52:03,820 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:52:03,823 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Gulbenkian\mapping_process.mp4'
+2025-02-18 23:54:36,122 [INFO] OE031-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Gulbenkian.
+2025-02-18 23:54:37,125 [INFO] OE031-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Gulbenkian.
+2025-02-18 23:54:37,127 [INFO] Processing participant OE031, session Lapa
+2025-02-18 23:54:43,151 [INFO] OE031-Lapa: Dataset loaded successfully.
+2025-02-18 23:56:05,894 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:56:05,898 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Lapa\mapping_process.mp4'
+2025-02-18 23:58:03,500 [INFO] OE031-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Lapa.
+2025-02-18 23:58:04,307 [INFO] OE031-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Lapa.
+2025-02-18 23:58:04,309 [INFO] Processing participant OE031, session Luz
+2025-02-18 23:58:08,552 [INFO] OE031-Luz: Dataset loaded successfully.
+2025-02-18 23:58:58,148 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-18 23:58:58,151 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Luz\mapping_process.mp4'
+2025-02-19 00:00:04,971 [INFO] OE031-Luz: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Luz.
+2025-02-19 00:00:05,453 [INFO] OE031-Luz: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Luz.
+2025-02-19 00:00:05,454 [INFO] Processing participant OE031, session Maat
+2025-02-19 00:00:05,459 [INFO] OE031-Maat: Detected Maat acquisition.
+2025-02-19 00:00:10,954 [ERROR] Error loading dataset for OE031-Maat: 'Class'
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 58, in main
+    dataset = load_dataset(session_path, schema=maat.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 30, in load
+    self.load_event_list(self.autoload_messages)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 43, in load_event_list
+    self.load_event(event)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ubx.py", line 33, in load_event
+    self._update_dotmap(event, load_ubx_event_stream(event, root=self.rootfolder))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\ubx.py", line 156, in load_ubx_event_stream
+    if (bin_file["Class"].values == csv_file["Class"].values).all():
+        ~~~~~~~~^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'Class'
+
+2025-02-19 00:00:10,955 [INFO] Processing participant OE031, session Madre
+2025-02-19 00:00:17,191 [INFO] OE031-Madre: Dataset loaded successfully.
+2025-02-19 00:01:28,584 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:01:28,587 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Madre\mapping_process.mp4'
+2025-02-19 00:03:00,006 [INFO] OE031-Madre: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Madre.
+2025-02-19 00:03:00,716 [INFO] OE031-Madre: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Madre.
+2025-02-19 00:03:00,718 [INFO] Processing participant OE031, session Marvila
+2025-02-19 00:03:06,418 [INFO] OE031-Marvila: Dataset loaded successfully.
+2025-02-19 00:04:19,335 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:04:19,338 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Marvila\mapping_process.mp4'
+2025-02-19 00:06:02,007 [INFO] OE031-Marvila: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Marvila.
+2025-02-19 00:06:02,724 [INFO] OE031-Marvila: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Marvila.
+2025-02-19 00:06:02,725 [INFO] Processing participant OE031, session Msoares
+2025-02-19 00:06:22,331 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50217.png
+2025-02-19 00:06:22,377 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50218.png
+2025-02-19 00:06:22,387 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50219.png
+2025-02-19 00:06:22,396 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50220.png
+2025-02-19 00:06:22,405 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50221.png
+2025-02-19 00:06:22,414 [INFO] Requesting http://a.tile.openstreetmap.org/17/62211/50222.png
+2025-02-19 00:06:22,424 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50217.png
+2025-02-19 00:06:22,432 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50218.png
+2025-02-19 00:06:22,441 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50219.png
+2025-02-19 00:06:22,449 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50220.png
+2025-02-19 00:06:22,457 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50221.png
+2025-02-19 00:06:22,465 [INFO] Requesting http://a.tile.openstreetmap.org/17/62212/50222.png
+2025-02-19 00:06:22,473 [INFO] Requesting http://a.tile.openstreetmap.org/17/62213/50217.png
+2025-02-19 00:06:22,481 [INFO] Requesting http://a.tile.openstreetmap.org/17/62213/50218.png
+2025-02-19 00:06:22,489 [INFO] Requesting http://a.tile.openstreetmap.org/17/62213/50219.png
+2025-02-19 00:06:22,497 [INFO] Requesting http://a.tile.openstreetmap.org/17/62213/50220.png
+2025-02-19 00:06:22,506 [INFO] Requesting http://a.tile.openstreetmap.org/17/62213/50221.png
+2025-02-19 00:06:22,514 [INFO] Requesting http://a.tile.openstreetmap.org/17/62213/50222.png
+2025-02-19 00:06:22,522 [INFO] Requesting http://a.tile.openstreetmap.org/17/62214/50217.png
+2025-02-19 00:06:22,530 [INFO] Requesting http://a.tile.openstreetmap.org/17/62214/50218.png
+2025-02-19 00:06:22,538 [INFO] Requesting http://a.tile.openstreetmap.org/17/62214/50219.png
+2025-02-19 00:06:22,547 [INFO] Requesting http://a.tile.openstreetmap.org/17/62214/50220.png
+2025-02-19 00:06:22,555 [INFO] Requesting http://a.tile.openstreetmap.org/17/62214/50221.png
+2025-02-19 00:06:22,563 [INFO] Requesting http://a.tile.openstreetmap.org/17/62214/50222.png
+2025-02-19 00:06:22,570 [INFO] Requesting http://a.tile.openstreetmap.org/17/62215/50217.png
+2025-02-19 00:06:22,578 [INFO] Requesting http://a.tile.openstreetmap.org/17/62215/50218.png
+2025-02-19 00:06:22,588 [INFO] Requesting http://a.tile.openstreetmap.org/17/62215/50219.png
+2025-02-19 00:06:22,596 [INFO] Requesting http://a.tile.openstreetmap.org/17/62215/50220.png
+2025-02-19 00:06:22,604 [INFO] Requesting http://a.tile.openstreetmap.org/17/62215/50221.png
+2025-02-19 00:06:22,612 [INFO] Requesting http://a.tile.openstreetmap.org/17/62215/50222.png
+2025-02-19 00:06:23,198 [INFO] OE031-Msoares: Dataset loaded successfully.
+2025-02-19 00:07:22,476 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:07:22,479 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Msoares\mapping_process.mp4'
+2025-02-19 00:08:40,861 [INFO] OE031-Msoares: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Msoares.
+2025-02-19 00:08:40,941 [ERROR] Error saving empatica data for OE031-Msoares: 'DotMap' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 90, in main
+    empatica.empatica_and_ecg_to_csv(dataset, csv_outdir)
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\utils\for_empatica.py", line 34, in empatica_and_ecg_to_csv
+    datapicker.streams.Empatica.data.E4_Ibi.to_csv(outdir+r'\e4_ibi.csv')
+TypeError: 'DotMap' object is not callable
+
+2025-02-19 00:08:40,941 [INFO] OE031-Msoares: No empatica data found or error encountered.
+2025-02-19 00:08:40,943 [INFO] Processing participant OE031, session Oriente
+2025-02-19 00:08:47,270 [INFO] OE031-Oriente: Dataset loaded successfully.
+2025-02-19 00:10:01,423 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:10:01,425 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Oriente\mapping_process.mp4'
+2025-02-19 00:11:45,232 [INFO] OE031-Oriente: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Oriente.
+2025-02-19 00:11:45,958 [INFO] OE031-Oriente: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Oriente.
+2025-02-19 00:11:45,960 [INFO] Processing participant OE031, session Prazeres
+2025-02-19 00:11:51,141 [INFO] OE031-Prazeres: Dataset loaded successfully.
+2025-02-19 00:13:00,915 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:13:00,918 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Prazeres\mapping_process.mp4'
+2025-02-19 00:14:37,494 [INFO] OE031-Prazeres: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Prazeres.
+2025-02-19 00:14:38,160 [INFO] OE031-Prazeres: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Prazeres.
+2025-02-19 00:14:38,161 [INFO] Processing participant OE031, session Pupilos
+2025-02-19 00:14:42,162 [INFO] Requesting http://a.tile.openstreetmap.org/17/62194/50212.png
+2025-02-19 00:14:42,176 [INFO] Requesting http://a.tile.openstreetmap.org/17/62194/50213.png
+2025-02-19 00:14:42,184 [INFO] Requesting http://a.tile.openstreetmap.org/17/62195/50212.png
+2025-02-19 00:14:42,193 [INFO] Requesting http://a.tile.openstreetmap.org/17/62195/50213.png
+2025-02-19 00:14:42,511 [INFO] OE031-Pupilos: Dataset loaded successfully.
+2025-02-19 00:15:37,707 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:15:37,710 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Pupilos\mapping_process.mp4'
+2025-02-19 00:16:58,472 [INFO] OE031-Pupilos: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Pupilos.
+2025-02-19 00:16:58,995 [INFO] OE031-Pupilos: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Pupilos.
+2025-02-19 00:16:58,996 [INFO] Processing participant OE031, session Restauradores
+2025-02-19 00:17:03,906 [WARNING] OE031-Restauradores: Failed to load using outdoor schema. Error: The quality of the linear fit is lower than expected 0.9980060048782015
+2025-02-19 00:17:03,907 [INFO] OE031-Restauradores: Trying missing_sync schema...
+2025-02-19 00:17:05,758 [ERROR] Error loading dataset for OE031-Restauradores: The quality of the linear fit is lower than expected 0.9980060048782015
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 42, in load
+    self.align_to_harp()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 46, in align_to_harp
+    eeg_to_harp_model = synchronize_eeg_to_harp(self.server_lsl_marker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 138, in synchronize_eeg_to_harp
+    raise AssertionError(f"The quality of the linear fit is lower than expected {r2}")
+AssertionError: The quality of the linear fit is lower than expected 0.9980060048782015
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 42, in load
+    self.align_to_harp()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 46, in align_to_harp
+    eeg_to_harp_model = synchronize_eeg_to_harp(self.server_lsl_marker)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 138, in synchronize_eeg_to_harp
+    raise AssertionError(f"The quality of the linear fit is lower than expected {r2}")
+AssertionError: The quality of the linear fit is lower than expected 0.9980060048782015
+
+2025-02-19 00:17:05,760 [INFO] Processing participant OE031, session Restelo
+2025-02-19 00:17:10,784 [INFO] Requesting http://a.tile.openstreetmap.org/16/31090/25115.png
+2025-02-19 00:17:10,796 [INFO] Requesting http://a.tile.openstreetmap.org/16/31090/25116.png
+2025-02-19 00:17:10,810 [INFO] Requesting http://a.tile.openstreetmap.org/16/31091/25115.png
+2025-02-19 00:17:10,820 [INFO] Requesting http://a.tile.openstreetmap.org/16/31091/25116.png
+2025-02-19 00:17:10,828 [INFO] Requesting http://a.tile.openstreetmap.org/16/31092/25115.png
+2025-02-19 00:17:10,837 [INFO] Requesting http://a.tile.openstreetmap.org/16/31092/25116.png
+2025-02-19 00:17:10,846 [INFO] Requesting http://a.tile.openstreetmap.org/16/31093/25115.png
+2025-02-19 00:17:10,854 [INFO] Requesting http://a.tile.openstreetmap.org/16/31093/25116.png
+2025-02-19 00:17:11,125 [INFO] OE031-Restelo: Dataset loaded successfully.
+2025-02-19 00:18:16,042 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:18:16,046 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Restelo\mapping_process.mp4'
+2025-02-19 00:19:39,857 [INFO] OE031-Restelo: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE031\ses-Restelo.
+2025-02-19 00:19:40,568 [INFO] OE031-Restelo: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE031\ses-Restelo.
+2025-02-19 00:19:40,569 [INFO] Processing participant OE032, session Parque
+2025-02-19 00:19:41,107 [WARNING] OE032-Parque: Failed to load using outdoor schema. Error: No objects to concatenate
+2025-02-19 00:19:41,107 [INFO] OE032-Parque: Trying missing_sync schema...
+2025-02-19 00:19:41,411 [ERROR] Error loading dataset for OE032-Parque: No objects to concatenate
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\zeromq.py", line 33, in load
+    zmq_data = load_zeromq(self.filenames, self.dtypes, root=self.rootfolder)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\zeromq.py", line 34, in load_zeromq
+    return pd.concat(data_frames, axis=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\zeromq.py", line 33, in load
+    zmq_data = load_zeromq(self.filenames, self.dtypes, root=self.rootfolder)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\zeromq.py", line 34, in load_zeromq
+    return pd.concat(data_frames, axis=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+2025-02-19 00:19:41,414 [INFO] Processing participant OE033, session Baixa
+2025-02-19 00:19:50,808 [INFO] OE033-Baixa: Dataset loaded successfully.
+2025-02-19 00:21:47,431 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:21:47,434 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE033\ses-Baixa\mapping_process.mp4'
+2025-02-19 00:24:29,753 [INFO] OE033-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE033\ses-Baixa.
+2025-02-19 00:24:30,878 [INFO] OE033-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE033\ses-Baixa.
+2025-02-19 00:24:30,880 [INFO] Processing participant OE034, session Parque
+2025-02-19 00:24:39,315 [INFO] Requesting http://a.tile.openstreetmap.org/17/62222/50207.png
+2025-02-19 00:24:39,331 [INFO] Requesting http://a.tile.openstreetmap.org/17/62223/50207.png
+2025-02-19 00:24:39,341 [INFO] Requesting http://a.tile.openstreetmap.org/17/62224/50207.png
+2025-02-19 00:24:39,352 [INFO] Requesting http://a.tile.openstreetmap.org/17/62225/50207.png
+2025-02-19 00:24:39,361 [INFO] Requesting http://a.tile.openstreetmap.org/17/62226/50207.png
+2025-02-19 00:24:39,832 [INFO] OE034-Parque: Dataset loaded successfully.
+2025-02-19 00:26:33,974 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:26:33,977 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE034\ses-Parque\mapping_process.mp4'
+2025-02-19 00:29:19,824 [INFO] OE034-Parque: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE034\ses-Parque.
+2025-02-19 00:29:20,975 [INFO] OE034-Parque: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE034\ses-Parque.
+2025-02-19 00:29:20,977 [INFO] Processing participant OE035, session Gulbenkian
+2025-02-19 00:29:30,069 [INFO] OE035-Gulbenkian: Dataset loaded successfully.
+2025-02-19 00:31:30,454 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:31:30,457 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE035\ses-Gulbenkian\mapping_process.mp4'
+2025-02-19 00:34:23,387 [INFO] OE035-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE035\ses-Gulbenkian.
+2025-02-19 00:34:24,562 [INFO] OE035-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE035\ses-Gulbenkian.
+2025-02-19 00:34:24,564 [INFO] Processing participant OE040, session Gulbenkian
+2025-02-19 00:34:35,325 [INFO] OE040-Gulbenkian: Dataset loaded successfully.
+2025-02-19 00:36:45,809 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:36:45,813 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE040\ses-Gulbenkian\mapping_process.mp4'
+2025-02-19 00:40:01,260 [INFO] OE040-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE040\ses-Gulbenkian.
+2025-02-19 00:40:02,515 [INFO] OE040-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE040\ses-Gulbenkian.
+2025-02-19 00:40:02,517 [INFO] Processing participant OE041, session Gulbenkian
+2025-02-19 00:40:14,834 [INFO] OE041-Gulbenkian: Dataset loaded successfully.
+2025-02-19 00:42:49,493 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:42:49,497 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE041\ses-Gulbenkian\mapping_process.mp4'
+2025-02-19 00:46:45,219 [INFO] OE041-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE041\ses-Gulbenkian.
+2025-02-19 00:46:46,672 [INFO] OE041-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE041\ses-Gulbenkian.
+2025-02-19 00:46:46,674 [INFO] Processing participant OE049, session Graca
+2025-02-19 00:46:55,767 [INFO] OE049-Graca: Dataset loaded successfully.
+2025-02-19 00:48:53,385 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:48:53,388 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE049\ses-Graca\mapping_process.mp4'
+2025-02-19 00:52:01,622 [INFO] OE049-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE049\ses-Graca.
+2025-02-19 00:52:02,779 [INFO] OE049-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE049\ses-Graca.
+2025-02-19 00:52:02,781 [INFO] Processing participant OE051, session Baixa
+2025-02-19 00:52:11,294 [INFO] OE051-Baixa: Dataset loaded successfully.
+2025-02-19 00:54:01,439 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:54:01,444 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE051\ses-Baixa\mapping_process.mp4'
+2025-02-19 00:56:29,121 [INFO] OE051-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE051\ses-Baixa.
+2025-02-19 00:56:30,206 [INFO] OE051-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE051\ses-Baixa.
+2025-02-19 00:56:30,208 [INFO] Processing participant OE054, session Lapa
+2025-02-19 00:56:38,417 [INFO] OE054-Lapa: Dataset loaded successfully.
+2025-02-19 00:58:38,124 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 00:58:38,128 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE054\ses-Lapa\mapping_process.mp4'
+2025-02-19 01:01:36,074 [INFO] OE054-Lapa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE054\ses-Lapa.
+2025-02-19 01:01:37,175 [INFO] OE054-Lapa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE054\ses-Lapa.
+2025-02-19 01:01:37,177 [INFO] Processing participant OE056, session Baixa
+2025-02-19 01:01:49,486 [INFO] OE056-Baixa: Dataset loaded successfully.
+2025-02-19 01:04:02,145 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:04:02,148 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE056\ses-Baixa\mapping_process.mp4'
+2025-02-19 01:07:12,463 [INFO] OE056-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE056\ses-Baixa.
+2025-02-19 01:07:13,753 [INFO] OE056-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE056\ses-Baixa.
+2025-02-19 01:07:13,754 [INFO] Processing participant OE056, session Graca
+2025-02-19 01:07:19,947 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200906.png
+2025-02-19 01:07:19,991 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200907.png
+2025-02-19 01:07:20,004 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200908.png
+2025-02-19 01:07:20,015 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200909.png
+2025-02-19 01:07:20,025 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200910.png
+2025-02-19 01:07:20,035 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200911.png
+2025-02-19 01:07:20,043 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200912.png
+2025-02-19 01:07:20,051 [INFO] Requesting http://a.tile.openstreetmap.org/19/248845/200913.png
+2025-02-19 01:07:20,060 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200906.png
+2025-02-19 01:07:20,075 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200907.png
+2025-02-19 01:07:20,083 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200908.png
+2025-02-19 01:07:20,091 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200909.png
+2025-02-19 01:07:20,100 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200910.png
+2025-02-19 01:07:20,159 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200911.png
+2025-02-19 01:07:20,168 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200912.png
+2025-02-19 01:07:20,175 [INFO] Requesting http://a.tile.openstreetmap.org/19/248846/200913.png
+2025-02-19 01:07:20,183 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200906.png
+2025-02-19 01:07:20,191 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200907.png
+2025-02-19 01:07:20,199 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200908.png
+2025-02-19 01:07:20,211 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200909.png
+2025-02-19 01:07:20,218 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200910.png
+2025-02-19 01:07:20,227 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200911.png
+2025-02-19 01:07:20,236 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200912.png
+2025-02-19 01:07:20,244 [INFO] Requesting http://a.tile.openstreetmap.org/19/248847/200913.png
+2025-02-19 01:07:20,252 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200906.png
+2025-02-19 01:07:20,260 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200907.png
+2025-02-19 01:07:20,268 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200908.png
+2025-02-19 01:07:21,681 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200909.png
+2025-02-19 01:07:21,690 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200910.png
+2025-02-19 01:07:21,698 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200911.png
+2025-02-19 01:07:21,708 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200912.png
+2025-02-19 01:07:21,717 [INFO] Requesting http://a.tile.openstreetmap.org/19/248848/200913.png
+2025-02-19 01:07:21,725 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200906.png
+2025-02-19 01:07:21,821 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200907.png
+2025-02-19 01:07:21,830 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200908.png
+2025-02-19 01:07:21,839 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200909.png
+2025-02-19 01:07:21,847 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200910.png
+2025-02-19 01:07:21,855 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200911.png
+2025-02-19 01:07:21,864 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200912.png
+2025-02-19 01:07:21,872 [INFO] Requesting http://a.tile.openstreetmap.org/19/248849/200913.png
+2025-02-19 01:07:22,625 [INFO] OE056-Graca: Dataset loaded successfully.
+2025-02-19 01:08:46,756 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:08:46,759 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE056\ses-Graca\mapping_process.mp4'
+2025-02-19 01:10:50,067 [INFO] OE056-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE056\ses-Graca.
+2025-02-19 01:10:50,890 [INFO] OE056-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE056\ses-Graca.
+2025-02-19 01:10:50,892 [INFO] Processing participant OE058, session Baixa
+2025-02-19 01:11:02,319 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100452.png
+2025-02-19 01:11:02,331 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100453.png
+2025-02-19 01:11:02,339 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100454.png
+2025-02-19 01:11:02,348 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100455.png
+2025-02-19 01:11:02,359 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100456.png
+2025-02-19 01:11:02,371 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100457.png
+2025-02-19 01:11:02,380 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100458.png
+2025-02-19 01:11:02,389 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100459.png
+2025-02-19 01:11:02,398 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100460.png
+2025-02-19 01:11:02,406 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100461.png
+2025-02-19 01:11:02,415 [INFO] Requesting http://a.tile.openstreetmap.org/18/124415/100462.png
+2025-02-19 01:11:03,595 [INFO] OE058-Baixa: Dataset loaded successfully.
+2025-02-19 01:13:12,084 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:13:12,089 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE058\ses-Baixa\mapping_process.mp4'
+2025-02-19 01:16:14,269 [INFO] OE058-Baixa: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE058\ses-Baixa.
+2025-02-19 01:16:15,531 [INFO] OE058-Baixa: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE058\ses-Baixa.
+2025-02-19 01:16:15,533 [INFO] Processing participant OE061, session Gulbenkian
+2025-02-19 01:16:27,173 [INFO] OE061-Gulbenkian: Dataset loaded successfully.
+2025-02-19 01:19:01,034 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:19:01,038 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE061\ses-Gulbenkian\mapping_process.mp4'
+2025-02-19 01:22:58,266 [INFO] OE061-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE061\ses-Gulbenkian.
+2025-02-19 01:22:59,752 [INFO] OE061-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE061\ses-Gulbenkian.
+2025-02-19 01:22:59,754 [INFO] Processing participant OE065, session Belem
+2025-02-19 01:23:11,974 [INFO] OE065-Belem: Dataset loaded successfully.
+2025-02-19 01:25:26,964 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:25:26,968 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE065\ses-Belem\mapping_process.mp4'
+2025-02-19 01:29:09,129 [INFO] OE065-Belem: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE065\ses-Belem.
+2025-02-19 01:29:10,467 [INFO] OE065-Belem: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE065\ses-Belem.
+2025-02-19 01:29:10,469 [INFO] Processing participant OE071, session Graca
+2025-02-19 01:29:17,945 [INFO] OE071-Graca: Dataset loaded successfully.
+2025-02-19 01:31:10,021 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:31:10,027 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE071\ses-Graca\mapping_process.mp4'
+2025-02-19 01:34:03,871 [INFO] OE071-Graca: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE071\ses-Graca.
+2025-02-19 01:34:04,921 [INFO] OE071-Graca: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE071\ses-Graca.
+2025-02-19 01:34:04,922 [INFO] Processing participant OE073, session Gulbenkian
+2025-02-19 01:34:13,795 [INFO] Requesting http://a.tile.openstreetmap.org/18/124403/100429.png
+2025-02-19 01:34:13,809 [INFO] Requesting http://a.tile.openstreetmap.org/18/124403/100430.png
+2025-02-19 01:34:13,817 [INFO] Requesting http://a.tile.openstreetmap.org/18/124403/100431.png
+2025-02-19 01:34:13,826 [INFO] Requesting http://a.tile.openstreetmap.org/18/124403/100432.png
+2025-02-19 01:34:13,834 [INFO] Requesting http://a.tile.openstreetmap.org/18/124403/100433.png
+2025-02-19 01:34:14,405 [INFO] OE073-Gulbenkian: Dataset loaded successfully.
+2025-02-19 01:36:26,825 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:36:26,830 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE073\ses-Gulbenkian\mapping_process.mp4'
+2025-02-19 01:39:44,494 [INFO] OE073-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE073\ses-Gulbenkian.
+2025-02-19 01:39:45,799 [INFO] OE073-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE073\ses-Gulbenkian.
+2025-02-19 01:39:45,800 [INFO] Processing participant OE074, session Gulbenkian
+2025-02-19 01:39:56,282 [INFO] OE074-Gulbenkian: Dataset loaded successfully.
+2025-02-19 01:42:28,170 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-19 01:42:28,173 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE074\ses-Gulbenkian\mapping_process.mp4'
+2025-02-19 01:46:18,272 [INFO] OE074-Gulbenkian: Geodata saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\geodata\log\sub-OE074\ses-Gulbenkian.
+2025-02-19 01:46:19,722 [INFO] OE074-Gulbenkian: Empatica data saved to Z:\Exp_4-outdoor_walk\lisbon\sourcedata\supp\stress_csv\sub-OE074\ses-Gulbenkian.
+2025-02-19 01:46:19,724 [INFO] Processing participant OE076, session Gulbenkian
+2025-02-19 01:46:20,532 [WARNING] OE076-Gulbenkian: Failed to load using outdoor schema. Error: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+2025-02-19 01:46:20,532 [INFO] OE076-Gulbenkian: Trying missing_sync schema...
+2025-02-19 01:46:20,925 [ERROR] Error loading dataset for OE076-Gulbenkian: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ecg.py", line 26, in load
+    heartrate, filtered, working_data, measures = heartrate_from_ecg(ecg)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\preprocessing\ecg.py", line 47, in heartrate_from_ecg
+    working_data, measures = hp.process(filtered, sample_rate=sample_rate, bpmmax=bpmmax)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\heartpy.py", line 289, in process
+    working_data = fit_peaks(hrdata, rol_mean, sample_rate, bpmmin=bpmmin,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\peakdetection.py", line 305, in fit_peaks
+    raise BadSignalWarning('\n----------------\nCould not determine best fit for \
+heartpy.exceptions.BadSignalWarning: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_27032\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\ecg.py", line 26, in load
+    heartrate, filtered, working_data, measures = heartrate_from_ecg(ecg)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\preprocessing\ecg.py", line 47, in heartrate_from_ecg
+    working_data, measures = hp.process(filtered, sample_rate=sample_rate, bpmmax=bpmmax)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\heartpy.py", line 289, in process
+    working_data = fit_peaks(hrdata, rol_mean, sample_rate, bpmmin=bpmmin,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\heartpy\peakdetection.py", line 305, in fit_peaks
+    raise BadSignalWarning('\n----------------\nCould not determine best fit for \
+heartpy.exceptions.BadSignalWarning: 
+----------------
+Could not determine best fit for given signal. Please check the source signal.
+ Probable causes:
+- detected heart rate falls outside of bpmmin<->bpmmax constraints
+- no detectable heart rate present in signal
+- very noisy signal (consider filtering and scaling)
+If you're sure the signal contains heartrate data, consider filtering and/or scaling first.
+----------------
+
+
+2025-02-19 02:29:53,591 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\data
+2025-02-19 02:29:53,596 [INFO] Processing participant OE002, session Hellerup
+2025-02-19 02:29:53,601 [WARNING] OE002-Hellerup: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,601 [INFO] OE002-Hellerup: Trying missing_sync schema...
+2025-02-19 02:29:53,602 [ERROR] Error loading dataset for OE002-Hellerup: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,603 [INFO] Processing participant OE004, session Norreport
+2025-02-19 02:29:53,609 [WARNING] OE004-Norreport: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,609 [INFO] OE004-Norreport: Trying missing_sync schema...
+2025-02-19 02:29:53,610 [ERROR] Error loading dataset for OE004-Norreport: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,612 [INFO] Processing participant OE005, session Hellerup
+2025-02-19 02:29:53,616 [WARNING] OE005-Hellerup: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,617 [INFO] OE005-Hellerup: Trying missing_sync schema...
+2025-02-19 02:29:53,617 [ERROR] Error loading dataset for OE005-Hellerup: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,618 [INFO] Processing participant OE005, session Nordhavn
+2025-02-19 02:29:53,623 [WARNING] OE005-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,623 [INFO] OE005-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,624 [ERROR] Error loading dataset for OE005-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,626 [INFO] Processing participant OE007, session Hellerup
+2025-02-19 02:29:53,630 [WARNING] OE007-Hellerup: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,630 [INFO] OE007-Hellerup: Trying missing_sync schema...
+2025-02-19 02:29:53,631 [ERROR] Error loading dataset for OE007-Hellerup: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,632 [INFO] Processing participant OE009, session Nordhavn
+2025-02-19 02:29:53,637 [WARNING] OE009-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,637 [INFO] OE009-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,638 [ERROR] Error loading dataset for OE009-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,638 [INFO] Processing participant OE009, session Norrebro
+2025-02-19 02:29:53,642 [WARNING] OE009-Norrebro: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,642 [INFO] OE009-Norrebro: Trying missing_sync schema...
+2025-02-19 02:29:53,642 [ERROR] Error loading dataset for OE009-Norrebro: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,644 [INFO] Processing participant OE010, session Nordhavn
+2025-02-19 02:29:53,648 [WARNING] OE010-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,649 [INFO] OE010-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,649 [ERROR] Error loading dataset for OE010-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,650 [INFO] Processing participant OE011, session Nordhavn
+2025-02-19 02:29:53,654 [WARNING] OE011-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,655 [INFO] OE011-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,655 [ERROR] Error loading dataset for OE011-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,657 [INFO] Processing participant OE012, session Norreport
+2025-02-19 02:29:53,661 [WARNING] OE012-Norreport: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,661 [INFO] OE012-Norreport: Trying missing_sync schema...
+2025-02-19 02:29:53,662 [ERROR] Error loading dataset for OE012-Norreport: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,663 [INFO] Processing participant OE015, session Norreport
+2025-02-19 02:29:53,668 [WARNING] OE015-Norreport: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,668 [INFO] OE015-Norreport: Trying missing_sync schema...
+2025-02-19 02:29:53,669 [ERROR] Error loading dataset for OE015-Norreport: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,670 [INFO] Processing participant OE017, session Norreport
+2025-02-19 02:29:53,674 [WARNING] OE017-Norreport: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,674 [INFO] OE017-Norreport: Trying missing_sync schema...
+2025-02-19 02:29:53,675 [ERROR] Error loading dataset for OE017-Norreport: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,677 [INFO] Processing participant OE018, session Hellerup
+2025-02-19 02:29:53,680 [WARNING] OE018-Hellerup: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,681 [INFO] OE018-Hellerup: Trying missing_sync schema...
+2025-02-19 02:29:53,681 [ERROR] Error loading dataset for OE018-Hellerup: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,683 [INFO] Processing participant OE019, session Hellerup
+2025-02-19 02:29:53,687 [WARNING] OE019-Hellerup: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,688 [INFO] OE019-Hellerup: Trying missing_sync schema...
+2025-02-19 02:29:53,688 [ERROR] Error loading dataset for OE019-Hellerup: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,690 [INFO] Processing participant OE020, session Nordhavn
+2025-02-19 02:29:53,693 [WARNING] OE020-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,693 [INFO] OE020-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,694 [ERROR] Error loading dataset for OE020-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,695 [INFO] Processing participant OE020, session Norrebro
+2025-02-19 02:29:53,700 [WARNING] OE020-Norrebro: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,700 [INFO] OE020-Norrebro: Trying missing_sync schema...
+2025-02-19 02:29:53,700 [ERROR] Error loading dataset for OE020-Norrebro: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,702 [INFO] Processing participant OE021, session Hellerup
+2025-02-19 02:29:53,706 [WARNING] OE021-Hellerup: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,706 [INFO] OE021-Hellerup: Trying missing_sync schema...
+2025-02-19 02:29:53,707 [ERROR] Error loading dataset for OE021-Hellerup: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,708 [INFO] Processing participant OE021, session Norrebro
+2025-02-19 02:29:53,711 [WARNING] OE021-Norrebro: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,712 [INFO] OE021-Norrebro: Trying missing_sync schema...
+2025-02-19 02:29:53,712 [ERROR] Error loading dataset for OE021-Norrebro: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,714 [INFO] Processing participant OE022, session Nordhavn
+2025-02-19 02:29:53,718 [WARNING] OE022-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,718 [INFO] OE022-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,719 [ERROR] Error loading dataset for OE022-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,719 [INFO] Processing participant OE022, session Norrebro
+2025-02-19 02:29:53,723 [WARNING] OE022-Norrebro: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,723 [INFO] OE022-Norrebro: Trying missing_sync schema...
+2025-02-19 02:29:53,724 [ERROR] Error loading dataset for OE022-Norrebro: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,724 [INFO] Processing participant OE022, session Norreport
+2025-02-19 02:29:53,728 [WARNING] OE022-Norreport: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,728 [INFO] OE022-Norreport: Trying missing_sync schema...
+2025-02-19 02:29:53,729 [ERROR] Error loading dataset for OE022-Norreport: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,731 [INFO] Processing participant OE023, session Nordhavn
+2025-02-19 02:29:53,735 [WARNING] OE023-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,735 [INFO] OE023-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,736 [ERROR] Error loading dataset for OE023-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,736 [INFO] Processing participant OE023, session Norrebro
+2025-02-19 02:29:53,740 [WARNING] OE023-Norrebro: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,740 [INFO] OE023-Norrebro: Trying missing_sync schema...
+2025-02-19 02:29:53,741 [ERROR] Error loading dataset for OE023-Norrebro: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,741 [INFO] Processing participant OE023, session Norreport
+2025-02-19 02:29:53,745 [WARNING] OE023-Norreport: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,745 [INFO] OE023-Norreport: Trying missing_sync schema...
+2025-02-19 02:29:53,745 [ERROR] Error loading dataset for OE023-Norreport: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-19 02:29:53,747 [INFO] Processing participant OE024, session Nordhavn
+2025-02-19 02:29:53,751 [WARNING] OE024-Nordhavn: Failed to load using outdoor schema. Error: name 'load_dataset' is not defined
+2025-02-19 02:29:53,752 [INFO] OE024-Nordhavn: Trying missing_sync schema...
+2025-02-19 02:29:53,752 [ERROR] Error loading dataset for OE024-Nordhavn: name 'load_dataset' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_19416\2587259609.py", line 73, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^
+NameError: name 'load_dataset' is not defined
+
+2025-02-20 19:00:56,077 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\data
+2025-02-20 19:00:56,082 [INFO] Processing participant OE002, session Hellerup
+2025-02-20 19:00:56,086 [WARNING] OE002-Hellerup: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,087 [INFO] OE002-Hellerup: Trying missing_sync schema...
+2025-02-20 19:00:56,088 [ERROR] Error loading dataset for OE002-Hellerup: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,089 [INFO] Processing participant OE004, session Norreport
+2025-02-20 19:00:56,115 [WARNING] OE004-Norreport: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,115 [INFO] OE004-Norreport: Trying missing_sync schema...
+2025-02-20 19:00:56,116 [ERROR] Error loading dataset for OE004-Norreport: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,117 [INFO] Processing participant OE005, session Hellerup
+2025-02-20 19:00:56,121 [WARNING] OE005-Hellerup: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,122 [INFO] OE005-Hellerup: Trying missing_sync schema...
+2025-02-20 19:00:56,122 [ERROR] Error loading dataset for OE005-Hellerup: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,123 [INFO] Processing participant OE005, session Nordhavn
+2025-02-20 19:00:56,127 [WARNING] OE005-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,128 [INFO] OE005-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,128 [ERROR] Error loading dataset for OE005-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,130 [INFO] Processing participant OE007, session Hellerup
+2025-02-20 19:00:56,133 [WARNING] OE007-Hellerup: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,134 [INFO] OE007-Hellerup: Trying missing_sync schema...
+2025-02-20 19:00:56,134 [ERROR] Error loading dataset for OE007-Hellerup: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,136 [INFO] Processing participant OE009, session Nordhavn
+2025-02-20 19:00:56,140 [WARNING] OE009-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,140 [INFO] OE009-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,141 [ERROR] Error loading dataset for OE009-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,141 [INFO] Processing participant OE009, session Norrebro
+2025-02-20 19:00:56,145 [WARNING] OE009-Norrebro: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,146 [INFO] OE009-Norrebro: Trying missing_sync schema...
+2025-02-20 19:00:56,146 [ERROR] Error loading dataset for OE009-Norrebro: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,148 [INFO] Processing participant OE010, session Nordhavn
+2025-02-20 19:00:56,152 [WARNING] OE010-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,152 [INFO] OE010-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,152 [ERROR] Error loading dataset for OE010-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,153 [INFO] Processing participant OE011, session Nordhavn
+2025-02-20 19:00:56,158 [WARNING] OE011-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,159 [INFO] OE011-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,159 [ERROR] Error loading dataset for OE011-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,161 [INFO] Processing participant OE012, session Norreport
+2025-02-20 19:00:56,191 [WARNING] OE012-Norreport: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,192 [INFO] OE012-Norreport: Trying missing_sync schema...
+2025-02-20 19:00:56,192 [ERROR] Error loading dataset for OE012-Norreport: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,194 [INFO] Processing participant OE015, session Norreport
+2025-02-20 19:00:56,199 [WARNING] OE015-Norreport: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,199 [INFO] OE015-Norreport: Trying missing_sync schema...
+2025-02-20 19:00:56,200 [ERROR] Error loading dataset for OE015-Norreport: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,202 [INFO] Processing participant OE017, session Norreport
+2025-02-20 19:00:56,206 [WARNING] OE017-Norreport: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,206 [INFO] OE017-Norreport: Trying missing_sync schema...
+2025-02-20 19:00:56,206 [ERROR] Error loading dataset for OE017-Norreport: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,208 [INFO] Processing participant OE018, session Hellerup
+2025-02-20 19:00:56,212 [WARNING] OE018-Hellerup: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,212 [INFO] OE018-Hellerup: Trying missing_sync schema...
+2025-02-20 19:00:56,213 [ERROR] Error loading dataset for OE018-Hellerup: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,214 [INFO] Processing participant OE019, session Hellerup
+2025-02-20 19:00:56,218 [WARNING] OE019-Hellerup: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,218 [INFO] OE019-Hellerup: Trying missing_sync schema...
+2025-02-20 19:00:56,219 [ERROR] Error loading dataset for OE019-Hellerup: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,221 [INFO] Processing participant OE020, session Nordhavn
+2025-02-20 19:00:56,224 [WARNING] OE020-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,225 [INFO] OE020-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,225 [ERROR] Error loading dataset for OE020-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,226 [INFO] Processing participant OE020, session Norrebro
+2025-02-20 19:00:56,229 [WARNING] OE020-Norrebro: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,230 [INFO] OE020-Norrebro: Trying missing_sync schema...
+2025-02-20 19:00:56,230 [ERROR] Error loading dataset for OE020-Norrebro: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,232 [INFO] Processing participant OE021, session Hellerup
+2025-02-20 19:00:56,236 [WARNING] OE021-Hellerup: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,236 [INFO] OE021-Hellerup: Trying missing_sync schema...
+2025-02-20 19:00:56,236 [ERROR] Error loading dataset for OE021-Hellerup: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,237 [INFO] Processing participant OE021, session Norrebro
+2025-02-20 19:00:56,241 [WARNING] OE021-Norrebro: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,241 [INFO] OE021-Norrebro: Trying missing_sync schema...
+2025-02-20 19:00:56,242 [ERROR] Error loading dataset for OE021-Norrebro: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,243 [INFO] Processing participant OE022, session Nordhavn
+2025-02-20 19:00:56,247 [WARNING] OE022-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,247 [INFO] OE022-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,248 [ERROR] Error loading dataset for OE022-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,249 [INFO] Processing participant OE022, session Norrebro
+2025-02-20 19:00:56,252 [WARNING] OE022-Norrebro: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,252 [INFO] OE022-Norrebro: Trying missing_sync schema...
+2025-02-20 19:00:56,253 [ERROR] Error loading dataset for OE022-Norrebro: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,253 [INFO] Processing participant OE022, session Norreport
+2025-02-20 19:00:56,258 [WARNING] OE022-Norreport: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,258 [INFO] OE022-Norreport: Trying missing_sync schema...
+2025-02-20 19:00:56,259 [ERROR] Error loading dataset for OE022-Norreport: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,260 [INFO] Processing participant OE023, session Nordhavn
+2025-02-20 19:00:56,264 [WARNING] OE023-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,264 [INFO] OE023-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,265 [ERROR] Error loading dataset for OE023-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,265 [INFO] Processing participant OE023, session Norrebro
+2025-02-20 19:00:56,269 [WARNING] OE023-Norrebro: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,269 [INFO] OE023-Norrebro: Trying missing_sync schema...
+2025-02-20 19:00:56,270 [ERROR] Error loading dataset for OE023-Norrebro: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,270 [INFO] Processing participant OE023, session Norreport
+2025-02-20 19:00:56,275 [WARNING] OE023-Norreport: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,275 [INFO] OE023-Norreport: Trying missing_sync schema...
+2025-02-20 19:00:56,275 [ERROR] Error loading dataset for OE023-Norreport: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:00:56,277 [INFO] Processing participant OE024, session Nordhavn
+2025-02-20 19:00:56,281 [WARNING] OE024-Nordhavn: Failed to load using outdoor schema. Error: name 'outdoor' is not defined
+2025-02-20 19:00:56,281 [INFO] OE024-Nordhavn: Trying missing_sync schema...
+2025-02-20 19:00:56,282 [ERROR] Error loading dataset for OE024-Nordhavn: name 'missing_sync' is not defined
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 64, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+                                               ^^^^^^^
+NameError: name 'outdoor' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\2587259609.py", line 75, in main
+    schema=missing_sync.build_schema)
+           ^^^^^^^^^^^^
+NameError: name 'missing_sync' is not defined
+
+2025-02-20 19:01:58,889 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\data
+2025-02-20 19:01:58,895 [INFO] Processing participant OE002, session Hellerup
+2025-02-20 19:02:06,803 [INFO] Requesting http://a.tile.openstreetmap.org/15/17527/10247.png
+2025-02-20 19:02:06,850 [INFO] Requesting http://a.tile.openstreetmap.org/15/17527/10248.png
+2025-02-20 19:02:06,860 [INFO] Requesting http://a.tile.openstreetmap.org/15/17528/10247.png
+2025-02-20 19:02:06,917 [INFO] Requesting http://a.tile.openstreetmap.org/15/17528/10248.png
+2025-02-20 19:02:06,927 [INFO] Requesting http://a.tile.openstreetmap.org/15/17529/10247.png
+2025-02-20 19:02:06,935 [INFO] Requesting http://a.tile.openstreetmap.org/15/17529/10248.png
+2025-02-20 19:02:07,138 [INFO] Requesting http://a.tile.openstreetmap.org/15/17530/10247.png
+2025-02-20 19:02:07,146 [INFO] Requesting http://a.tile.openstreetmap.org/15/17530/10248.png
+2025-02-20 19:02:07,464 [INFO] OE002-Hellerup: Dataset loaded successfully.
+2025-02-20 19:03:55,693 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:03:55,698 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE002\ses-Hellerup\mapping_process.mp4'
+2025-02-20 19:06:29,615 [INFO] OE002-Hellerup: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE002\ses-Hellerup.
+2025-02-20 19:06:30,575 [INFO] OE002-Hellerup: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE002\ses-Hellerup.
+2025-02-20 19:06:30,578 [INFO] Processing participant OE004, session Norreport
+2025-02-20 19:06:37,493 [INFO] Requesting http://a.tile.openstreetmap.org/16/35054/20509.png
+2025-02-20 19:06:37,551 [INFO] Requesting http://a.tile.openstreetmap.org/16/35054/20510.png
+2025-02-20 19:06:37,560 [INFO] Requesting http://a.tile.openstreetmap.org/16/35055/20509.png
+2025-02-20 19:06:37,568 [INFO] Requesting http://a.tile.openstreetmap.org/16/35055/20510.png
+2025-02-20 19:06:37,577 [INFO] Requesting http://a.tile.openstreetmap.org/16/35056/20509.png
+2025-02-20 19:06:37,586 [INFO] Requesting http://a.tile.openstreetmap.org/16/35056/20510.png
+2025-02-20 19:06:37,595 [INFO] Requesting http://a.tile.openstreetmap.org/16/35057/20509.png
+2025-02-20 19:06:37,603 [INFO] Requesting http://a.tile.openstreetmap.org/16/35057/20510.png
+2025-02-20 19:06:37,913 [INFO] OE004-Norreport: Dataset loaded successfully.
+2025-02-20 19:08:12,455 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:08:12,459 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE004\ses-Norreport\mapping_process.mp4'
+2025-02-20 19:10:19,086 [INFO] OE004-Norreport: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE004\ses-Norreport.
+2025-02-20 19:10:19,965 [INFO] OE004-Norreport: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE004\ses-Norreport.
+2025-02-20 19:10:19,967 [INFO] Processing participant OE005, session Hellerup
+2025-02-20 19:10:28,722 [INFO] OE005-Hellerup: Dataset loaded successfully.
+2025-02-20 19:12:15,452 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:12:15,456 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE005\ses-Hellerup\mapping_process.mp4'
+2025-02-20 19:14:52,626 [INFO] OE005-Hellerup: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE005\ses-Hellerup.
+2025-02-20 19:14:53,631 [INFO] OE005-Hellerup: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE005\ses-Hellerup.
+2025-02-20 19:14:53,632 [INFO] Processing participant OE005, session Nordhavn
+2025-02-20 19:14:59,693 [INFO] Requesting http://a.tile.openstreetmap.org/16/35059/20501.png
+2025-02-20 19:14:59,708 [INFO] Requesting http://a.tile.openstreetmap.org/16/35059/20502.png
+2025-02-20 19:14:59,717 [INFO] Requesting http://a.tile.openstreetmap.org/16/35059/20503.png
+2025-02-20 19:14:59,726 [INFO] Requesting http://a.tile.openstreetmap.org/16/35060/20501.png
+2025-02-20 19:15:00,011 [INFO] Requesting http://a.tile.openstreetmap.org/16/35060/20502.png
+2025-02-20 19:15:00,115 [INFO] Requesting http://a.tile.openstreetmap.org/16/35060/20503.png
+2025-02-20 19:15:00,125 [INFO] Requesting http://a.tile.openstreetmap.org/16/35061/20501.png
+2025-02-20 19:15:00,207 [INFO] Requesting http://a.tile.openstreetmap.org/16/35061/20502.png
+2025-02-20 19:15:00,222 [INFO] Requesting http://a.tile.openstreetmap.org/16/35061/20503.png
+2025-02-20 19:15:00,230 [INFO] Requesting http://a.tile.openstreetmap.org/16/35062/20501.png
+2025-02-20 19:15:00,238 [INFO] Requesting http://a.tile.openstreetmap.org/16/35062/20502.png
+2025-02-20 19:15:00,245 [INFO] Requesting http://a.tile.openstreetmap.org/16/35062/20503.png
+2025-02-20 19:15:00,540 [INFO] OE005-Nordhavn: Dataset loaded successfully.
+2025-02-20 19:16:42,269 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:16:42,272 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE005\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 19:19:08,102 [INFO] OE005-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE005\ses-Nordhavn.
+2025-02-20 19:19:09,030 [INFO] OE005-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE005\ses-Nordhavn.
+2025-02-20 19:19:09,032 [INFO] Processing participant OE007, session Hellerup
+2025-02-20 19:19:17,904 [WARNING] OE007-Hellerup: Failed to load using outdoor schema. Error: no element found: line 1, column 0
+2025-02-20 19:19:17,905 [INFO] OE007-Hellerup: Trying missing_sync schema...
+2025-02-20 19:19:22,198 [ERROR] Error loading dataset for OE007-Hellerup: no element found: line 1, column 0
+Traceback (most recent call last):
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1728, in close
+    self.parser.Parse(b"", True) # end of data
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 74, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 38, in load
+    self.data, _lsl_timestamp = load_eeg(filename=None, root=self.rootfolder)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 71, in load_eeg
+    _out = read_raw_nedf(filename, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-206>", line 12, in read_raw_nedf
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 229, in read_raw_nedf
+    return RawNedf(filename, preload, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 141, in __init__
+    header, dt, dt_last, n_samp, n_full = _parse_nedf_header(header)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 74, in _parse_nedf_header
+    headerxml = defusedxml.ElementTree.fromstring(header[:headerend])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\defusedxml\common.py", line 127, in fromstring
+    return parser.close()
+           ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1730, in close
+    self._raiseerror(v)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1630, in _raiseerror
+    raise err
+xml.etree.ElementTree.ParseError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1728, in close
+    self.parser.Parse(b"", True) # end of data
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 83, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 38, in load
+    self.data, _lsl_timestamp = load_eeg(filename=None, root=self.rootfolder)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 71, in load_eeg
+    _out = read_raw_nedf(filename, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-206>", line 12, in read_raw_nedf
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 229, in read_raw_nedf
+    return RawNedf(filename, preload, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 141, in __init__
+    header, dt, dt_last, n_samp, n_full = _parse_nedf_header(header)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 74, in _parse_nedf_header
+    headerxml = defusedxml.ElementTree.fromstring(header[:headerend])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\defusedxml\common.py", line 127, in fromstring
+    return parser.close()
+           ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1730, in close
+    self._raiseerror(v)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1630, in _raiseerror
+    raise err
+xml.etree.ElementTree.ParseError: no element found: line 1, column 0
+
+2025-02-20 19:19:22,201 [INFO] Processing participant OE009, session Nordhavn
+2025-02-20 19:19:31,244 [INFO] OE009-Nordhavn: Dataset loaded successfully.
+2025-02-20 19:21:31,912 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:21:31,916 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE009\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 19:24:33,695 [INFO] OE009-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE009\ses-Nordhavn.
+2025-02-20 19:24:34,847 [INFO] OE009-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE009\ses-Nordhavn.
+2025-02-20 19:24:34,849 [INFO] Processing participant OE009, session Norrebro
+2025-02-20 19:24:41,972 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41007.png
+2025-02-20 19:24:42,058 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41008.png
+2025-02-20 19:24:42,068 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41009.png
+2025-02-20 19:24:42,076 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41010.png
+2025-02-20 19:24:42,234 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41011.png
+2025-02-20 19:24:42,349 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41012.png
+2025-02-20 19:24:42,460 [INFO] Requesting http://a.tile.openstreetmap.org/17/70100/41013.png
+2025-02-20 19:24:42,609 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41007.png
+2025-02-20 19:24:42,618 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41008.png
+2025-02-20 19:24:42,626 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41009.png
+2025-02-20 19:24:42,637 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41010.png
+2025-02-20 19:24:42,930 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41011.png
+2025-02-20 19:24:43,031 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41012.png
+2025-02-20 19:24:43,128 [INFO] Requesting http://a.tile.openstreetmap.org/17/70101/41013.png
+2025-02-20 19:24:43,259 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41007.png
+2025-02-20 19:24:43,267 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41008.png
+2025-02-20 19:24:43,376 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41009.png
+2025-02-20 19:24:43,385 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41010.png
+2025-02-20 19:24:43,528 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41011.png
+2025-02-20 19:24:43,627 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41012.png
+2025-02-20 19:24:43,719 [INFO] Requesting http://a.tile.openstreetmap.org/17/70102/41013.png
+2025-02-20 19:24:44,311 [INFO] OE009-Norrebro: Dataset loaded successfully.
+2025-02-20 19:26:25,037 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:26:25,041 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE009\ses-Norrebro\mapping_process.mp4'
+2025-02-20 19:28:43,180 [INFO] OE009-Norrebro: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE009\ses-Norrebro.
+2025-02-20 19:28:44,116 [INFO] OE009-Norrebro: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE009\ses-Norrebro.
+2025-02-20 19:28:44,118 [INFO] Processing participant OE010, session Nordhavn
+2025-02-20 19:28:48,288 [INFO] OE010-Nordhavn: Dataset loaded successfully.
+2025-02-20 19:30:35,517 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:30:35,521 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE010\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 19:33:16,205 [INFO] OE010-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE010\ses-Nordhavn.
+2025-02-20 19:33:16,857 [INFO] OE010-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE010\ses-Nordhavn.
+2025-02-20 19:33:16,859 [INFO] Processing participant OE011, session Nordhavn
+2025-02-20 19:33:26,342 [INFO] OE011-Nordhavn: Dataset loaded successfully.
+2025-02-20 19:35:28,235 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:35:28,240 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE011\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 19:38:31,119 [INFO] OE011-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE011\ses-Nordhavn.
+2025-02-20 19:38:32,271 [INFO] OE011-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE011\ses-Nordhavn.
+2025-02-20 19:38:32,272 [INFO] Processing participant OE012, session Norreport
+2025-02-20 19:38:38,732 [WARNING] OE012-Norreport: Failed to load using outdoor schema. Error: no element found: line 1, column 0
+2025-02-20 19:38:38,732 [INFO] OE012-Norreport: Trying missing_sync schema...
+2025-02-20 19:38:41,315 [ERROR] Error loading dataset for OE012-Norreport: no element found: line 1, column 0
+Traceback (most recent call last):
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1728, in close
+    self.parser.Parse(b"", True) # end of data
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 74, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 38, in load
+    self.data, _lsl_timestamp = load_eeg(filename=None, root=self.rootfolder)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 71, in load_eeg
+    _out = read_raw_nedf(filename, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-206>", line 12, in read_raw_nedf
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 229, in read_raw_nedf
+    return RawNedf(filename, preload, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 141, in __init__
+    header, dt, dt_last, n_samp, n_full = _parse_nedf_header(header)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 74, in _parse_nedf_header
+    headerxml = defusedxml.ElementTree.fromstring(header[:headerend])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\defusedxml\common.py", line 127, in fromstring
+    return parser.close()
+           ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1730, in close
+    self._raiseerror(v)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1630, in _raiseerror
+    raise err
+xml.etree.ElementTree.ParseError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1728, in close
+    self.parser.Parse(b"", True) # end of data
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 83, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 38, in load
+    self.data, _lsl_timestamp = load_eeg(filename=None, root=self.rootfolder)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 71, in load_eeg
+    _out = read_raw_nedf(filename, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-206>", line 12, in read_raw_nedf
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 229, in read_raw_nedf
+    return RawNedf(filename, preload, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 141, in __init__
+    header, dt, dt_last, n_samp, n_full = _parse_nedf_header(header)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 74, in _parse_nedf_header
+    headerxml = defusedxml.ElementTree.fromstring(header[:headerend])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\defusedxml\common.py", line 127, in fromstring
+    return parser.close()
+           ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1730, in close
+    self._raiseerror(v)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1630, in _raiseerror
+    raise err
+xml.etree.ElementTree.ParseError: no element found: line 1, column 0
+
+2025-02-20 19:38:41,318 [INFO] Processing participant OE015, session Norreport
+2025-02-20 19:38:47,805 [INFO] OE015-Norreport: Dataset loaded successfully.
+2025-02-20 19:40:31,419 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:40:31,422 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE015\ses-Norreport\mapping_process.mp4'
+2025-02-20 19:42:53,921 [INFO] OE015-Norreport: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE015\ses-Norreport.
+2025-02-20 19:42:53,932 [ERROR] Error saving empatica data for OE015-Norreport: 'NoneType' object has no attribute 'MarkerIdx'
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 100, in main
+    empatica.empatica_and_ecg_to_csv(dataset, csv_outdir)
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\utils\for_empatica.py", line 27, in empatica_and_ecg_to_csv
+    lsl_markers = datapicker.streams.EEG.server_lsl_marker[datapicker.streams.EEG.server_lsl_marker.MarkerIdx>35000]
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'MarkerIdx'
+
+2025-02-20 19:42:53,933 [INFO] OE015-Norreport: No empatica data found or error encountered.
+2025-02-20 19:42:53,936 [INFO] Processing participant OE017, session Norreport
+2025-02-20 19:42:59,524 [WARNING] OE017-Norreport: Failed to load using outdoor schema. Error: no element found: line 1, column 0
+2025-02-20 19:42:59,524 [INFO] OE017-Norreport: Trying missing_sync schema...
+2025-02-20 19:43:01,689 [ERROR] Error loading dataset for OE017-Norreport: no element found: line 1, column 0
+Traceback (most recent call last):
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1728, in close
+    self.parser.Parse(b"", True) # end of data
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 74, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 38, in load
+    self.data, _lsl_timestamp = load_eeg(filename=None, root=self.rootfolder)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 71, in load_eeg
+    _out = read_raw_nedf(filename, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-206>", line 12, in read_raw_nedf
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 229, in read_raw_nedf
+    return RawNedf(filename, preload, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 141, in __init__
+    header, dt, dt_last, n_samp, n_full = _parse_nedf_header(header)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 74, in _parse_nedf_header
+    headerxml = defusedxml.ElementTree.fromstring(header[:headerend])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\defusedxml\common.py", line 127, in fromstring
+    return parser.close()
+           ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1730, in close
+    self._raiseerror(v)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1630, in _raiseerror
+    raise err
+xml.etree.ElementTree.ParseError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1728, in close
+    self.parser.Parse(b"", True) # end of data
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+xml.parsers.expat.ExpatError: no element found: line 1, column 0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 83, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\eeg.py", line 38, in load
+    self.data, _lsl_timestamp = load_eeg(filename=None, root=self.rootfolder)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\eeg.py", line 71, in load_eeg
+    _out = read_raw_nedf(filename, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<decorator-gen-206>", line 12, in read_raw_nedf
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 229, in read_raw_nedf
+    return RawNedf(filename, preload, verbose)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 141, in __init__
+    header, dt, dt_last, n_samp, n_full = _parse_nedf_header(header)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\mne\io\nedf\nedf.py", line 74, in _parse_nedf_header
+    headerxml = defusedxml.ElementTree.fromstring(header[:headerend])
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\defusedxml\common.py", line 127, in fromstring
+    return parser.close()
+           ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1730, in close
+    self._raiseerror(v)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\xml\etree\ElementTree.py", line 1630, in _raiseerror
+    raise err
+xml.etree.ElementTree.ParseError: no element found: line 1, column 0
+
+2025-02-20 19:43:01,691 [INFO] Processing participant OE018, session Hellerup
+2025-02-20 19:43:11,235 [INFO] OE018-Hellerup: Dataset loaded successfully.
+2025-02-20 19:45:05,375 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:45:05,379 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE018\ses-Hellerup\mapping_process.mp4'
+2025-02-20 19:47:54,953 [INFO] OE018-Hellerup: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE018\ses-Hellerup.
+2025-02-20 19:47:56,030 [INFO] OE018-Hellerup: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE018\ses-Hellerup.
+2025-02-20 19:47:56,031 [INFO] Processing participant OE019, session Hellerup
+2025-02-20 19:48:04,902 [INFO] OE019-Hellerup: Dataset loaded successfully.
+2025-02-20 19:50:11,345 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:50:11,348 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE019\ses-Hellerup\mapping_process.mp4'
+2025-02-20 19:53:23,248 [INFO] OE019-Hellerup: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE019\ses-Hellerup.
+2025-02-20 19:53:23,360 [ERROR] Error saving empatica data for OE019-Hellerup: 'DotMap' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_11460\912911305.py", line 100, in main
+    empatica.empatica_and_ecg_to_csv(dataset, csv_outdir)
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\utils\for_empatica.py", line 34, in empatica_and_ecg_to_csv
+    datapicker.streams.Empatica.data.E4_Ibi.to_csv(outdir+r'\e4_ibi.csv')
+TypeError: 'DotMap' object is not callable
+
+2025-02-20 19:53:23,360 [INFO] OE019-Hellerup: No empatica data found or error encountered.
+2025-02-20 19:53:23,362 [INFO] Processing participant OE020, session Nordhavn
+2025-02-20 19:53:31,448 [INFO] OE020-Nordhavn: Dataset loaded successfully.
+2025-02-20 19:55:19,423 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 19:55:19,426 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE020\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 19:58:02,786 [INFO] OE020-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE020\ses-Nordhavn.
+2025-02-20 19:58:03,794 [INFO] OE020-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE020\ses-Nordhavn.
+2025-02-20 19:58:03,796 [INFO] Processing participant OE020, session Norrebro
+2025-02-20 19:58:12,699 [INFO] OE020-Norrebro: Dataset loaded successfully.
+2025-02-20 20:00:07,504 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:00:07,507 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE020\ses-Norrebro\mapping_process.mp4'
+2025-02-20 20:02:50,616 [INFO] OE020-Norrebro: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE020\ses-Norrebro.
+2025-02-20 20:02:51,677 [INFO] OE020-Norrebro: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE020\ses-Norrebro.
+2025-02-20 20:02:51,679 [INFO] Processing participant OE021, session Hellerup
+2025-02-20 20:03:00,429 [INFO] OE021-Hellerup: Dataset loaded successfully.
+2025-02-20 20:04:55,983 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:04:55,985 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE021\ses-Hellerup\mapping_process.mp4'
+2025-02-20 20:07:45,730 [INFO] OE021-Hellerup: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE021\ses-Hellerup.
+2025-02-20 20:07:46,841 [INFO] OE021-Hellerup: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE021\ses-Hellerup.
+2025-02-20 20:07:46,842 [INFO] Processing participant OE021, session Norrebro
+2025-02-20 20:07:55,278 [INFO] OE021-Norrebro: Dataset loaded successfully.
+2025-02-20 20:09:26,779 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:09:26,782 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE021\ses-Norrebro\mapping_process.mp4'
+2025-02-20 20:11:31,854 [INFO] OE021-Norrebro: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE021\ses-Norrebro.
+2025-02-20 20:11:32,718 [INFO] OE021-Norrebro: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE021\ses-Norrebro.
+2025-02-20 20:11:32,720 [INFO] Processing participant OE022, session Nordhavn
+2025-02-20 20:11:40,760 [INFO] OE022-Nordhavn: Dataset loaded successfully.
+2025-02-20 20:13:24,911 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:13:24,914 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE022\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 20:15:59,262 [INFO] OE022-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE022\ses-Nordhavn.
+2025-02-20 20:16:00,146 [INFO] OE022-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE022\ses-Nordhavn.
+2025-02-20 20:16:00,147 [INFO] Processing participant OE022, session Norrebro
+2025-02-20 20:16:10,017 [INFO] OE022-Norrebro: Dataset loaded successfully.
+2025-02-20 20:17:57,597 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:17:57,600 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE022\ses-Norrebro\mapping_process.mp4'
+2025-02-20 20:20:28,719 [INFO] OE022-Norrebro: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE022\ses-Norrebro.
+2025-02-20 20:20:29,724 [INFO] OE022-Norrebro: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE022\ses-Norrebro.
+2025-02-20 20:20:29,725 [INFO] Processing participant OE022, session Norreport
+2025-02-20 20:20:38,604 [INFO] Requesting http://a.tile.openstreetmap.org/16/35054/20508.png
+2025-02-20 20:20:38,649 [INFO] Requesting http://a.tile.openstreetmap.org/16/35054/20511.png
+2025-02-20 20:20:38,658 [INFO] Requesting http://a.tile.openstreetmap.org/16/35055/20508.png
+2025-02-20 20:20:38,668 [INFO] Requesting http://a.tile.openstreetmap.org/16/35055/20511.png
+2025-02-20 20:20:38,677 [INFO] Requesting http://a.tile.openstreetmap.org/16/35056/20508.png
+2025-02-20 20:20:38,687 [INFO] Requesting http://a.tile.openstreetmap.org/16/35056/20511.png
+2025-02-20 20:20:38,696 [INFO] Requesting http://a.tile.openstreetmap.org/16/35057/20508.png
+2025-02-20 20:20:38,706 [INFO] Requesting http://a.tile.openstreetmap.org/16/35057/20511.png
+2025-02-20 20:20:39,071 [INFO] OE022-Norreport: Dataset loaded successfully.
+2025-02-20 20:22:29,673 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:22:29,677 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE022\ses-Norreport\mapping_process.mp4'
+2025-02-20 20:25:03,925 [INFO] OE022-Norreport: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE022\ses-Norreport.
+2025-02-20 20:25:05,000 [INFO] OE022-Norreport: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE022\ses-Norreport.
+2025-02-20 20:25:05,009 [INFO] Processing participant OE023, session Nordhavn
+2025-02-20 20:25:13,129 [INFO] OE023-Nordhavn: Dataset loaded successfully.
+2025-02-20 20:27:13,745 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:27:13,749 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE023\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 20:30:20,732 [INFO] OE023-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE023\ses-Nordhavn.
+2025-02-20 20:30:21,921 [INFO] OE023-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE023\ses-Nordhavn.
+2025-02-20 20:30:21,923 [INFO] Processing participant OE023, session Norrebro
+2025-02-20 20:30:30,548 [INFO] OE023-Norrebro: Dataset loaded successfully.
+2025-02-20 20:32:18,315 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:32:18,318 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE023\ses-Norrebro\mapping_process.mp4'
+2025-02-20 20:34:53,843 [INFO] OE023-Norrebro: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE023\ses-Norrebro.
+2025-02-20 20:34:54,848 [INFO] OE023-Norrebro: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE023\ses-Norrebro.
+2025-02-20 20:34:54,850 [INFO] Processing participant OE023, session Norreport
+2025-02-20 20:35:02,743 [INFO] OE023-Norreport: Dataset loaded successfully.
+2025-02-20 20:36:48,688 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:36:48,692 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE023\ses-Norreport\mapping_process.mp4'
+2025-02-20 20:39:14,010 [INFO] OE023-Norreport: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE023\ses-Norreport.
+2025-02-20 20:39:15,022 [INFO] OE023-Norreport: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE023\ses-Norreport.
+2025-02-20 20:39:15,024 [INFO] Processing participant OE024, session Nordhavn
+2025-02-20 20:39:19,052 [INFO] OE024-Nordhavn: Dataset loaded successfully.
+2025-02-20 20:41:05,783 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-20 20:41:05,786 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE024\ses-Nordhavn\mapping_process.mp4'
+2025-02-20 20:43:41,311 [INFO] OE024-Nordhavn: Geodata saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\geodata\log\sub-OE024\ses-Nordhavn.
+2025-02-20 20:43:42,030 [INFO] OE024-Nordhavn: Empatica data saved to Z:\Exp_4-outdoor_walk\copenhagen\sourcedata\supp\stress_csv\sub-OE024\ses-Nordhavn.
+2025-02-21 09:40:25,183 [INFO] Processing directory: Z:\Exp_4-outdoor_walk\lansing\sourcedata\data
+2025-02-21 09:40:25,189 [INFO] Processing participant OE036001, session NorthNatural
+2025-02-21 09:40:35,134 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24134.png
+2025-02-21 09:40:36,909 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24135.png
+2025-02-21 09:40:37,009 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24136.png
+2025-02-21 09:40:39,108 [INFO] Requesting http://a.tile.openstreetmap.org/16/17378/24134.png
+2025-02-21 09:40:39,197 [INFO] Requesting http://a.tile.openstreetmap.org/16/17378/24135.png
+2025-02-21 09:40:39,336 [INFO] Requesting http://a.tile.openstreetmap.org/16/17378/24136.png
+2025-02-21 09:40:40,493 [INFO] Requesting http://a.tile.openstreetmap.org/16/17379/24134.png
+2025-02-21 09:40:40,574 [INFO] Requesting http://a.tile.openstreetmap.org/16/17379/24135.png
+2025-02-21 09:40:40,661 [INFO] Requesting http://a.tile.openstreetmap.org/16/17379/24136.png
+2025-02-21 09:40:40,744 [INFO] Requesting http://a.tile.openstreetmap.org/16/17380/24134.png
+2025-02-21 09:40:40,819 [INFO] Requesting http://a.tile.openstreetmap.org/16/17380/24135.png
+2025-02-21 09:40:40,910 [INFO] Requesting http://a.tile.openstreetmap.org/16/17380/24136.png
+2025-02-21 09:40:41,319 [INFO] OE036001-NorthNatural: Dataset loaded successfully.
+2025-02-21 09:42:05,671 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 09:42:05,675 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE036001\ses-NorthNatural\mapping_process.mp4'
+2025-02-21 09:43:54,196 [INFO] OE036001-NorthNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE036001\ses-NorthNatural.
+2025-02-21 09:43:54,952 [INFO] OE036001-NorthNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE036001\ses-NorthNatural.
+2025-02-21 09:43:54,954 [INFO] Processing participant OE036001, session NorthUrban
+2025-02-21 09:44:03,990 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193073.png
+2025-02-21 09:44:05,135 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193074.png
+2025-02-21 09:44:05,192 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193075.png
+2025-02-21 09:44:05,248 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193076.png
+2025-02-21 09:44:05,394 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193077.png
+2025-02-21 09:44:05,452 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193078.png
+2025-02-21 09:44:05,509 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193079.png
+2025-02-21 09:44:05,568 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193080.png
+2025-02-21 09:44:06,490 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193081.png
+2025-02-21 09:44:06,554 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193082.png
+2025-02-21 09:44:06,615 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193083.png
+2025-02-21 09:44:06,671 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193084.png
+2025-02-21 09:44:06,728 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193085.png
+2025-02-21 09:44:06,783 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193086.png
+2025-02-21 09:44:06,838 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193087.png
+2025-02-21 09:44:06,901 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193088.png
+2025-02-21 09:44:07,965 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193089.png
+2025-02-21 09:44:08,022 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193090.png
+2025-02-21 09:44:08,086 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193091.png
+2025-02-21 09:44:08,140 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193092.png
+2025-02-21 09:44:08,198 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193093.png
+2025-02-21 09:44:08,258 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193094.png
+2025-02-21 09:44:08,405 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193095.png
+2025-02-21 09:44:08,461 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193096.png
+2025-02-21 09:44:09,360 [INFO] Requesting http://a.tile.openstreetmap.org/19/139019/193097.png
+2025-02-21 09:44:09,416 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193073.png
+2025-02-21 09:44:09,472 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193074.png
+2025-02-21 09:44:09,529 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193075.png
+2025-02-21 09:44:09,583 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193076.png
+2025-02-21 09:44:09,640 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193077.png
+2025-02-21 09:44:09,699 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193078.png
+2025-02-21 09:44:09,753 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193079.png
+2025-02-21 09:44:09,807 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193080.png
+2025-02-21 09:44:09,862 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193081.png
+2025-02-21 09:44:09,919 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193082.png
+2025-02-21 09:44:09,973 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193083.png
+2025-02-21 09:44:10,027 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193084.png
+2025-02-21 09:44:10,087 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193085.png
+2025-02-21 09:44:10,147 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193086.png
+2025-02-21 09:44:10,205 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193087.png
+2025-02-21 09:44:10,260 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193088.png
+2025-02-21 09:44:10,317 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193089.png
+2025-02-21 09:44:10,374 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193090.png
+2025-02-21 09:44:10,429 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193091.png
+2025-02-21 09:44:10,482 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193092.png
+2025-02-21 09:44:10,537 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193093.png
+2025-02-21 09:44:10,593 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193094.png
+2025-02-21 09:44:10,650 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193095.png
+2025-02-21 09:44:10,709 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193096.png
+2025-02-21 09:44:10,766 [INFO] Requesting http://a.tile.openstreetmap.org/19/139020/193097.png
+2025-02-21 09:44:11,074 [INFO] OE036001-NorthUrban: Dataset loaded successfully.
+2025-02-21 09:45:24,289 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 09:45:24,292 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE036001\ses-NorthUrban\mapping_process.mp4'
+2025-02-21 09:47:00,419 [INFO] OE036001-NorthUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE036001\ses-NorthUrban.
+2025-02-21 09:47:01,133 [INFO] OE036001-NorthUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE036001\ses-NorthUrban.
+2025-02-21 09:47:01,156 [INFO] Processing participant OE109001, session DownTownUrban
+2025-02-21 09:47:12,292 [INFO] Requesting http://a.tile.openstreetmap.org/16/17375/24147.png
+2025-02-21 09:47:12,495 [INFO] Requesting http://a.tile.openstreetmap.org/16/17375/24148.png
+2025-02-21 09:47:12,573 [INFO] Requesting http://a.tile.openstreetmap.org/16/17376/24147.png
+2025-02-21 09:47:14,688 [INFO] Requesting http://a.tile.openstreetmap.org/16/17376/24148.png
+2025-02-21 09:47:16,625 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24147.png
+2025-02-21 09:47:16,740 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24148.png
+2025-02-21 09:47:17,094 [INFO] OE109001-DownTownUrban: Dataset loaded successfully.
+2025-02-21 09:48:51,950 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 09:48:51,953 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109001\ses-DownTownUrban\mapping_process.mp4'
+2025-02-21 09:50:58,686 [INFO] OE109001-DownTownUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109001\ses-DownTownUrban.
+2025-02-21 09:50:59,580 [INFO] OE109001-DownTownUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE109001\ses-DownTownUrban.
+2025-02-21 09:50:59,608 [INFO] Processing participant OE109002, session DownTownNatural
+2025-02-21 09:51:07,712 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193157.png
+2025-02-21 09:51:08,912 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193158.png
+2025-02-21 09:51:08,992 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193159.png
+2025-02-21 09:51:09,079 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193160.png
+2025-02-21 09:51:10,107 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193161.png
+2025-02-21 09:51:10,182 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193162.png
+2025-02-21 09:51:10,260 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193163.png
+2025-02-21 09:51:10,339 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193164.png
+2025-02-21 09:51:10,417 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193165.png
+2025-02-21 09:51:10,490 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193166.png
+2025-02-21 09:51:10,571 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193167.png
+2025-02-21 09:51:10,652 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193168.png
+2025-02-21 09:51:11,617 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193169.png
+2025-02-21 09:51:11,699 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193170.png
+2025-02-21 09:51:11,777 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193171.png
+2025-02-21 09:51:11,861 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193172.png
+2025-02-21 09:51:11,937 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193173.png
+2025-02-21 09:51:12,015 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193174.png
+2025-02-21 09:51:12,313 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193175.png
+2025-02-21 09:51:12,393 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193176.png
+2025-02-21 09:51:12,479 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193177.png
+2025-02-21 09:51:12,554 [INFO] Requesting http://a.tile.openstreetmap.org/19/139009/193178.png
+2025-02-21 09:51:12,633 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193157.png
+2025-02-21 09:51:12,713 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193158.png
+2025-02-21 09:51:12,793 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193159.png
+2025-02-21 09:51:12,874 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193160.png
+2025-02-21 09:51:12,953 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193161.png
+2025-02-21 09:51:13,030 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193162.png
+2025-02-21 09:51:13,103 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193163.png
+2025-02-21 09:51:13,188 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193164.png
+2025-02-21 09:51:13,275 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193165.png
+2025-02-21 09:51:13,353 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193166.png
+2025-02-21 09:51:13,429 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193167.png
+2025-02-21 09:51:13,512 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193168.png
+2025-02-21 09:51:13,590 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193169.png
+2025-02-21 09:51:13,798 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193170.png
+2025-02-21 09:51:13,876 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193171.png
+2025-02-21 09:51:14,150 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193172.png
+2025-02-21 09:51:14,231 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193173.png
+2025-02-21 09:51:14,305 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193174.png
+2025-02-21 09:51:14,385 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193175.png
+2025-02-21 09:51:14,467 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193176.png
+2025-02-21 09:51:14,549 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193177.png
+2025-02-21 09:51:14,759 [INFO] Requesting http://a.tile.openstreetmap.org/19/139010/193178.png
+2025-02-21 09:51:14,842 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193157.png
+2025-02-21 09:51:14,918 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193158.png
+2025-02-21 09:51:15,132 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193159.png
+2025-02-21 09:51:15,221 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193160.png
+2025-02-21 09:51:15,439 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193161.png
+2025-02-21 09:51:15,512 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193162.png
+2025-02-21 09:51:15,586 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193163.png
+2025-02-21 09:51:15,664 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193164.png
+2025-02-21 09:51:15,746 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193165.png
+2025-02-21 09:51:15,828 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193166.png
+2025-02-21 09:51:15,909 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193167.png
+2025-02-21 09:51:15,986 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193168.png
+2025-02-21 09:51:16,065 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193169.png
+2025-02-21 09:51:16,150 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193170.png
+2025-02-21 09:51:16,370 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193171.png
+2025-02-21 09:51:16,449 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193172.png
+2025-02-21 09:51:16,526 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193173.png
+2025-02-21 09:51:16,608 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193174.png
+2025-02-21 09:51:16,697 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193175.png
+2025-02-21 09:51:16,796 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193176.png
+2025-02-21 09:51:16,881 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193177.png
+2025-02-21 09:51:16,965 [INFO] Requesting http://a.tile.openstreetmap.org/19/139011/193178.png
+2025-02-21 09:51:17,050 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193157.png
+2025-02-21 09:51:17,129 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193158.png
+2025-02-21 09:51:17,208 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193159.png
+2025-02-21 09:51:17,287 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193160.png
+2025-02-21 09:51:17,365 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193161.png
+2025-02-21 09:51:17,439 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193162.png
+2025-02-21 09:51:17,519 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193163.png
+2025-02-21 09:51:17,599 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193164.png
+2025-02-21 09:51:17,686 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193165.png
+2025-02-21 09:51:17,771 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193166.png
+2025-02-21 09:51:17,849 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193167.png
+2025-02-21 09:51:17,927 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193168.png
+2025-02-21 09:51:18,008 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193169.png
+2025-02-21 09:51:18,082 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193170.png
+2025-02-21 09:51:18,158 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193171.png
+2025-02-21 09:51:18,236 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193172.png
+2025-02-21 09:51:18,309 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193173.png
+2025-02-21 09:51:18,390 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193174.png
+2025-02-21 09:51:18,481 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193175.png
+2025-02-21 09:51:18,560 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193176.png
+2025-02-21 09:51:18,633 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193177.png
+2025-02-21 09:51:18,847 [INFO] Requesting http://a.tile.openstreetmap.org/19/139012/193178.png
+2025-02-21 09:51:20,287 [INFO] OE109002-DownTownNatural: Dataset loaded successfully.
+2025-02-21 09:52:28,998 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 09:52:29,001 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109002\ses-DownTownNatural\mapping_process.mp4'
+2025-02-21 09:53:54,190 [INFO] OE109002-DownTownNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109002\ses-DownTownNatural.
+2025-02-21 09:53:54,836 [INFO] OE109002-DownTownNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE109002\ses-DownTownNatural.
+2025-02-21 09:53:54,874 [INFO] Processing participant OE109003, session SouthUrban
+2025-02-21 09:54:01,527 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193206.png
+2025-02-21 09:54:02,570 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193207.png
+2025-02-21 09:54:02,655 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193208.png
+2025-02-21 09:54:03,711 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193209.png
+2025-02-21 09:54:03,787 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193210.png
+2025-02-21 09:54:03,869 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193211.png
+2025-02-21 09:54:03,950 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193212.png
+2025-02-21 09:54:04,035 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193213.png
+2025-02-21 09:54:04,116 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193214.png
+2025-02-21 09:54:04,199 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193215.png
+2025-02-21 09:54:04,282 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193216.png
+2025-02-21 09:54:04,368 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193217.png
+2025-02-21 09:54:04,456 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193218.png
+2025-02-21 09:54:04,548 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193219.png
+2025-02-21 09:54:04,637 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193220.png
+2025-02-21 09:54:04,720 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193221.png
+2025-02-21 09:54:04,808 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193222.png
+2025-02-21 09:54:04,894 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193223.png
+2025-02-21 09:54:04,977 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193224.png
+2025-02-21 09:54:06,606 [INFO] OE109003-SouthUrban: Dataset loaded successfully.
+2025-02-21 09:55:00,841 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 09:55:00,844 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109003\ses-SouthUrban\mapping_process.mp4'
+2025-02-21 09:56:07,331 [INFO] OE109003-SouthUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109003\ses-SouthUrban.
+2025-02-21 09:56:07,863 [INFO] OE109003-SouthUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE109003\ses-SouthUrban.
+2025-02-21 09:56:07,865 [INFO] Processing participant OE109004, session SouthUrban
+2025-02-21 09:56:17,142 [WARNING] OE109004-SouthUrban: Failed to load using outdoor schema. Error: All values above the minimum allowed dt_error.
+2025-02-21 09:56:17,143 [INFO] OE109004-SouthUrban: Trying missing_sync schema...
+2025-02-21 09:56:21,450 [INFO] OE109004-SouthUrban: Dataset loaded successfully.
+2025-02-21 09:56:23,677 [INFO] OE109004-SouthUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109004\ses-SouthUrban.
+2025-02-21 09:56:24,416 [INFO] OE109004-SouthUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE109004\ses-SouthUrban.
+2025-02-21 09:56:24,419 [INFO] Processing participant OE109005, session SouthUrban
+2025-02-21 09:56:33,476 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193203.png
+2025-02-21 09:56:33,565 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193204.png
+2025-02-21 09:56:33,648 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193205.png
+2025-02-21 09:56:33,738 [INFO] Requesting http://a.tile.openstreetmap.org/19/139026/193225.png
+2025-02-21 09:56:34,222 [INFO] OE109005-SouthUrban: Dataset loaded successfully.
+2025-02-21 09:56:35,705 [INFO] OE109005-SouthUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE109005\ses-SouthUrban.
+2025-02-21 09:56:36,360 [INFO] OE109005-SouthUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE109005\ses-SouthUrban.
+2025-02-21 09:56:36,362 [INFO] Processing participant OE821001, session DownTownUrban
+2025-02-21 09:56:47,075 [INFO] OE821001-DownTownUrban: Dataset loaded successfully.
+2025-02-21 09:58:05,057 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 09:58:05,060 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE821001\ses-DownTownUrban\mapping_process.mp4'
+2025-02-21 09:59:48,049 [INFO] OE821001-DownTownUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE821001\ses-DownTownUrban.
+2025-02-21 09:59:48,796 [INFO] OE821001-DownTownUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE821001\ses-DownTownUrban.
+2025-02-21 09:59:48,799 [INFO] Processing participant OE822001, session DownTownUrban
+2025-02-21 09:59:58,930 [INFO] OE822001-DownTownUrban: Dataset loaded successfully.
+2025-02-21 10:01:21,134 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 10:01:21,138 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE822001\ses-DownTownUrban\mapping_process.mp4'
+2025-02-21 10:03:10,055 [INFO] OE822001-DownTownUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE822001\ses-DownTownUrban.
+2025-02-21 10:03:10,837 [INFO] OE822001-DownTownUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE822001\ses-DownTownUrban.
+2025-02-21 10:03:10,840 [INFO] Processing participant OE823001, session DownTownUrban
+2025-02-21 10:03:20,713 [INFO] OE823001-DownTownUrban: Dataset loaded successfully.
+2025-02-21 10:04:33,265 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 10:04:33,270 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE823001\ses-DownTownUrban\mapping_process.mp4'
+2025-02-21 10:06:10,005 [INFO] OE823001-DownTownUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE823001\ses-DownTownUrban.
+2025-02-21 10:06:10,712 [INFO] OE823001-DownTownUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE823001\ses-DownTownUrban.
+2025-02-21 10:06:10,714 [INFO] Processing participant OE824001, session DownTownNatural
+2025-02-21 10:06:18,013 [INFO] OE824001-DownTownNatural: Dataset loaded successfully.
+2025-02-21 10:07:08,390 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 10:07:08,393 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE824001\ses-DownTownNatural\mapping_process.mp4'
+2025-02-21 10:08:06,884 [INFO] OE824001-DownTownNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE824001\ses-DownTownNatural.
+2025-02-21 10:08:07,375 [INFO] OE824001-DownTownNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE824001\ses-DownTownNatural.
+2025-02-21 10:08:07,377 [INFO] Processing participant OE825001, session DownTownNatural
+2025-02-21 10:08:08,184 [WARNING] OE825001-DownTownNatural: Failed to load using outdoor schema. Error: No objects to concatenate
+2025-02-21 10:08:08,184 [INFO] OE825001-DownTownNatural: Trying missing_sync schema...
+2025-02-21 10:08:08,626 [ERROR] Error loading dataset for OE825001-DownTownNatural: No objects to concatenate
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_29788\912911305.py", line 74, in main
+    dataset = load_dataset(session_path, schema=outdoor.build_schema,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\zeromq.py", line 33, in load
+    zmq_data = load_zeromq(self.filenames, self.dtypes, root=self.rootfolder)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\zeromq.py", line 34, in load_zeromq
+    return pd.concat(data_frames, axis=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\NGR_FMUL\AppData\Local\Temp\ipykernel_29788\912911305.py", line 83, in main
+    dataset = load_dataset(session_path, ubx=ubx, unity=False,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\github\JoaoAmaro2001\notebooks\src\ingestion\helpers.py", line 27, in load_dataset
+    dataset.reload_streams(force_load=True)
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\schema\__init__.py", line 149, in reload_streams
+    stream.load()
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\stream\zeromq.py", line 33, in load
+    zmq_data = load_zeromq(self.filenames, self.dtypes, root=self.rootfolder)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pluma\io\zeromq.py", line 34, in load_zeromq
+    return pd.concat(data_frames, axis=1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\NGR_FMUL\miniconda3\envs\emotional-cities-outdoor\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+2025-02-21 10:08:08,641 [INFO] Processing participant OE931001, session SouthNatural
+2025-02-21 10:08:21,015 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24150.png
+2025-02-21 10:08:21,123 [INFO] Requesting http://a.tile.openstreetmap.org/16/17377/24151.png
+2025-02-21 10:08:21,234 [INFO] Requesting http://a.tile.openstreetmap.org/16/17378/24150.png
+2025-02-21 10:08:21,378 [INFO] Requesting http://a.tile.openstreetmap.org/16/17378/24151.png
+2025-02-21 10:08:21,475 [INFO] Requesting http://a.tile.openstreetmap.org/16/17379/24150.png
+2025-02-21 10:08:21,587 [INFO] Requesting http://a.tile.openstreetmap.org/16/17379/24151.png
+2025-02-21 10:08:21,695 [INFO] Requesting http://a.tile.openstreetmap.org/16/17380/24150.png
+2025-02-21 10:08:21,808 [INFO] Requesting http://a.tile.openstreetmap.org/16/17380/24151.png
+2025-02-21 10:08:22,177 [INFO] OE931001-SouthNatural: Dataset loaded successfully.
+2025-02-21 10:10:11,809 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 10:10:11,813 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE931001\ses-SouthNatural\mapping_process.mp4'
+2025-02-21 10:12:38,840 [INFO] OE931001-SouthNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE931001\ses-SouthNatural.
+2025-02-21 10:12:39,911 [INFO] OE931001-SouthNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE931001\ses-SouthNatural.
+2025-02-21 10:12:39,913 [INFO] Processing participant OE932001, session SouthNatural
+2025-02-21 10:12:50,295 [INFO] OE932001-SouthNatural: Dataset loaded successfully.
+2025-02-21 10:14:12,064 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 10:14:12,068 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE932001\ses-SouthNatural\mapping_process.mp4'
+2025-02-21 10:15:56,481 [INFO] OE932001-SouthNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE932001\ses-SouthNatural.
+2025-02-21 10:15:57,290 [INFO] OE932001-SouthNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE932001\ses-SouthNatural.
+2025-02-21 10:15:57,314 [INFO] Processing participant OE933001, session SouthNatural
+2025-02-21 10:16:05,312 [WARNING] OE933001-SouthNatural: Failed to load using outdoor schema. Error: All values above the minimum allowed dt_error.
+2025-02-21 10:16:05,313 [INFO] OE933001-SouthNatural: Trying missing_sync schema...
+2025-02-21 10:16:08,800 [INFO] OE933001-SouthNatural: Dataset loaded successfully.
+2025-02-21 10:16:10,406 [INFO] OE933001-SouthNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE933001\ses-SouthNatural.
+2025-02-21 10:16:11,102 [INFO] OE933001-SouthNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE933001\ses-SouthNatural.
+2025-02-21 10:16:11,104 [INFO] Processing participant OE933002, session SouthNatural
+2025-02-21 10:16:14,691 [WARNING] OE933002-SouthNatural: Failed to load using outdoor schema. Error: All values above the minimum allowed dt_error.
+2025-02-21 10:16:14,692 [INFO] OE933002-SouthNatural: Trying missing_sync schema...
+2025-02-21 10:16:16,083 [INFO] OE933002-SouthNatural: Dataset loaded successfully.
+2025-02-21 10:16:18,338 [INFO] OE933002-SouthNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE933002\ses-SouthNatural.
+2025-02-21 10:16:18,604 [INFO] OE933002-SouthNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE933002\ses-SouthNatural.
+2025-02-21 10:16:18,606 [INFO] Processing participant OE971001, session NorthNatural
+2025-02-21 10:16:30,284 [WARNING] OE971001-NorthNatural: Failed to load using outdoor schema. Error: All values above the minimum allowed dt_error.
+2025-02-21 10:16:30,285 [INFO] OE971001-NorthNatural: Trying missing_sync schema...
+2025-02-21 10:16:35,697 [INFO] OE971001-NorthNatural: Dataset loaded successfully.
+2025-02-21 10:18:12,959 [INFO] Animation.save using <class 'matplotlib.animation.FFMpegWriter'>
+2025-02-21 10:18:12,962 [INFO] MovieWriter._run: running command: ffmpeg -f rawvideo -vcodec rawvideo -s 1200x800 -pix_fmt rgba -framerate 10 -loglevel error -i pipe: -vcodec h264 -pix_fmt yuv420p -b 1800k -y 'Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE971001\ses-NorthNatural\mapping_process.mp4'
+2025-02-21 10:20:31,449 [INFO] OE971001-NorthNatural: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE971001\ses-NorthNatural.
+2025-02-21 10:20:32,403 [INFO] OE971001-NorthNatural: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE971001\ses-NorthNatural.
+2025-02-21 10:20:32,404 [INFO] Processing participant OE971001, session NorthUrban
+2025-02-21 10:20:42,999 [INFO] OE971001-NorthUrban: Dataset loaded successfully.
+2025-02-21 10:20:44,889 [INFO] OE971001-NorthUrban: Geodata saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\geodata\log\sub-OE971001\ses-NorthUrban.
+2025-02-21 10:20:45,680 [INFO] OE971001-NorthUrban: Empatica data saved to Z:\Exp_4-outdoor_walk\lansing\sourcedata\supp\stress_csv\sub-OE971001\ses-NorthUrban.
