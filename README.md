@@ -19,3 +19,10 @@ More information about sample data sharing can be found in the [eMOTIONAL Cities
 5. Make sure correct environment is selected in the notebook
 
 The current notebook requires Python 3.9+ to run successfully. The file `environment.yml` contains the list of minimal package dependencies required.
+
+## Running analyses
+
+Run the notebooks in `ingestion` starting with `do_`:
+- `do_process.ipynb`
+- `do_analysis.ipynb`
+- `do_statistics.ipynb`
