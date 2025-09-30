@@ -26,7 +26,7 @@ def export_gaze_to_csv(dataset, outdir):
 def export_gaze_andre(dataset):
 
     """
-    This scipt is the preliminary code to exoprt a video with the gaze data
+    This script is the preliminary code to export a video with the gaze data
     To add the gaze data back to the video it is necessary use the output of this function 
     in bonsai.
     """

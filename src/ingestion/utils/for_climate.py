@@ -55,20 +55,20 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
         gps_file     = os.path.join(output, f"sub-{participant_name}_ses-{session_name}_gps.png")
 
         # Get path information
-        if "lisbon" in path.sourcedata:
+        if "lisbon" in sourcedata:
             path_num = fetch_path_num(session_name, "lisbon")
-        elif "copenhagen" in path.sourcedata:
+        elif "copenhagen" in sourcedata:
             path_num = fetch_path_num(session_name, "copenhagen")
-        if "lansing" in path.sourcedata:
+        if "lansing" in sourcedata:
             path_num = fetch_path_num(session_name, "lansing")
-        elif "london" in path.sourcedata:
+        elif "london" in sourcedata:
             path_num = fetch_path_num(session_name, "london")            
         path_num = str(path_num).zfill(2) # make it a two-digit string
 
         # Correct GPS data and plot it
         try:
-            if "lisbon" in path.sourcedata:
-                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+            if "lisbon" in sourcedata:
+                shpdata    = os.path.join(sourcedata, 'supp','interexperimentalpaths_shp')
                 # Get shapefile name
                 if path_num == '01':
                     shp_filename = "01_belem.shp"
@@ -120,7 +120,7 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                 # Correct GPS data
                 if path_num in ['23']:
                     print("Getting stoppage times...")
-                    times = fetch_stoppage_times(path.sourcedata, participant_name, session_name)
+                    times = fetch_stoppage_times(sourcedata, participant_name, session_name)
                     print(times)     
                     print("Attempting to interpolate GPS data...")               
                     geodata = interpolate_gps_data(geodata, shp_file, output, times, plot=True)
@@ -131,10 +131,10 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                 # Add typology
                 if path_num in ['01', '02', '03', '04', '05', '06', '23']:
                     print('Adding typology...')
-                    geodata = add_typology(geodata, path.sourcedata, int(path_num))
+                    geodata = add_typology(geodata, sourcedata, int(path_num))
             
-            elif "copenhagen" in path.sourcedata:
-                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+            elif "copenhagen" in sourcedata:
+                shpdata    = os.path.join(sourcedata, 'supp','interexperimentalpaths_shp')
                 # Get shapefile name
                 if path_num == '01':
                     shp_filename = "Path1_Norrebro.shp"
@@ -150,8 +150,8 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                 print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
                 print('Check plot for the corrected GPS data...')
 
-            elif "lansing" in path.sourcedata:
-                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+            elif "lansing" in sourcedata:
+                shpdata    = os.path.join(sourcedata, 'supp','interexperimentalpaths_shp')
                 # Get shapefile name
                 if path_num == '01':
                     shp_filename = "Path1_Northern_Natural.shp"
@@ -171,8 +171,8 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                 print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
                 print('Check plot for the corrected GPS data...')     
 
-            elif "london" in path.sourcedata:
-                shpdata    = os.path.join(path.sourcedata, 'supp','interexperimentalpaths_shp')
+            elif "london" in sourcedata:
+                shpdata    = os.path.join(sourcedata, 'supp','interexperimentalpaths_shp')
                 # Get shapefile name
                 if path_num == '01':
                     shp_filename = "Path1_CityLondon.shp"
