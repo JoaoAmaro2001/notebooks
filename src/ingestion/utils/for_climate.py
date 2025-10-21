@@ -2,6 +2,7 @@
 #                              IMPORT LIBRARIES                                 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+from utils import *
 import matplotlib.pyplot as plt
 import numpy as np
 from pythermalcomfort.models import utci, solar_gain
@@ -21,6 +22,7 @@ import os
 from matplotlib.animation import FuncAnimation
 import matplotlib.animation as animation
 
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #                          PROCESSING FUNCTIONS                                 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -34,9 +36,9 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
     """
     
     # Import functions from utils
+    from utils import sourcedata
     from utils import fetch_path_num 
     from utils import fetch_stoppage_times
-    import utils.for_setpath as path
 
     print(f"Processing geodata for participant '{participant_name}', session '{session_name}'...")
 
@@ -123,9 +125,9 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                     times = fetch_stoppage_times(sourcedata, participant_name, session_name)
                     print(times)     
                     print("Attempting to interpolate GPS data...")               
-                    geodata = interpolate_gps_data(geodata, shp_file, output, times, plot=True)
+                    geodata = interpolate_gps_data(geodata, shp_file, output, times, plot=False)
                 else:
-                    geodata = correct_gps_data(geodata, shp_file, output, plot=True)
+                    geodata = correct_gps_data(geodata, shp_file, output)
                     print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
                     print('Check plot for the corrected GPS data...')
                 # Add typology
@@ -146,7 +148,7 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                     shp_filename = "Path4_Hellerup.shp"
                 # Correct GPS data
                 shp_file        = os.path.join(shpdata, shp_filename)
-                geodata         = correct_gps_data(geodata, shp_file, output, plot=True)
+                geodata         = correct_gps_data(geodata, shp_file, output)
                 print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
                 print('Check plot for the corrected GPS data...')
 
@@ -167,7 +169,7 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                     shp_filename = "Path6_Southern_Urban.shp"                                        
                 # Correct GPS data
                 shp_file        = os.path.join(shpdata, shp_filename)
-                geodata         = correct_gps_data(geodata, shp_file, output, plot=True)
+                geodata         = correct_gps_data(geodata, shp_file, output, plot=False)
                 print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
                 print('Check plot for the corrected GPS data...')     
 
@@ -184,7 +186,7 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
                     shp_filename = "Path4_Woolwich.shp"
                 # Correct GPS data
                 shp_file        = os.path.join(shpdata, shp_filename)
-                geodata         = correct_gps_data(geodata, shp_file, output, plot=True)
+                geodata         = correct_gps_data(geodata, shp_file, output, plot=False)
                 print(f"Corrected GPS data for participant '{participant_name}', session '{session_name}'...")
                 print('Check plot for the corrected GPS data...')                                                         
             
@@ -224,8 +226,8 @@ def tidy_geodata(df):
     df['temp_radiant']    = temp_radiant
     df['noise_level']     = noise_level
 
-    # # Compute the UTCI
-    # df['utci']            = utci(tdb=temp_atmos, tr=temp_radiant, v=wind_speed, rh=humidity)
+    # Compute the UTCI
+    df['utci']            = utci(tdb=temp_atmos, tr=temp_radiant, v=wind_speed, rh=humidity)
 
     # Get raw GPS coordinates and integrate them into df
     coords                = df.geometry.get_coordinates(include_z=True)
@@ -433,7 +435,7 @@ def add_environmental_metrics(df):
 
     return df
 
-def correct_gps_data(df, shp_path, output_dir, plot=True):
+def correct_gps_data(df, shp_path, output_dir, plot=False):
     """
     Robust GPS correction with continuity checks, parameter optimization, and advanced visualization.
     Saves all plots and creates a video showing the mapping process.
@@ -455,6 +457,8 @@ def correct_gps_data(df, shp_path, output_dir, plot=True):
     gdf : GeoDataFrame
         The input GeoDataFrame with added corrected coordinates and distances.
     """
+
+    print(f"Plotting is set to: {plot}")
     
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
@@ -731,7 +735,7 @@ import geopandas as gpd
 import matplotlib.pyplot as plt
 from shapely.geometry import Point
 
-def interpolate_gps_data(df, shp_path, output_dir, times, plot=True):
+def interpolate_gps_data(df, shp_path, output_dir, times, plot=False):
     """
     Robust GPS correction with sequential checkpoint/questionnaire adjustments.
     

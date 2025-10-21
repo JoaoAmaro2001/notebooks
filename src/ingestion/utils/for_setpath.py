@@ -8,6 +8,7 @@ def setpath_city(CITY='lisbon'):
 
     # --- Set your default city here ---
     print(f"Current city is {CITY}!")
+    print("If you wish to change the city, please edit the value in the __init__.py file")
 
     # --- Get current directory and user name ---
     cdir = os.getcwd()
@@ -134,7 +135,7 @@ def setpath_city(CITY='lisbon'):
     results     = os.path.join(root, 'results')
     derivatives = os.path.join(root, 'derivatives')
 
-    return sourcedata, bidsroot, results, derivatives
+    return sourcedata, bidsroot, results, derivatives, scripts
 
     # # --- Add all subdirectories of the scripts folder to sys.path ---
     # for path_entry in glob.glob(os.path.join(scripts, '**'), recursive=True):

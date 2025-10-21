@@ -9,4 +9,4 @@ from .for_analysis import *
 from .for_setpath import *
 
 # adapt paths if necessary
-sourcedata, bidsroot, results, derivatives = setpath_city(CITY='copenhagen')
+sourcedata, bidsroot, results, derivatives, scripts = setpath_city(CITY='lisbon')

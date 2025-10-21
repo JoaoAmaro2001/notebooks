@@ -17,24 +17,24 @@ import datetime
 #                          PROCESSING FUNCTIONS                                 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-def empatica_and_ecg_to_csv(datapicker, outdir):
+def empatica_and_ecg_to_csv(dataset, outdir):
 
-    """Extracts Empatica and ECG data from the datapicker object and saves it to CSV files.
+    """Extracts Empatica and ECG data from the dataset object and saves it to CSV files.
         As of now the ECG data is not yet correctly processed.
     """
     
     # Get LSL markers
-    lsl_markers = datapicker.streams.EEG.server_lsl_marker[datapicker.streams.EEG.server_lsl_marker.MarkerIdx>35000]
+    lsl_markers = dataset.streams.EEG.server_lsl_marker[dataset.streams.EEG.server_lsl_marker.MarkerIdx>35000]
     
     # Save to csv
     lsl_markers.to_csv(outdir+r'\lsl_markers.csv')
-    datapicker.streams.BioData.ECG.data.HeartRate.to_csv(outdir+r'\ecg_hr.csv')
-    datapicker.streams.Empatica.data.E4_Gsr.to_csv(outdir+r'\e4_gsr.csv')
-    datapicker.streams.Empatica.data.E4_Temperature.to_csv(outdir+r'\e4_temp.csv')
-    datapicker.streams.Empatica.data.E4_Ibi.to_csv(outdir+r'\e4_ibi.csv')
-    datapicker.streams.Empatica.data.E4_Bvp.to_csv(outdir+r'\e4_bvp.csv')
-    datapicker.streams.Empatica.data.E4_Acc.to_csv(outdir+r'\e4_acc.csv')
-    datapicker.streams.Empatica.data.E4_Hr.to_csv(outdir+r'\e4_hr.csv')
+    dataset.streams.BioData.ECG.data.HeartRate.to_csv(outdir+r'\ecg_hr.csv')
+    dataset.streams.Empatica.data.E4_Gsr.to_csv(outdir+r'\e4_gsr.csv')
+    dataset.streams.Empatica.data.E4_Temperature.to_csv(outdir+r'\e4_temp.csv')
+    dataset.streams.Empatica.data.E4_Ibi.to_csv(outdir+r'\e4_ibi.csv')
+    dataset.streams.Empatica.data.E4_Bvp.to_csv(outdir+r'\e4_bvp.csv')
+    dataset.streams.Empatica.data.E4_Acc.to_csv(outdir+r'\e4_acc.csv')
+    dataset.streams.Empatica.data.E4_Hr.to_csv(outdir+r'\e4_hr.csv')
 
     # output
     print('Data saved to:', outdir)
