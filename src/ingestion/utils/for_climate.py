@@ -53,6 +53,11 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
 
         # Prepare oututs for the log directory
         os.makedirs(output, exist_ok=True)
+        # Get LSL markers (above 35000 corresponds to manually sent markers)
+        lsl_markers_manual = dataset.streams.EEG.server_lsl_marker[
+            dataset.streams.EEG.server_lsl_marker.MarkerIdx > 35000]
+
+        # Save to csv
         geodata_file = os.path.join(output, f"sub-{participant_name}_ses-{session_name}_geodata.xlsx")
         gps_file     = os.path.join(output, f"sub-{participant_name}_ses-{session_name}_gps.png")
 
@@ -193,6 +198,36 @@ def geodata_to_csv(dataset, participant_name, session_name, output):
         except Exception as e:
             print(f"An unexpected error occurred for participant '{participant_name}', session '{session_name}': {e}")
             print("Could not correct GPS data...")
+
+        # Finally add the LSL data to geodata
+        lsl = dataset.streams.EEG.server_lsl_marker
+        lsl.to_csv(os.path.join(output, f"sub-{participant_name}_ses-{session_name}_lsl.csv"))
+
+        # Make sure "time" is a column (not index) in both dataframes
+        geodata = geodata.reset_index(drop=False)
+
+        # print(geodata.index.name)
+        # print(lsl.index.name)
+
+        if geodata.index.name == "time":
+            geodata.index.name = "time_index"  # rename temporarily
+        geodata = geodata.reset_index(drop=False)
+
+        # If 'time' appears twice (as column and index), remove the duplicate column
+        if "index" in geodata.columns and "time" in geodata.columns:
+            geodata = geodata.loc[:, ~geodata.columns.duplicated()]
+        if "index" in lsl.columns and "time" in lsl.columns:
+            lsl = lsl.loc[:, ~lsl.columns.duplicated()]
+
+        # Now run the merge again
+        geodata = pd.merge_asof(
+            geodata.sort_values("time"),
+            lsl.sort_values("time"),
+            on="time",
+            direction="nearest",
+            tolerance=pd.Timedelta("500ms")
+        )
+        geodata = geodata.rename(columns={"Seconds": "LSL_seconds"})
 
         # Ensure geodata is a DataFrame and save as Excel
         if not isinstance(geodata, pd.DataFrame):

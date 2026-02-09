@@ -2,16 +2,12 @@
 #                              IMPORT LIBRARIES                                 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-import matplotlib.pyplot as plt
-import numpy as np
-from pluma.preprocessing.ecg import heartrate_from_ecg
-import pandas as pd
-import numpy as np
-import scipy.signal
-import matplotlib.pyplot as plt
-import biosppy
 import os
-import datetime
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import scipy.signal
+
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #                          PROCESSING FUNCTIONS                                 #
@@ -23,11 +19,12 @@ def empatica_and_ecg_to_csv(dataset, outdir):
         As of now the ECG data is not yet correctly processed.
     """
     
-    # Get LSL markers
-    lsl_markers = dataset.streams.EEG.server_lsl_marker[dataset.streams.EEG.server_lsl_marker.MarkerIdx>35000]
+    # Get LSL markers (above 35000 corresponds to manually sent markers)
+    lsl_markers_manual = dataset.streams.EEG.server_lsl_marker[dataset.streams.EEG.server_lsl_marker.MarkerIdx>35000]
     
     # Save to csv
-    lsl_markers.to_csv(outdir+r'\lsl_markers.csv')
+    lsl_markers_manual.to_csv(outdir+r'\lsl_markers_manual.csv')
+    dataset.streams.EEG.server_lsl_marker.to_csv(outdir+r'\lsl_markers.csv')
     dataset.streams.BioData.ECG.data.HeartRate.to_csv(outdir+r'\ecg_hr.csv')
     dataset.streams.Empatica.data.E4_Gsr.to_csv(outdir+r'\e4_gsr.csv')
     dataset.streams.Empatica.data.E4_Temperature.to_csv(outdir+r'\e4_temp.csv')
@@ -78,8 +75,6 @@ def export_resampled_empatica_data(input_dir, output_dir):
     fs_bvp = 64
     fs_eda = 4
 
-    # Load ecg_hr
-
     # Load data from CSV files
     print("Loading data...")
     bvp_subj = pd.read_csv(os.path.join(input_dir, 'e4_bvp.csv'))
@@ -88,6 +83,11 @@ def export_resampled_empatica_data(input_dir, output_dir):
     hr_subj = pd.read_csv(os.path.join(input_dir, 'e4_hr.csv'))
     acc_subj = pd.read_csv(os.path.join(input_dir, 'e4_acc.csv'))
     temp_subj = pd.read_csv(os.path.join(input_dir, 'e4_temp.csv'))
+    try:
+        hrlead_subj = pd.read_csv(os.path.join(input_dir, 'ecg_hr.csv'))
+        hrlead = True
+    except:
+        hrlead = False
 
     # Process datetime columns
     print("Processing datetime columns...")
@@ -97,6 +97,8 @@ def export_resampled_empatica_data(input_dir, output_dir):
     hr_subj['DateTime'] = pd.to_datetime(hr_subj['E4_Seconds'].str[:-3], format="%Y-%m-%d %H:%M:%S.%f")
     acc_subj['DateTime'] = pd.to_datetime(acc_subj['E4_Seconds'].str[:-3], format="%Y-%m-%d %H:%M:%S.%f")
     temp_subj['DateTime'] = pd.to_datetime(temp_subj['E4_Seconds'].str[:-3], format="%Y-%m-%d %H:%M:%S.%f")
+    if hrlead:
+        hrlead_subj['DateTime'] = pd.to_datetime(temp_subj['Seconds'], format="%Y-%m-%d %H:%M:%S.%f")
 
     # Rename columns for consistency
     eda_subj.rename(columns={'Value': 'Values'}, inplace=True)
@@ -137,7 +139,10 @@ def export_resampled_empatica_data(input_dir, output_dir):
     print("Plotting HR signals...")
     plt.figure(figsize=(15, 7))
     plt.plot(hr_subj['DateTime'], hr_subj['Values'], label='E4 HR')
-    plt.plot(ibi_subj['DateTime'], ibi_subj['bpm'], label='E4 IBI Heart Rate')
+    plt.plot(ibi_subj['DateTime'], ibi_subj['IBI'], label='E4 IBI')
+    if hrlead:
+        plt.plot(hrlead_subj['DateTime'], hrlead_subj['Bpm'], label='Hear Rate (3-lead)')
+    plt.xlabel('Time')
     plt.legend()
     plt.xlabel('Time')
     plt.ylabel('Heart Rate (bpm)')
@@ -161,23 +166,29 @@ def export_resampled_empatica_data(input_dir, output_dir):
     data_eda = resample_numeric(eda_subj)
     data_acc = resample_numeric(acc_subj)
     data_bvp = resample_numeric(bvp_subj)
+    if hrlead:
+        data_hrlead = resample_numeric(hrlead_subj)
 
     # Merge all data into a single DataFrame
     print("Merging data...")
     data_all = data_hr[['DateTime', 'Values']].rename(columns={'Values': 'E4_HR'})
-    data_all = pd.merge(data_all, data_ibi[['DateTime', 'bpm']].rename(columns={'bpm': 'E4_HR_IBI'}), on='DateTime', how='outer')
-    data_all = pd.merge(data_all, data_temp[['DateTime', 'Values']].rename(columns={'Values': 'TEMP'}), on='DateTime', how='outer')
-    data_all = pd.merge(data_all, data_eda[['DateTime', 'Values', 'NEW_EDA']].rename(columns={'Values': 'EDA_RAW', 'NEW_EDA': 'EDA_PHASIC'}), on='DateTime', how='outer')
-    data_all = pd.merge(data_all, data_acc[['DateTime', 'AccX', 'AccY', 'AccZ', 'Magnitude']], on='DateTime', how='outer')
-    data_all = pd.merge(data_all, data_bvp[['DateTime', 'Values']].rename(columns={'Values': 'BVP_Values'}), on='DateTime', how='outer')
+    data_all = pd.merge(data_all, data_ibi[['DateTime', 'Values']].rename(columns={'Values': 'E4_IBI'}), on='DateTime', how='outer')
+    data_all = pd.merge(data_all, data_temp[['DateTime', 'Values']].rename(columns={'Values': 'E4_TEMP'}), on='DateTime', how='outer')
+    data_all = pd.merge(data_all, data_eda[['DateTime', 'Values', 'NEW_EDA']].rename(columns={'Values': 'E4_EDA_RAW', 'NEW_EDA': 'E4_EDA_PHASIC'}), on='DateTime', how='outer')
+    data_all = pd.merge(data_all, data_acc[['DateTime', 'AccX', 'AccY', 'AccZ', 'Magnitude',]].rename(columns={'AccX': 'E4_ACC_X', 'AccY': 'E4_ACC_Y', 'AccZ': 'E4_ACC_Z', 'Magnitude': 'E4_ACC_MAGNITUDE'}), on='DateTime', how='outer')
+    data_all = pd.merge(data_all, data_bvp[['DateTime', 'Values']].rename(columns={'Values': 'E4_ACC_BVP'}), on='DateTime', how='outer')
+    if hrlead:
+        data_all = pd.merge(data_all, data_hrlead[['DateTime', 'Bpm']].rename(columns={'Bpm': 'HR'}), on='DateTime', how='outer')
+
 
     # Plot merged data
     print("Plotting merged data...")
     plt.figure(figsize=(15, 7))
     plt.plot(data_all['DateTime'], data_all['E4_HR'], label='E4 HR')
-    plt.plot(data_all['DateTime'], data_all['E4_HR_IBI'], label='E4 HR from IBI')
-    plt.plot(data_all['DateTime'], data_all['EDA_RAW'], label='EDA Raw')
-    plt.plot(data_all['DateTime'], data_all['TEMP'], label='Temperature')
+    plt.plot(data_all['DateTime'], data_all['E4_IBI'], label='E4 IBI')
+    plt.plot(data_all['DateTime'], data_all['E4_EDA_RAW'], label='Raw EDA')
+    plt.plot(data_all['DateTime'], data_all['E4_TEMP'], label='Temperature')
+    plt.plot(data_all['DateTime'], data_all['HR'], label='HR')
     plt.legend()
     plt.xlabel('Time')
     plt.ylabel('Values')
@@ -190,7 +201,3 @@ def export_resampled_empatica_data(input_dir, output_dir):
     data_all.to_csv(os.path.join(output_dir, 'data_all_1Hz.csv'), index=False)
 
     print("Processing complete. All figures and CSV file saved to the output directory.")
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-#                          PLOTTING FUNCTIONS                                   #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
