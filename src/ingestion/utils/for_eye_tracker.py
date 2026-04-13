@@ -9,12 +9,13 @@ import os
 #                          PROCESSING FUNCTIONS                                 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+
 def export_gaze_to_csv(dataset, outdir):
 
-    gaze_timestamps = dataset.streams.PupilLabs.Counter.Gaze.data
-    #gaze_timestamps.reset_index(inplace = T1rue)
-    gaze_data = dataset.streams.PupilLabs.PupilGaze.data
-    gaze = gaze_timestamps.join(gaze_data, on='Value') 
+    # gaze_timestamps = dataset.streams.PupilLabs.Counter.Gaze.data
+    # gaze_timestamps.reset_index(inplace = True)
+    gaze = dataset.streams.PupilLabs.PupilGaze.data
+    # gaze = gaze_timestamps.join(gaze_data, on='Value') 
     gaze = gaze.drop('Value', axis=1)
     video_frames = dataset.streams.PupilLabs.Counter.DecodedFrames.data
     video_frames = video_frames[video_frames.Value !=0]

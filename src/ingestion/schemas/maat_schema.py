@@ -9,7 +9,7 @@ from pluma.stream.empatica import EmpaticaStream
 from pluma.stream.ubx import UbxStream, _UBX_MSGIDS
 from pluma.stream.microphone import MicrophoneStream
 from pluma.stream.eeg import EegStream
-from pluma.stream.zeromq import PupilGazeStream, PupilWorldCameraStream
+from pluma.stream.pupil import PupilGazeStream, PupilWorldCameraStream
 
 from pluma.io.path_helper import ComplexPath, ensure_complexpath
 
@@ -42,12 +42,12 @@ def build_schema(root: Union[str, ComplexPath], parent_dataset=None, autoload: b
     streams.Pluma.GSR =                     HarpStream(36, device="Pluma", streamlabel="GSR", **kwargs)
 
     # Pupil streams
-    # streams.PupilLabs.DecodedFrames =       HarpStream(209, device="PupilLabs", streamlabel="Pupil_RawFrames", **kwargs)
-    # streams.PupilLabs.RawFrames =           PupilWorldCameraStream(210, device="PupilLabs", streamlabel="Pupil_RawFrames", **kwargs)
-    # streams.PupilLabs.Counter.IMU =         HarpStream(211, device="PupilLabs", streamlabel="Counter_IMU", **kwargs)
-    # streams.PupilLabs.PupilGaze =           PupilGazeStream(212, device="PupilLabs", streamlabel="Pupil_Gaze", **kwargs)
-    # streams.PupilLabs.Counter.Audio =       HarpStream(213, device="PupilLabs", streamlabel="Counter_Audio", **kwargs)
-    # streams.PupilLabs.Counter.Key =         HarpStream(214, device="PupilLabs", streamlabel="Counter_Key", **kwargs)
+    streams.PupilLabs.DecodedFrames =       HarpStream(209, device="PupilLabs", streamlabel="Pupil_RawFrames", **kwargs)
+    streams.PupilLabs.RawFrames =           PupilWorldCameraStream(210, device="PupilLabs", streamlabel="Pupil_RawFrames", **kwargs)
+    streams.PupilLabs.Counter.IMU =         HarpStream(211, device="PupilLabs", streamlabel="Counter_IMU", **kwargs)
+    streams.PupilLabs.PupilGaze =           PupilGazeStream(212, device="PupilLabs", streamlabel="Pupil_Gaze", **kwargs)
+    streams.PupilLabs.Counter.Audio =       HarpStream(213, device="PupilLabs", streamlabel="Counter_Audio", **kwargs)
+    streams.PupilLabs.Counter.Key =         HarpStream(214, device="PupilLabs", streamlabel="Counter_Key", **kwargs)
 
     # TinkerForge streams
     streams.TK.GPS.Latitude =               HarpStream(227, device="TK", streamlabel="GPS_Latitude", **kwargs)
