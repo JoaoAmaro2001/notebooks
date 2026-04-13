@@ -10,41 +10,76 @@ import os
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 
-def export_gaze_to_csv(dataset, outdir):
+def _convert_pupil_time_to_timestamp(df):
+    if df is None or df.empty:
+        return df
+    if "PupilTime" not in df.columns:
+        return df
 
-    # gaze_timestamps = dataset.streams.PupilLabs.Counter.Gaze.data
-    # gaze_timestamps.reset_index(inplace = True)
-    gaze = dataset.streams.PupilLabs.PupilGaze.data
-    # gaze = gaze_timestamps.join(gaze_data, on='Value') 
-    gaze = gaze.drop('Value', axis=1)
-    video_frames = dataset.streams.PupilLabs.Counter.DecodedFrames.data
-    video_frames = video_frames[video_frames.Value !=0]
-    #eyetracking_correlation = pd.merge_asof(data, space_time, left_index=True, right_index=True)
-    gaze_coorelation = pd.merge_asof(video_frames, gaze, left_index=True, right_index=True)
-    gaze_coorelation.to_csv(os.path.join(outdir,'gaze.csv'))
+    df["time"] = pd.to_datetime(df["PupilTime"], unit="ns", errors="coerce")
+    return df
 
 
-def export_gaze_andre(dataset):
+def _ensure_datetime_index(df):
+    if df is None or df.empty:
+        return df
 
-    """
-    This script is the preliminary code to export a video with the gaze data
-    To add the gaze data back to the video it is necessary use the output of this function 
-    in bonsai.
-    """
-    
-    gaze_timestamps = dataset.streams.PupilLabs.Counter.Gaze.data
-    #gaze_timestamps.reset_index(inplace = T1rue)
-    gaze_data = dataset.streams.PupilLabs.PupilGaze.data
-    #gaze = gaze_timestamps.join(gaze_data, on='Value') 
-    #gaze = gaze.drop('Value', axis=1)
+    df = _convert_pupil_time_to_timestamp(df)
+
+    if not pd.api.types.is_datetime64_any_dtype(df.index):
+        if "time" in df.columns:
+            df = df.set_index(df["time"])
+        else:
+            df.index = pd.to_datetime(df.index, errors="coerce")
+    return df.sort_index()
 
 
-    video_frames = dataset.streams.PupilLabs.DecodedFrames.data
-    video_frames = video_frames[video_frames.Value !=0]
-    #eyetracking_correlation = pd.merge_asof(data, space_time, left_index=True, right_index=True)
-    gaze_coorelation = pd.merge_asof(video_frames, gaze_data, left_index=True, right_index=True)
+def build_eye_tracker_table(dataset, include_raw_frames=False, tolerance_ms=100):
+    """Return a merged table for PupilLabs decoded frames and gaze data."""
+    decoded_frames = dataset.streams.PupilLabs.DecodedFrames.data.copy()
+    gaze = dataset.streams.PupilLabs.PupilGaze.data.copy()
 
-    gaze_coorelation.to_csv(dataset._selected_path+r'\gaze_coorelation.csv')
-    gaze_coorelation
+    if decoded_frames.empty or gaze.empty:
+        raise ValueError("DecodedFrames or PupilGaze stream is empty.")
+
+    decoded_frames = decoded_frames[decoded_frames["Value"] != 0].copy()
+    decoded_frames = _ensure_datetime_index(decoded_frames)
+    gaze = _ensure_datetime_index(gaze)
+
+    merged = pd.merge_asof(
+        decoded_frames,
+        gaze,
+        left_index=True,
+        right_index=True,
+        direction="nearest",
+        tolerance=pd.Timedelta(milliseconds=tolerance_ms),
+        suffixes=("_frame", "_gaze"),
+    )
+
+    if include_raw_frames and hasattr(dataset.streams.PupilLabs, "RawFrames"):
+        raw_frames = dataset.streams.PupilLabs.RawFrames.data.copy()
+        raw_frames = _ensure_datetime_index(raw_frames)
+        merged = pd.merge_asof(
+            merged,
+            raw_frames,
+            left_index=True,
+            right_index=True,
+            direction="nearest",
+            tolerance=pd.Timedelta(milliseconds=tolerance_ms),
+            suffixes=("", "_raw"),
+        )
+
+    return merged
+
+
+def export_eye_tracker_table(dataset, outdir, filename="eye_tracker_table.csv", **kwargs):
+    table = build_eye_tracker_table(dataset, **kwargs)
+    table = table.reset_index()
+    if table.columns[0] == "index":
+        table.rename(columns={"index": "Timestamp"}, inplace=True)
+
+    os.makedirs(outdir, exist_ok=True)
+    table.to_csv(os.path.join(outdir, filename), index=False)
+    return table
 
     
